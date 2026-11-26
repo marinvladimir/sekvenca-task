@@ -1,4 +1,4 @@
-# Kadar — od Instagram brenda do tri gotove objave
+# Kadar, od Instagram brenda do tri gotove objave
 
 **Kadar** je ponovljiv AI recept (lokalna web aplikacija + naredbeni redak + paket promptova za Claude Code) koji iz brifa i službenih izvora brenda izradi **tri gotove Instagram objave**: slajdove u PNG-u, opise, obrazloženja i izvještaj provjere.
 
