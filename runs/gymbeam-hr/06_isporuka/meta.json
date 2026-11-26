@@ -1,5 +1,7 @@
 {
-  "status": "needs_review",
+  "status": "approved",
   "started_at": "2026-11-26T13:56:47+00:00",
-  "finished_at": "2026-11-26T13:56:47+00:00"
+  "finished_at": "2026-11-26T13:56:47+00:00",
+  "approved_at": "2026-11-26T14:08:02+00:00",
+  "review_note": "Čovjek pregledao objave na mobitelu; isporuka odobrena."
 }
