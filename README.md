@@ -22,7 +22,18 @@ Postupak je razložen na **6 kadrova**. Svaki kadar sprema svoj izlaz na disk, a
 | **Claude Code** (zadano) | instaliran [Claude Code](https://claude.ai/install.sh) i prijava `claude auth login` (Claude pretplata) | `KADAR_LLM_BACKEND=claude-code` |
 | **Claude API** | vlastiti API ključ | `KADAR_LLM_BACKEND=api`, `ANTHROPIC_API_KEY=…` |
 
-Preduvjeti: macOS ili Linux (na Windowsu WSL), Python ≥ 3.9 i internet (dohvat stranice brenda). U repou nema ključeva; `.env.example` je primjer konfiguracije bez ključeva.
+**Windows** (PowerShell, u mapi projekta):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\setup.ps1
+powershell -ExecutionPolicy Bypass -File .\run.ps1
+```
+
+Preduvjeti: Python ≥ 3.9 (Windows: s python.org, uz opciju "Add python.exe to PATH") i internet za dohvat stranice brenda. Claude Code na Windowsu se instalira naredbom `irm https://claude.ai/install.ps1 | iex`. U repou nema ključeva; `.env.example` je primjer konfiguracije bez ključeva.
+
+### Što radi bez AI pristupa
+
+Bez Claude Codea i bez API ključa rade: aplikacija i pregled GymBeam demo runa, kadar 01 (dohvat proizvoda, loga i IG objava), render slajdova iz postojećih tekstova (`create`), provjera u kodu (`qa --no-vision`) i isporuka (`deliver`). AI je potreban za analizu (02), plan (03), nove tekstove (04) i provjeru s AI vizijom (05).
 
 ---
 

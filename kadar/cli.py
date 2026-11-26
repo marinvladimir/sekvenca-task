@@ -167,6 +167,11 @@ def cmd_status(a: argparse.Namespace) -> None:
 
 
 def main(argv=None) -> None:
+    for stream in (sys.stdout, sys.stderr):  # Windows konzola (cp1252) inače puca na ✓, ⚠, →
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
     p = argparse.ArgumentParser(prog="kadar", description="Od brenda do objave, kadar po kadar.")
     sub = p.add_subparsers(dest="cmd", required=True)
 

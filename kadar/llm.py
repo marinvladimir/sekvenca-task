@@ -83,8 +83,10 @@ def ask_structured(
 def _claude_bin() -> str:
     found = os.getenv("KADAR_CLAUDE_BIN") or shutil.which("claude")
     if not found:
-        candidate = Path.home() / ".local/bin/claude"
-        found = str(candidate) if candidate.exists() else None
+        for candidate in (Path.home() / ".local/bin/claude", Path.home() / ".local/bin/claude.exe"):
+            if candidate.exists():
+                found = str(candidate)
+                break
     if not found:
         raise SystemExit(
             "Claude Code CLI nije pronađen. Instaliraj ga (curl -fsSL https://claude.ai/install.sh | bash) "
@@ -106,7 +108,7 @@ def _ask_claude_code(schema, system, text, images, labels, effort, log_path, lab
         )
 
     cmd = [
-        _claude_bin(), "-p", text,
+        _claude_bin(), "-p",
         "--output-format", "json",
         "--json-schema", json.dumps(schema.model_json_schema(), ensure_ascii=False),
         "--model", settings.text_model,
@@ -120,7 +122,9 @@ def _ask_claude_code(schema, system, text, images, labels, effort, log_path, lab
         "--max-turns", str(len(previews) + 4),
     ]
     t0 = time.monotonic()
-    proc = subprocess.run(cmd, capture_output=True, text=True, cwd=str(settings.root), timeout=1800)
+    # prompt ide preko stdin-a: na Windowsu je naredbeni redak ograničen na ~32k znakova
+    proc = subprocess.run(cmd, input=text, capture_output=True, text=True, encoding="utf-8",
+                          cwd=str(settings.root), timeout=1800)
     seconds = round(time.monotonic() - t0, 1)
     try:
         data = json.loads(proc.stdout)
