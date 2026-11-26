@@ -11,6 +11,7 @@ Postupak je razložen na **6 kadrova**. Svaki kadar sprema svoj izlaz na disk, a
 | Što | Gdje |
 |---|---|
 | **Tri gotove objave** (slajdovi, opisi, cilj, format, obrazloženje) | [`isporuka/gymbeam-hr/`](isporuka/gymbeam-hr/README.md) |
+| **Drugi brend, Dida Boža:** cijeli prolaz kao test ponovljivosti (3 objave, 96/96 provjera) | [`isporuka/dida-boza/`](isporuka/dida-boza/README.md) |
 | **Upute i osvrt** (PDF, 2 str.) | [`Kadar_upute_i_osvrt.pdf`](Kadar_upute_i_osvrt.pdf) |
 | **Recept**: alati, modeli, postavke, ljudske radnje | [`RECEPT.md`](RECEPT.md) |
 | Analiza brenda · plan · provjera kvalitete | [`isporuka/gymbeam-hr/dokumenti/`](isporuka/gymbeam-hr/dokumenti/) |
