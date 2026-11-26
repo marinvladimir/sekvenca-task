@@ -1,0 +1,1 @@
+{"at": "2026-11-26T14:37:34+00:00", "label": "tekstovi", "backend": "claude-code", "model": "claude-sonnet-5-5", "effort": "high", "images": 0, "turns": 2, "input_tokens": 9888, "output_tokens": 6293, "seconds": 42.5, "notional_cost_usd": 0.0949198, "subtype": "success"}

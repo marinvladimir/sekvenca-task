@@ -1,0 +1,156 @@
+{
+  "posts": [
+    {
+      "number": 1,
+      "caption": "Blagdani su sve bliže, a mi ti predstavljamo tri imena koja vrijedi zapamtiti: ekološki džem od smokve (240 g), ekološki sok od nara (0,75 L) i Didin paket slastica. 🧡 Koji bi ti prvi došao na stol? Spremi objavu i napiši nam u komentaru, a cijelu ponudu pogledaj na didaboza.hr.\n\n#DidaBoža #advent #blagdani #pokloniZaBlagdane #ekološkiProizvodi",
+      "alt_text": "Karusel s tri proizvoda marke Dida Boža: ekološki džem od smokve, ekološki sok od nara i Didin paket slastica.",
+      "slides": [
+        {
+          "kicker": "Pred blagdane",
+          "headline": "Upoznaj tri *Didina* proizvoda",
+          "body": "Džem, sok i paket slastica za adventsko vrijeme.",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        },
+        {
+          "kicker": "Džem",
+          "headline": "Ekološki džem od *smokve*",
+          "body": "240 g • Dida Boža",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        },
+        {
+          "kicker": "Sok",
+          "headline": "Ekološki sok od *nara*",
+          "body": "0,75 L • Dida Boža",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        },
+        {
+          "kicker": "Paket",
+          "headline": "Didin paket *slastica*",
+          "body": "Za blagdane • Za one do kojih ti je stalo",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        },
+        {
+          "kicker": "Tvoj izbor",
+          "headline": "Koji bi došao *prvi*?",
+          "body": "Spremi objavu, a cijelu ponudu pogledaj na didaboza.hr.",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "caption": "Advent je tu, a s njim i vrijeme za darivanje. Pomisli na osobu i dodaj nekoliko riječi napisanih rukom, a Didin paket slastica jedna je od ideja za one do kojih ti je stalo. 🎁 Označi osobu koju želiš obradovati i spremi objavu za kasnije.\n\n#DidaBoža #pokloniZaBlagdane #advent #idejaZaPoklon #blagdanskiPoklon",
+      "alt_text": "Karusel o darivanju u adventu s dva savjeta i prijedlogom poklona: Didin paket slastica marke Dida Boža.",
+      "slides": [
+        {
+          "kicker": "Advent je tu",
+          "headline": "Poklon do kojeg ti je *stalo*",
+          "body": "Dva jednostavna koraka prije nego što zapakiraš.",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        },
+        {
+          "kicker": "01",
+          "headline": "Prvo pomisli na *osobu*",
+          "body": "Zamisli koga ćeš obradovati. Kad znaš kome daruješ, izbor je puno lakši.",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        },
+        {
+          "kicker": "02",
+          "headline": "Dodaj nekoliko riječi *rukom*",
+          "body": "Kartica s tvojim rukopisom poklon čini osobnijim.",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        },
+        {
+          "kicker": "Ideja za poklon",
+          "headline": "Didin paket *slastica*",
+          "body": "Za blagdane • Za one do kojih ti je stalo",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        },
+        {
+          "kicker": "Tvoj red",
+          "headline": "Koga ćeš *obradovati*?",
+          "body": "Označi osobu u komentaru, a paket pogledaj na didaboza.hr.",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "caption": "Niz storyja: dvije ankete, pitanje o blagdanskoj tradiciji (odgovori stižu u poruke) i poveznica na didaboza.hr. Odgovore iz poruka ne objavljujemo bez dopuštenja.",
+      "alt_text": "Niz od četiri storyja: anketa o džemu ili soku, anketa o poklonu, pitanje o blagdanskoj tradiciji i poveznica na didaboza.hr.",
+      "slides": [
+        {
+          "kicker": "Pitanje dana",
+          "headline": "Tvoj *izbor*",
+          "body": "Što ide prvo na blagdanski stol?",
+          "stat": "",
+          "options": [
+            "Ekološki džem od smokve",
+            "Ekološki sok od nara"
+          ],
+          "footnote": ""
+        },
+        {
+          "kicker": "Anketa",
+          "headline": "Poklon za *nekoga*",
+          "body": "Tko dobiva Didin paket slastica?",
+          "stat": "",
+          "options": [
+            "Netko iz obitelji",
+            "Netko od prijatelja",
+            "Ja"
+          ],
+          "footnote": ""
+        },
+        {
+          "kicker": "Reci nam",
+          "headline": "Tvoja *tradicija*",
+          "body": "Koja je tvoja blagdanska tradicija? Odgovori na ovaj story, rado ćemo pročitati.",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        },
+        {
+          "kicker": "Ponuda",
+          "headline": "Sve na *didaboza.hr*",
+          "body": "Pogledaj cijelu ponudu.",
+          "stat": "",
+          "options": [],
+          "footnote": ""
+        }
+      ]
+    }
+  ],
+  "editor_notes": [
+    "Objava 2, slajd 1: plan je najavljivao „tri jednostavna koraka”, a karusel ima samo dva savjeta. Najavu sam promijenio u „dva koraka” da tekst odgovara slajdovima, a koncept i redoslijed nisu dirani.",
+    "Objava 1, slajd 1: uklonio sam „Prolistaj” iz teksta jer navigaciju dodaje sustav. Zamijenila ga je neutralna rečenica bez tvrdnji.",
+    "Objava 1, slajdovi 2 i 3: izbacio sam „staklenka” i „boca”. Plan ih ne navodi kao tvrdnju, a iz naziva proizvoda vidljivi su samo 240 g i 0,75 L. Stavke su odvojene znakom •, a jedinice imaju razmak.",
+    "Objava 1, slajd 5: naslov „Koji bi ti prvi došao na stol?” skratio sam na „Koji bi došao *prvi*?”. Cijelo pitanje ostaje u opisu objave.",
+    "Objava 2: kickeri savjeta su „01” i „02” umjesto „Korak 1” i „Korak 2”. U zadnjem slajdu i u opisu izbjegnut je rodno obilježen glagol („poklonio”) pa je naslov „Koga ćeš *obradovati*?”.",
+    "Objava 2, slajd 3: „često znači više od samog poklona” zamijenio sam rečenicom „poklon čini osobnijim”. Tako tekst ne ostaje usporedba ni preuveličana tvrdnja.",
+    "Objava 3: pitanje je premješteno u `body`, a naslovi su kratke najave koje ne ponavljaju pitanje, prema pravilu za ankete. Opcije u drugoj anketi preoblikovane su tako da odgovaraju pitanju „Tko dobiva…?” i da su rodno neutralne.",
+    "Objava 3: opis je kratka napomena za objavu, bez hashtagova i emojija, jer je to story niz.",
+    "`claims_used` je u planu svugdje prazan, pa u tekstu nema novih brojki ni tvrdnji o proizvodima. Imena, 240 g, 0,75 L i didaboza.hr uzeti su izravno iz plana.",
+    "Hashtag #ekološkiProizvodi ostao je kako je u planu. Prije objave treba pravno potvrditi da se smije koristiti, jer plan to navodi kao otvoreni rizik."
+  ]
+}

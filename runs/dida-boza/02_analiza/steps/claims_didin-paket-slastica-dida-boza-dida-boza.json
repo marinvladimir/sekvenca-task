@@ -1,0 +1,19 @@
+{
+  "source_id": "S3",
+  "product": "Didin paket slastica | Dida Boža - Dida Boža",
+  "claims": [],
+  "inconsistencies": [
+    "Izvor S3 sadrži samo naziv proizvoda. Opis, svojstva, FAQ, ocjene i varijante su prazni, pa nema podataka za provjeru ni usporedbu brojki."
+  ],
+  "forbidden": [
+    "Bilo kakve nutritivne vrijednosti (kalorije, šećeri, masti, proteini): u izvoru ih nema.",
+    "Bilo kakve zdravstvene tvrdnje, uključujući 'zdravija slastica', 'lagano', 'bez šećera' i 'energija': u izvoru ih nema.",
+    "Sastav i alergeni (npr. 'bez glutena', 'bez laktoze', 'veganski', 'prirodni sastojci'): nisu navedeni.",
+    "Sadržaj paketa (koje slastice, koliko komada, težina): nije naveden. Iz naziva se ne smije zaključivati što paket sadrži.",
+    "Porijeklo i način proizvodnje (npr. 'domaće', 'po tradicionalnom receptu', 'ručno rađeno'): nije navedeno.",
+    "Ocjene i recenzije kupaca (npr. 'omiljeno među kupcima'): nema podataka.",
+    "Cijene, popusti i akcije: ne uvrštavaju se.",
+    "Superlativi i usporedbe (npr. 'najbolje slastice', 'ukusnije od drugih'): nemaju uporišta u izvoru.",
+    "Izraz 'Dida Boža' smije se koristiti samo kao naziv iz izvora. Ne smije se tvrditi tko je Dida Boža ni kakva je priča iza marke."
+  ]
+}

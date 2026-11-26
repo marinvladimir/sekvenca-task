@@ -1,0 +1,58 @@
+[
+  {
+    "slide": 1,
+    "layout": "story_anketa",
+    "png": "slajd_01.png",
+    "W": 1080,
+    "H": 1920,
+    "overflow_v": false,
+    "overflow_h": false,
+    "headline_px": 120,
+    "text_top": 615,
+    "text_bottom": 1232,
+    "logo_ok": true,
+    "product_ok": null
+  },
+  {
+    "slide": 2,
+    "layout": "story_anketa",
+    "png": "slajd_02.png",
+    "W": 1080,
+    "H": 1920,
+    "overflow_v": false,
+    "overflow_h": false,
+    "headline_px": 120,
+    "text_top": 639,
+    "text_bottom": 1208,
+    "logo_ok": true,
+    "product_ok": null
+  },
+  {
+    "slide": 3,
+    "layout": "story_otkrivanje",
+    "png": "slajd_03.png",
+    "W": 1080,
+    "H": 1920,
+    "overflow_v": false,
+    "overflow_h": false,
+    "headline_px": 124,
+    "text_top": 394,
+    "text_bottom": 779,
+    "logo_ok": true,
+    "product_ok": true
+  },
+  {
+    "slide": 4,
+    "layout": "story_poveznica",
+    "png": "slajd_04.png",
+    "W": 1080,
+    "H": 1920,
+    "overflow_v": false,
+    "overflow_h": false,
+    "headline_px": 124,
+    "text_top": 364,
+    "text_bottom": 1483,
+    "logo_ok": true,
+    "product_ok": true
+  }
+]

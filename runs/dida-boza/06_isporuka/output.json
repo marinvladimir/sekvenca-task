@@ -1,0 +1,44 @@
+{
+  "folder": "isporuka/dida-boza",
+  "posts": 3,
+  "usage": {
+    "llm_calls": 9,
+    "llm_minutes": 3.8,
+    "input_tokens": 82669,
+    "output_tokens": 28598
+  },
+  "qa_summary": {
+    "pass": 96
+  },
+  "files": [
+    "README.md",
+    "dokumenti/analiza.md",
+    "dokumenti/plan.md",
+    "dokumenti/provjera.md",
+    "izvori.md",
+    "objava_1/README.md",
+    "objava_1/opis.txt",
+    "objava_1/slajd_01.png",
+    "objava_1/slajd_02.png",
+    "objava_1/slajd_03.png",
+    "objava_1/slajd_04.png",
+    "objava_1/slajd_05.png",
+    "objava_2/README.md",
+    "objava_2/opis.txt",
+    "objava_2/slajd_01.png",
+    "objava_2/slajd_02.png",
+    "objava_2/slajd_03.png",
+    "objava_2/slajd_04.png",
+    "objava_2/slajd_05.png",
+    "objava_3/README.md",
+    "objava_3/kadar_01.png",
+    "objava_3/kadar_02.png",
+    "objava_3/kadar_03.png",
+    "objava_3/kadar_04.png",
+    "objava_3/opis.txt",
+    "ulazi/logo.svg",
+    "ulazi/proizvodi/01_ekoloski_dzem_smokva_240g__3.800x0.png",
+    "ulazi/proizvodi/01_mix-didin-paket-slastica-6x-1.800x0.png",
+    "ulazi/proizvodi/01_nar-sipak-ekoloski-sok-dida-boza.800x0.png"
+  ]
+}

@@ -1,0 +1,778 @@
+{
+  "results": [
+    {
+      "post": 1,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 128 px"
+    },
+    {
+      "post": 1,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "128 px"
+    },
+    {
+      "post": 1,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 1,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 92 px"
+    },
+    {
+      "post": 1,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "92 px"
+    },
+    {
+      "post": 1,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 1,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 92 px"
+    },
+    {
+      "post": 1,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "92 px"
+    },
+    {
+      "post": 1,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 1,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 92 px"
+    },
+    {
+      "post": 1,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "92 px"
+    },
+    {
+      "post": 1,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 1,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 128 px"
+    },
+    {
+      "post": 1,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "128 px"
+    },
+    {
+      "post": 1,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "objava",
+      "check": "Broj slajdova = plan",
+      "status": "pass",
+      "detail": "5 / plan 5"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "objava",
+      "check": "Format odgovara planu",
+      "status": "pass",
+      "detail": "karusel"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "opis",
+      "check": "Duljina opisa (40–2200 znakova)",
+      "status": "pass",
+      "detail": "346 znakova"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "opis",
+      "check": "Najviše 3 emojija u opisu",
+      "status": "pass",
+      "detail": "1 emojija"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "opis",
+      "check": "Hashtagovi (2–6, uključuje #didaboza)",
+      "status": "pass",
+      "detail": "#DidaBoža #advent #blagdani #pokloniZaBlagdane #ekološkiProizvodi"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Bez zabranjenih tvrdnji, cijena i kodova",
+      "status": "pass",
+      "detail": "nema"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Dosljedno obraćanje „ti”",
+      "status": "pass",
+      "detail": "nema oblika s „vi”"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Sve brojke na slajdovima postoje u izvoru",
+      "status": "pass",
+      "detail": "2 brojki provjereno"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez zaostalih oznaka (*, {{ }}, dupli „Listaj”)",
+      "status": "pass",
+      "detail": "čisto"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Obavezna upozorenja prisutna",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "proizvod",
+      "check": "Packshot je odobrena referenca (bez promo kompozicija)",
+      "status": "pass",
+      "detail": "3 odobrenih referenci u analizi"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez pretjeranog ponavljanja riječi",
+      "status": "pass",
+      "detail": "ok"
+    },
+    {
+      "post": 2,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 128 px"
+    },
+    {
+      "post": 2,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "128 px"
+    },
+    {
+      "post": 2,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 2,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 104 px"
+    },
+    {
+      "post": 2,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "104 px"
+    },
+    {
+      "post": 2,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 2,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 104 px"
+    },
+    {
+      "post": 2,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "104 px"
+    },
+    {
+      "post": 2,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 2,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 92 px"
+    },
+    {
+      "post": 2,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "92 px"
+    },
+    {
+      "post": 2,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 2,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 128 px"
+    },
+    {
+      "post": 2,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "128 px"
+    },
+    {
+      "post": 2,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "objava",
+      "check": "Broj slajdova = plan",
+      "status": "pass",
+      "detail": "5 / plan 5"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "objava",
+      "check": "Format odgovara planu",
+      "status": "pass",
+      "detail": "karusel"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "opis",
+      "check": "Duljina opisa (40–2200 znakova)",
+      "status": "pass",
+      "detail": "310 znakova"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "opis",
+      "check": "Najviše 3 emojija u opisu",
+      "status": "pass",
+      "detail": "1 emojija"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "opis",
+      "check": "Hashtagovi (2–6, uključuje #didaboza)",
+      "status": "pass",
+      "detail": "#DidaBoža #pokloniZaBlagdane #advent #idejaZaPoklon #blagdanskiPoklon"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Bez zabranjenih tvrdnji, cijena i kodova",
+      "status": "pass",
+      "detail": "nema"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Dosljedno obraćanje „ti”",
+      "status": "pass",
+      "detail": "nema oblika s „vi”"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Sve brojke na slajdovima postoje u izvoru",
+      "status": "pass",
+      "detail": "0 brojki provjereno"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez zaostalih oznaka (*, {{ }}, dupli „Listaj”)",
+      "status": "pass",
+      "detail": "čisto"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Obavezna upozorenja prisutna",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "proizvod",
+      "check": "Packshot je odobrena referenca (bez promo kompozicija)",
+      "status": "pass",
+      "detail": "3 odobrenih referenci u analizi"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez pretjeranog ponavljanja riječi",
+      "status": "pass",
+      "detail": "ok"
+    },
+    {
+      "post": 3,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1920 (očekivano 1080×1920)"
+    },
+    {
+      "post": 3,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 120 px"
+    },
+    {
+      "post": 3,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "120 px"
+    },
+    {
+      "post": 3,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 3,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Sigurna zona storyja (250 px gore, 340 px dolje)",
+      "status": "pass",
+      "detail": "tekst od 615 do 1232 px"
+    },
+    {
+      "post": 3,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1920 (očekivano 1080×1920)"
+    },
+    {
+      "post": 3,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 120 px"
+    },
+    {
+      "post": 3,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "120 px"
+    },
+    {
+      "post": 3,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 3,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Sigurna zona storyja (250 px gore, 340 px dolje)",
+      "status": "pass",
+      "detail": "tekst od 639 do 1208 px"
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1920 (očekivano 1080×1920)"
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 124 px"
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "124 px"
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Sigurna zona storyja (250 px gore, 340 px dolje)",
+      "status": "pass",
+      "detail": "tekst od 394 do 779 px"
+    },
+    {
+      "post": 3,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1920 (očekivano 1080×1920)"
+    },
+    {
+      "post": 3,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 124 px"
+    },
+    {
+      "post": 3,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "124 px"
+    },
+    {
+      "post": 3,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 3,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Sigurna zona storyja (250 px gore, 340 px dolje)",
+      "status": "pass",
+      "detail": "tekst od 364 do 1483 px"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "objava",
+      "check": "Broj slajdova = plan",
+      "status": "pass",
+      "detail": "4 / plan 4"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "objava",
+      "check": "Format odgovara planu",
+      "status": "pass",
+      "detail": "story_niz"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "opis",
+      "check": "Duljina opisa (40–2200 znakova)",
+      "status": "pass",
+      "detail": "163 znakova"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "opis",
+      "check": "Najviše 3 emojija u opisu",
+      "status": "pass",
+      "detail": "0 emojija"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "opis",
+      "check": "Hashtagovi (2–6, uključuje #didaboza)",
+      "status": "pass",
+      "detail": "—"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Bez zabranjenih tvrdnji, cijena i kodova",
+      "status": "pass",
+      "detail": "nema"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Dosljedno obraćanje „ti”",
+      "status": "pass",
+      "detail": "nema oblika s „vi”"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Sve brojke na slajdovima postoje u izvoru",
+      "status": "pass",
+      "detail": "0 brojki provjereno"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez zaostalih oznaka (*, {{ }}, dupli „Listaj”)",
+      "status": "pass",
+      "detail": "čisto"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Obavezna upozorenja prisutna",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "proizvod",
+      "check": "Packshot je odobrena referenca (bez promo kompozicija)",
+      "status": "pass",
+      "detail": "3 odobrenih referenci u analizi"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez pretjeranog ponavljanja riječi",
+      "status": "pass",
+      "detail": "ok"
+    }
+  ],
+  "summary": {
+    "pass": 96
+  },
+  "total": 96,
+  "language_fixes": [],
+  "overall": {}
+}

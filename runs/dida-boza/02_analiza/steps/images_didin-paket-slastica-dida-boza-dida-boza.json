@@ -1,0 +1,16 @@
+{
+  "images": [
+    {
+      "file": "01_mix-didin-paket-slastica-6x-1.800x0.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "Dida Boža; Marelica; Jagoda; Kupina; Smokva s narančom; Višnja; Šljiva; Original Dalmatian recipe; Ekološki proizvod; All natural",
+      "usable_as_reference": true,
+      "reason": "Čist packshot na bijeloj pozadini: kartonska kutija sa šest staklenki bez poklona, natpisa akcija ili kolaža. Mogući su sitni nečitljivi detalji na etiketama, ali sam proizvod je jasan."
+    }
+  ],
+  "best_reference": "01_mix-didin-paket-slastica-6x-1.800x0.png",
+  "packaging_description": "Otvorena kartonska kutija smeđe kraft boje s tiskanim logotipom \"Dida Boža\" (s likom starca u šeširu) na prednjoj i bočnoj strani. U njoj je šest staklenki s crnim poklopcima, u dva reda po tri. Svaki poklopac ima okruglu etiketu s logotipom Dida Boža, nazivom okusa i EU oznakom za ekološki proizvod. Oko staklenki su omotane obojene trake: marelica je narančasto-bež, jagoda crvena, kupina tamnoplava, smokva s narančom bijela s narančastim, višnja tamnocrvena, šljiva ljubičasta. Na trakama piše \"Original Dalmatian recipe\". Na prednjim staklenkama vide se i male etikete: okrugli pečat \"Ekološki proizvod\" na višnji i \"All natural\" na šljivi. Pogled je odozgo pod kutom.",
+  "best_reference_path": "01_brif/products/didin-paket-slastica-dida-boza-dida-boza/images/01_mix-didin-paket-slastica-6x-1.800x0.png"
+}

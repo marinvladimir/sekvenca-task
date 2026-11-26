@@ -1,0 +1,301 @@
+{
+  "plan": {
+    "strategy_summary": "Plan je napisan na vrlo tankoj podlozi, i to treba reći otvoreno. Analiza nema nijedan provjeren nalaz o Instagramu (feed, ton, formati i angažman su NEDOSTUPNI). Popis dopuštenih tvrdnji za sva tri proizvoda je prazan. Zato slajdovi ne sadrže nijednu činjenicu o proizvodima osim njihovih naziva (S1, S2, S3), a `claims_used` je svugdje prazan. Nema recepata ni serviranja, jer upotreba nije potvrđena. Nema tvrdnji o sastavu, podrijetlu, certifikatima, zdravlju ni sadržaju paketa. Teme slijede ciljeve iz brifa i sezonu. Danas je 26. studenoga, pa je naglasak na adventu i pripremi za blagdane. 1) Predstavljanje proizvoda: karusel koji redom imenuje tri proizvoda. 2) Interes za kupnju: karusel o poklonu s općenitim savjetima o darivanju, bez tvrdnji i bez opisa sadržaja paketa. 3) Reakcije i komentari: niz storyja s anketama i otvorenim pitanjem. Ton je topao i u „ti” obliku, kako traži brif (Brif: tone_notes). To je željeni smjer, a ne opažanje postojećih objava. Dida se ne prikazuje kao stvarna osoba i nema izmišljenih citata. Boje su iz izmjerene palete (bijela, tamna, bež, narančasti naglasak) i vrijede kao pretpostavka. Prije objave treba dobaviti opise proizvoda sa službene stranice i feed profila. Tek tada se mogu dodati recepti i konkretne tvrdnje.",
+    "posts": [
+      {
+        "number": 1,
+        "title": "Tri proizvoda za adventski stol",
+        "goal": "predstavljanje_proizvoda",
+        "format": "karusel",
+        "product": "Ekološki džem od smokve | 240 g - Dida Boža; Ekološki sok nar 0,75 L - Dida Boža; Didin paket slastica | Dida Boža - Dida Boža",
+        "concept": "Kratki karusel koji redom predstavlja tri proizvoda iz brifa, svaki na jednom slajdu s packshotom i punim nazivom. Cilj je da pratitelj zapamti imena proizvoda i spremi objavu za blagdanski izbor. Slajdovi nemaju tvrdnje o sastavu, okusu ni upotrebi. Nose ih samo naziv i toplo „ti” obraćanje.",
+        "why_it_fits": "Brif kao prvi cilj navodi predstavljanje proizvoda (Brif: goals). Jedino što je provjereno su nazivi i kategorije proizvoda (S1, S2, S3), pa objava ostaje na njima. Ton je topao i s „ti”, prema Brif: tone_notes. Pozadine su bijele i bež, uz jedan narančasti naglasak, što slijedi izmjerenu paletu (pretpostavka). Postoji i sezonski okvir: kraj studenoga i advent.",
+        "evidence": [
+          "S1",
+          "S2",
+          "S3",
+          "Brif: goals",
+          "Brif: tone_notes",
+          "Analiza: paleta"
+        ],
+        "kpi": "Omjer spremanja i dosega, uz broj klikova na poveznicu u biografiji prema webshopu.",
+        "slides": [
+          {
+            "layout": "naslovnica",
+            "purpose": "Zaustaviti scroll i najaviti tri proizvoda uz sezonski okvir.",
+            "kicker": "Pred blagdane",
+            "headline": "Upoznaj tri Didina proizvoda",
+            "body": "Prolistaj i vidi što te čeka u ponudi.",
+            "stat": "",
+            "options": [],
+            "product": "",
+            "background": "brand",
+            "claims_used": []
+          },
+          {
+            "layout": "proizvod",
+            "purpose": "Predstaviti prvi proizvod nazivom i packshotom.",
+            "kicker": "Džem",
+            "headline": "Ekološki džem od smokve",
+            "body": "Staklenka od 240 g.",
+            "stat": "",
+            "options": [],
+            "product": "Ekološki džem od smokve | 240 g - Dida Boža",
+            "background": "svijetla",
+            "claims_used": []
+          },
+          {
+            "layout": "proizvod",
+            "purpose": "Predstaviti drugi proizvod nazivom i packshotom.",
+            "kicker": "Sok",
+            "headline": "Ekološki sok od nara",
+            "body": "Boca od 0,75 L.",
+            "stat": "",
+            "options": [],
+            "product": "Ekološki sok nar 0,75 L - Dida Boža",
+            "background": "bijela",
+            "claims_used": []
+          },
+          {
+            "layout": "proizvod",
+            "purpose": "Predstaviti treći proizvod i najaviti poklon temu.",
+            "kicker": "Paket",
+            "headline": "Didin paket slastica",
+            "body": "Za blagdane i za one do kojih ti je stalo.",
+            "stat": "",
+            "options": [],
+            "product": "Didin paket slastica | Dida Boža - Dida Boža",
+            "background": "svijetla",
+            "claims_used": []
+          },
+          {
+            "layout": "poziv",
+            "purpose": "Potaknuti spremanje i odlazak na stranicu te prikupiti prvi komentar.",
+            "kicker": "Tvoj izbor",
+            "headline": "Koji bi ti prvi došao na stol?",
+            "body": "Spremi objavu, a cijelu ponudu pogledaj na didaboza.hr.",
+            "stat": "",
+            "options": [],
+            "product": "",
+            "background": "tamna",
+            "claims_used": []
+          }
+        ],
+        "caption_brief": "Topao, kratak opis u „ti” obliku. Kaže da se bliže blagdani i da su tu tri imena koja vrijedi zapamtiti: ekološki džem od smokve (240 g), ekološki sok od nara (0,75 L) i Didin paket slastica. Završava pitanjem koji bi ti prvi došao na stol. Bez cijena, okusa i serviranja.",
+        "cta": "Spremi objavu i reci nam u komentaru koji bi ti prvi došao na stol. Ponudu pogledaj na didaboza.hr.",
+        "hashtags": [
+          "#DidaBoža",
+          "#advent",
+          "#blagdani",
+          "#pokloniZaBlagdane",
+          "#ekološkiProizvodi"
+        ],
+        "risks": [
+          "Prazan popis tvrdnji: tekst smije sadržavati samo nazive proizvoda. Izbjegavamo opise okusa, sastava i upotrebe.",
+          "Riječ „ekološki” stoji samo u nazivu. Ne razrađujemo je i ne spominjemo certifikate ni EU znak dok se to pravno ne potvrdi.",
+          "Packshot s etiketama sadrži tekstove poput „No sugar added”. Slike treba kadrirati ili pripremiti tako da se ti natpisi ne čitaju kao naša tvrdnja, ili ih prije objave provjeriti.",
+          "Nema jasne reference za stil postojećeg feeda, pa je vizualni dojam pretpostavka."
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Poklon do kojeg ti je stalo",
+        "goal": "interes_za_kupnju",
+        "format": "karusel",
+        "product": "Didin paket slastica | Dida Boža - Dida Boža",
+        "concept": "Karusel o darivanju u adventu. Prva tri slajda daju općenite, toplo napisane savjete koje se isplati spremiti: pomisli na osobu, dodaj ručno napisanu poruku, ne ostavljaj do zadnjeg trenutka. Zatim se kao jedno rješenje pokazuje Didin paket slastica, bez ijedne tvrdnje o sadržaju, a na kraju poziv na označavanje osobe.",
+        "why_it_fits": "Drugi cilj iz brifa su blagdanski pokloni (Brif: goals). Analiza predlaže uokviriti poklon kao „za nekoga do koga ti je stalo” i ne obećavati sadržaj paketa dok se ne potvrdi sa stranice (Analiza: voice.do, S3). Savjeti o darivanju ne spominju svojstva proizvoda pa su sigurni, a ton je topao i u „ti” obliku. Sezona je advent.",
+        "evidence": [
+          "S3",
+          "Brif: goals",
+          "Brif: tone_notes",
+          "Analiza: content_pillars (Blagdanski pokloni)",
+          "Analiza: voice.do"
+        ],
+        "kpi": "Broj spremanja i dijeljenja u porukama, te klikovi na poveznicu prema stranici paketa.",
+        "slides": [
+          {
+            "layout": "naslovnica",
+            "purpose": "Otvoriti temu poklona i dati razlog za prolistavanje.",
+            "kicker": "Advent je tu",
+            "headline": "Poklon do kojeg ti je stalo",
+            "body": "Tri jednostavna koraka prije nego što zapakiraš.",
+            "stat": "",
+            "options": [],
+            "product": "",
+            "background": "brand",
+            "claims_used": []
+          },
+          {
+            "layout": "savjet",
+            "purpose": "Prvi savjet: krenuti od osobe.",
+            "kicker": "Korak 1",
+            "headline": "Prvo pomisli na osobu",
+            "body": "Zamisli lice koje ćeš obradovati. Kad znaš kome daješ, izbor je puno lakši.",
+            "stat": "",
+            "options": [],
+            "product": "",
+            "background": "svijetla",
+            "claims_used": []
+          },
+          {
+            "layout": "savjet",
+            "purpose": "Drugi savjet: osobna poruka.",
+            "kicker": "Korak 2",
+            "headline": "Dodaj nekoliko riječi rukom",
+            "body": "Mala kartica s tvojim rukopisom često znači više od samog poklona.",
+            "stat": "",
+            "options": [],
+            "product": "",
+            "background": "bijela",
+            "claims_used": []
+          },
+          {
+            "layout": "proizvod",
+            "purpose": "Prikazati paket kao jedan od mogućih poklona, bez navođenja sadržaja.",
+            "kicker": "Ideja za poklon",
+            "headline": "Didin paket slastica",
+            "body": "Za blagdane i za one do kojih ti je stalo.",
+            "stat": "",
+            "options": [],
+            "product": "Didin paket slastica | Dida Boža - Dida Boža",
+            "background": "svijetla",
+            "claims_used": []
+          },
+          {
+            "layout": "poziv",
+            "purpose": "Potaknuti označavanje osobe i klik na stranicu.",
+            "kicker": "Tvoj red",
+            "headline": "Kome bi ti poklonio?",
+            "body": "Označi osobu u komentaru, a paket pogledaj na didaboza.hr.",
+            "stat": "",
+            "options": [],
+            "product": "",
+            "background": "tamna",
+            "claims_used": []
+          }
+        ],
+        "caption_brief": "Topao opis u „ti” obliku: advent je tu i vrijeme je za darivanje. Kratko ponavlja savjete (osoba, rukom napisana poruka) i spominje Didin paket slastica kao jednu ideju. Ne navodi što paket sadrži, ni cijenu, ni rokove.",
+        "cta": "Označi osobu kojoj bi poklonio paket i spremi objavu za kasnije.",
+        "hashtags": [
+          "#DidaBoža",
+          "#pokloniZaBlagdane",
+          "#advent",
+          "#idejaZaPoklon",
+          "#blagdanskiPoklon"
+        ],
+        "risks": [
+          "Sadržaj paketa nije potvrđen: ne navodimo koje slastice ni koliko ih je, iako packshot prikazuje šest staklenki. Slajd s paketom ne smije imati opis sadržaja.",
+          "Ne spominjemo cijene, popuste, kodove ni rokove dostave.",
+          "Opći savjeti o darivanju su naše mišljenje, ne činjenice o proizvodu. Držimo ih kratkima i bez tvrdnji da poklon „djeluje” na osobu.",
+          "Ne pripisujemo izjave Didi ni kupcima."
+        ]
+      },
+      {
+        "number": 3,
+        "title": "Što prvo na blagdanski stol?",
+        "goal": "reakcije_komentari",
+        "format": "story_niz",
+        "product": "Ekološki džem od smokve | 240 g - Dida Boža; Ekološki sok nar 0,75 L - Dida Boža; Didin paket slastica | Dida Boža - Dida Boža",
+        "concept": "Niz od četiri storyja za brze reakcije. Dvije ankete (džem ili sok; kome bi poklonio paket), otvoreno pitanje o blagdanskoj tradiciji uz odgovor u poruci te završna poveznica na webshop. Ankete ne traže nikakvu činjenicu o proizvodu, samo osobni izbor.",
+        "why_it_fits": "Treći cilj iz brifa su reakcije i komentari, a analiza predlaže pitanja poput „kome bi poklonio paket” i CTA kao pitanje u „ti” obliku, a ne prodajni poziv (Analiza: opportunities, content_pillars). Storyji su lagan format za interakciju. Provjereni podaci o angažmanu ne postoje, pa je format prijedlog, a ne nalaz. Sezonski okvir je advent.",
+        "evidence": [
+          "S1",
+          "S2",
+          "S3",
+          "Brif: goals",
+          "Analiza: content_pillars (Pitanja i reakcije)",
+          "Analiza: opportunities"
+        ],
+        "kpi": "Broj glasova u anketama i odgovora na pitanje, te udio gledatelja koji dođu do zadnjeg kadra i kliknu poveznicu.",
+        "slides": [
+          {
+            "layout": "story_anketa",
+            "purpose": "Brza anketa koja traži izbor između dva proizvoda.",
+            "kicker": "Pitanje dana",
+            "headline": "Što prvo na blagdanski stol?",
+            "body": "",
+            "stat": "",
+            "options": [
+              "Ekološki džem od smokve",
+              "Ekološki sok od nara"
+            ],
+            "product": "",
+            "background": "svijetla",
+            "claims_used": []
+          },
+          {
+            "layout": "story_anketa",
+            "purpose": "Anketa o tome kome bi poklonio paket, da se vrati tema poklona.",
+            "kicker": "Još jedno",
+            "headline": "Kome bi poklonio Didin paket slastica?",
+            "body": "",
+            "stat": "",
+            "options": [
+              "Nekome iz obitelji",
+              "Prijatelju",
+              "Sebi"
+            ],
+            "product": "",
+            "background": "bijela",
+            "claims_used": []
+          },
+          {
+            "layout": "story_otkrivanje",
+            "purpose": "Otvoreno pitanje koje traži odgovor u poruci.",
+            "kicker": "Reci nam",
+            "headline": "Koja je tvoja blagdanska tradicija?",
+            "body": "Odgovori nam na ovaj story. Rado ćemo pročitati.",
+            "stat": "",
+            "options": [],
+            "product": "",
+            "background": "brand",
+            "claims_used": []
+          },
+          {
+            "layout": "story_poveznica",
+            "purpose": "Odvesti zainteresirane na webshop.",
+            "kicker": "Želiš pogledati?",
+            "headline": "Cijela ponuda na didaboza.hr",
+            "body": "",
+            "stat": "",
+            "options": [],
+            "product": "",
+            "background": "tamna",
+            "claims_used": []
+          }
+        ],
+        "caption_brief": "Za storyje nema opisa objave. Naljepnice su kratke i u „ti” obliku, a ton je toplo razgovorni. Pitanja traže osobni izbor, ne činjenice o proizvodima.",
+        "cta": "Glasaj u anketama i odgovori na pitanje o blagdanskoj tradiciji.",
+        "hashtags": [],
+        "risks": [
+          "Ankete s nazivima proizvoda ne smiju implicirati svojstva (npr. „zdravije”, „bolje”). Opcije su samo puni nazivi.",
+          "Odgovori u porukama mogu sadržavati izjave stvarnih osoba. Ne smijemo ih objavljivati bez dozvole i ne smijemo ih predstavljati kao recenzije.",
+          "Kvizove s točnim odgovorom namjerno ne koristimo jer bi tražili činjenice koje nemamo.",
+          "Nema podataka o angažmanu profila, pa je očekivanje reakcija nesigurno."
+        ]
+      }
+    ],
+    "rejected_ideas": [
+      {
+        "idea": "Karusel sa sezonskim receptom koji koristi džem od smokve i sok od nara (npr. adventski desert ili topli napitak).",
+        "reason": "Recept znači tvrdnje o upotrebi i serviranju, a one nisu navedene za nijedan proizvod (S1, S2 – zabranjeno: upotreba i serviranje). Popis dopuštenih tvrdnji je prazan. Ideja se vraća kad se opisi potvrde sa službene stranice."
+      },
+      {
+        "idea": "Objava s pričom o „Didi” i „originalnom dalmatinskom receptu” (obiteljski recept, tradicija proizvodnje), s likom starca u šeširu s etikete.",
+        "reason": "Podrijetlo, način proizvodnje i priča o marki nisu potvrđeni. Natpis na pakiranju nije dopuštena tvrdnja, a ne smije se tvrditi tko je Dida Boža (zabrane za S3). Rizik je izmišljen lik ili citat."
+      },
+      {
+        "idea": "Raspakiravanje paketa: „Što se krije u Didinu paketu” s imenovanjem okusa sa packshota.",
+        "reason": "Sadržaj paketa nije naveden na popisu tvrdnji, a iz naziva se ne smije zaključivati što paket sadrži (zabrane za S3). Okuse s fotografije ne smijemo prepisivati kao činjenice dok ih ne potvrdi službena stranica."
+      },
+      {
+        "idea": "Edukativni karusel „Zašto je nar dobar za tebe” uz sok od nara.",
+        "reason": "To je zdravstvena tvrdnja iz općeg znanja, a za sok od nara ne postoji nijedna odobrena tvrdnja (zabrane za S2, Uredba 1924/2006). Odbačeno u cijelosti."
+      }
+    ]
+  },
+  "claim_check": [],
+  "human_notes": "(nema)",
+  "human_edits": []
+}

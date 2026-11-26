@@ -1,0 +1,61 @@
+{
+  "objava": 1,
+  "naslov": "Tri proizvoda za adventski stol",
+  "cilj": "predstavljanje_proizvoda",
+  "format": "karusel",
+  "proizvod": "Ekološki džem od smokve | 240 g - Dida Boža; Ekološki sok nar 0,75 L - Dida Boža; Didin paket slastica | Dida Boža - Dida Boža",
+  "koncept": "Kratki karusel koji redom predstavlja tri proizvoda iz brifa, svaki na jednom slajdu s packshotom i punim nazivom. Cilj je da pratitelj zapamti imena proizvoda i spremi objavu za blagdanski izbor. Slajdovi nemaju tvrdnje o sastavu, okusu ni upotrebi. Nose ih samo naziv i toplo „ti” obraćanje.",
+  "obrazlozenje": "Brif kao prvi cilj navodi predstavljanje proizvoda (Brif: goals). Jedino što je provjereno su nazivi i kategorije proizvoda (S1, S2, S3), pa objava ostaje na njima. Ton je topao i s „ti”, prema Brif: tone_notes. Pozadine su bijele i bež, uz jedan narančasti naglasak, što slijedi izmjerenu paletu (pretpostavka). Postoji i sezonski okvir: kraj studenoga i advent.",
+  "kpi": "Omjer spremanja i dosega, uz broj klikova na poveznicu u biografiji prema webshopu.",
+  "opis": "Blagdani su sve bliže, a mi ti predstavljamo tri imena koja vrijedi zapamtiti: ekološki džem od smokve (240 g), ekološki sok od nara (0,75 L) i Didin paket slastica. 🧡 Koji bi ti prvi došao na stol? Spremi objavu i napiši nam u komentaru, a cijelu ponudu pogledaj na didaboza.hr.\n\n#DidaBoža #advent #blagdani #pokloniZaBlagdane #ekološkiProizvodi",
+  "alt_text": "Karusel s tri proizvoda marke Dida Boža: ekološki džem od smokve, ekološki sok od nara i Didin paket slastica.",
+  "slajdovi": [
+    "04_izrada/objava_1/slajd_01.png",
+    "04_izrada/objava_1/slajd_02.png",
+    "04_izrada/objava_1/slajd_03.png",
+    "04_izrada/objava_1/slajd_04.png",
+    "04_izrada/objava_1/slajd_05.png"
+  ],
+  "tekst_slajdova": [
+    {
+      "kicker": "Pred blagdane",
+      "headline": "Upoznaj tri *Didina* proizvoda",
+      "body": "Džem, sok i paket slastica za adventsko vrijeme.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Džem",
+      "headline": "Ekološki džem od *smokve*",
+      "body": "240 g • Dida Boža",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Sok",
+      "headline": "Ekološki sok od *nara*",
+      "body": "0,75 L • Dida Boža",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Paket",
+      "headline": "Didin paket *slastica*",
+      "body": "Za blagdane • Za one do kojih ti je stalo",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Tvoj izbor",
+      "headline": "Koji bi došao *prvi*?",
+      "body": "Spremi objavu, a cijelu ponudu pogledaj na didaboza.hr.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    }
+  ]
+}

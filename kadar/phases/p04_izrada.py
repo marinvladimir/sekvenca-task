@@ -30,12 +30,16 @@ FLAVOR_HINTS = {"bez okusa": "unflavored", "cookies": "cookie", "krokant": "cara
 def _match_product(name: str, refs: Dict[str, Dict[str, Any]]) -> Optional[str]:
     if not name:
         return None
-    n = name.lower()
+    import re as _re
+    words = lambda t: {w for w in _re.findall(r"\w+", t.lower()) if len(w) > 2}
+    n = words(name)
+    best, score = None, 0.0
     for key in refs:
-        k = key.lower()
-        if n in k or k in n or n.split()[0] in k:
-            return key
-    return None
+        k = words(key)
+        sc = len(n & k) / max(1, len(n))  # udio riječi iz plana koje postoje u nazivu proizvoda
+        if sc > score:
+            best, score = key, sc
+    return best if score >= 0.34 else None
 
 
 def _image_for(slide_text: str, product: str, analysis: Dict[str, Any], run: Run) -> Optional[Path]:
@@ -88,10 +92,13 @@ def run_create(run: Run, copy_only: bool = False) -> Dict[str, Any]:
         for ps, fs in zip(planned["slides"], final["slides"]):
             s = {"layout": ps["layout"], "background": ps["background"], **fs}
             s["product"] = ""
-            if product and (ps.get("product") or ps["layout"] in ("proizvod", "story_otkrivanje", "story_poveznica")):
-                img = _image_for(" ".join([fs["headline"], fs["body"]]), product, analysis, run)
+            # proizvod po slajdu (karusel s više proizvoda), inače proizvod objave
+            slide_product = _match_product(ps.get("product", ""), analysis["product_images"]) or product
+            if slide_product and (ps.get("product") or ps["layout"] in ("proizvod", "story_otkrivanje", "story_poveznica")):
+                img = _image_for(" ".join([fs["headline"], fs["body"]]), slide_product, analysis, run)
+                product_key = slide_product
                 if img:
-                    key = f"{product}::{img.name}"
+                    key = f"{product_key}::{img.name}"
                     images[key] = img
                     s["product"] = key
             s["source"] = fs.get("footnote", "")

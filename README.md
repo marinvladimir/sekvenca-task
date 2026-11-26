@@ -117,9 +117,11 @@ Dohvat podataka (kadar 01) provjeren je na različitim tipovima webshopa:
 | Trgovina | Platforma / tip stranice | Kako recept čita podatke | Rezultat |
 |---|---|---|---|
 | gymbeam.hr | Magento, schema.org `Product` | JSON-LD + slike varijanti | puna demonstracija (kadrovi 01–06) |
-| didaboza.hr | sadržaj se učitava JavaScriptom | render u Chromiumu → Open Graph | brif i ulazi (`runs/dida-boza/`), spremno za kadar 02 |
+| didaboza.hr | sadržaj se učitava JavaScriptom | render u Chromiumu → Open Graph | **cijeli prolaz 01–06** kao automatski test ponovljivosti (Sonnet 5.5, bez ljudskog pregleda, 9 AI poziva, ≈ 4 min): [`isporuka/dida-boza/`](isporuka/dida-boza/README.md) |
 | myprotein.com | schema.org `ProductGroup` s varijantama | JSON-LD (`hasVariant`) | naziv, opis, FAQ, varijante |
 | allbirds.com | Shopify | JSON-LD | naziv, opis, varijante, slike |
+
+Test na Dida Boži otkrio je i ispravio greške koje se na GymBeamu nisu mogle vidjeti (proizvodi bez SKU-a, paleta bez IG screenshotova, hashtag brenda, više proizvoda u jednom karuselu).
 
 Redoslijed rezervi: schema.org (`Product`, `ProductGroup`…) → render JavaScriptom → Open Graph oznake. Što manje strukturiranih podataka stranica ima, to je manje činjenica u popisu dopuštenih tvrdnji, a analiza to označava kao nedostupno.
 

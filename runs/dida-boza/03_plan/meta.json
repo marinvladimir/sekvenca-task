@@ -1,0 +1,7 @@
+{
+  "status": "approved",
+  "started_at": "2026-11-26T14:35:32+00:00",
+  "finished_at": "2026-11-26T14:36:52+00:00",
+  "approved_at": "2026-11-26T14:36:52+00:00",
+  "review_note": "Automatski test ponovljivosti (bez ljudskog pregleda), model Sonnet 5.5"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "slide": 1,
+    "layout": "naslovnica",
+    "png": "slajd_01.png",
+    "W": 1080,
+    "H": 1350,
+    "overflow_v": false,
+    "overflow_h": false,
+    "headline_px": 128,
+    "text_top": 725,
+    "text_bottom": 1211,
+    "logo_ok": true,
+    "product_ok": null
+  },
+  {
+    "slide": 2,
+    "layout": "savjet",
+    "png": "slajd_02.png",
+    "W": 1080,
+    "H": 1350,
+    "overflow_v": false,
+    "overflow_h": false,
+    "headline_px": 104,
+    "text_top": 586,
+    "text_bottom": 975,
+    "logo_ok": true,
+    "product_ok": null
+  },
+  {
+    "slide": 3,
+    "layout": "savjet",
+    "png": "slajd_03.png",
+    "W": 1080,
+    "H": 1350,
+    "overflow_v": false,
+    "overflow_h": false,
+    "headline_px": 104,
+    "text_top": 612,
+    "text_bottom": 949,
+    "logo_ok": true,
+    "product_ok": null
+  },
+  {
+    "slide": 4,
+    "layout": "proizvod",
+    "png": "slajd_04.png",
+    "W": 1080,
+    "H": 1350,
+    "overflow_v": false,
+    "overflow_h": false,
+    "headline_px": 92,
+    "text_top": 664,
+    "text_bottom": 905,
+    "logo_ok": true,
+    "product_ok": true
+  },
+  {
+    "slide": 5,
+    "layout": "poziv",
+    "png": "slajd_05.png",
+    "W": 1080,
+    "H": 1350,
+    "overflow_v": false,
+    "overflow_h": false,
+    "headline_px": 128,
+    "text_top": 522,
+    "text_bottom": 969,
+    "logo_ok": true,
+    "product_ok": null
+  }
+]

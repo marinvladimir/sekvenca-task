@@ -30,7 +30,7 @@ FORBIDDEN = [
     r"\bnajbolj\w*", r"\bbr\.?\s*1\b", r"#1\b", r"\bjača\w*\s+imunitet", r"\bliječi\w*", r"\bsprječava\w*",
     r"\bgarantira\w*", r"\bzajamčen\w*", r"\bbez šećera\b", r"\bbez dodanog šećera\b", r"\bčudesn\w*",
     r"\b100\s?% prirodn\w*", r"\btopi masti\b", r"\bbrže gradi\b", r"\bdetoks\w*", r"€", r"\bEUR\b",
-    r"\bpopust\w*", r"\bkod\s+[A-Z0-9]{3,}\b", r"\bakcij\w*",
+    r"\bpopust\w*", r"\bakcij\w*",
 ]
 VI_FORMS = r"\b(Vi|Vas|Vam|Vama|Vaš\w*|vaš\w*)\b"
 VI_IMPERATIVE = r"\b(Listajte|Pošaljite|Spremite|Napišite|Pogledajte|Uzmite|Probajte|Kliknite|Glasajte|Pronađite|Otkrijte|Uvedite|Pripremite|Javite|Recite|Odaberite|Izaberite)\b"
@@ -111,10 +111,15 @@ def code_checks(run: Run) -> List[Dict[str, Any]]:
         emo = len(EMOJI.findall(caption))
         _r(res, n, 0, "opis", "Najviše 3 emojija u opisu", "pass" if emo <= 3 else "warn", f"{emo} emojija")
         tags = re.findall(r"#\w+", caption)
-        tag_ok = 2 <= len(tags) <= 6 and "#gymbeamhr" in [t.lower() for t in tags]
-        _r(res, n, 0, "opis", "Hashtagovi (2–6, uključuje #gymbeamhr)", "pass" if tag_ok or story else "warn",
+        from ..render.renderer import brand_config
+        brand_tag = "#" + brand_config(run.dir).get("handle", "").lstrip("@").lower()
+        from ..state import slugify
+        norm = lambda t: slugify(t).replace("-", "")
+        tag_ok = 2 <= len(tags) <= 6 and (brand_tag == "#" or norm(brand_tag) in [norm(t) for t in tags])
+        _r(res, n, 0, "opis", f"Hashtagovi (2–6{', uključuje ' + brand_tag if brand_tag != '#' else ''})", "pass" if tag_ok or story else "warn",
            " ".join(tags) or "—")
         hits = [m.group(0) for p in FORBIDDEN for m in re.finditer(p, allt, re.I)]
+        hits += re.findall(r"\b(?:kod|KOD|Kod)\s+[A-Z0-9]{3,}\b", allt)  # kod popusta (npr. KOD FOOD10), osjetljivo na verzal
         _r(res, n, 0, "usklađenost", "Bez zabranjenih tvrdnji, cijena i kodova", "fail" if hits else "pass", ", ".join(hits) or "nema")
         vi = re.findall(VI_FORMS, allt) + re.findall(VI_IMPERATIVE, allt)
         _r(res, n, 0, "jezik", "Dosljedno obraćanje „ti”", "warn" if vi else "pass", ", ".join(vi) or "nema oblika s „vi”")

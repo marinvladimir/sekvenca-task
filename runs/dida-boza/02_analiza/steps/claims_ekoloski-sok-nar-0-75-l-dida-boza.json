@@ -1,0 +1,17 @@
+{
+  "source_id": "S2",
+  "product": "Ekološki sok nar 0,75 L - Dida Boža",
+  "claims": [],
+  "inconsistencies": [
+    "Izvor S2 sadrži samo naziv proizvoda; opis, svojstva, FAQ, ocjene i brend su prazni, a varijanta je prazan niz. Nema podataka za provjeru dosljednosti."
+  ],
+  "forbidden": [
+    "Bilo kakve zdravstvene tvrdnje (imunitet, antioksidansi, srce, probava, energija, detoksikacija i sl.): u izvoru nema nijedne tvrdnje, a ne smiju se dodavati iz općeg znanja.",
+    "Nutritivne vrijednosti i tvrdnje o sadržaju (npr. 'bogat vitaminima', 'bez dodanog šećera', '100% sok'): nisu navedene u izvoru.",
+    "Tvrdnje o porijeklu i proizvodnji (npr. 'hrvatski', 'iz domaćeg uzgoja', 'hladno prešano'): nisu navedene. Riječ 'ekološki' stoji samo u nazivu, bez certifikata ili opisa, pa se ne smije razrađivati bez dodatne provjere.",
+    "Tvrdnje o okusu, kvaliteti ili superlativi (npr. 'najbolji sok od nara', 'najukusniji'): nema ih u izvoru.",
+    "Ocjene kupaca ili preporuke: ocjena i broj recenzija su prazni (null).",
+    "Cijene i akcije: ne uvrštavaju se prema pravilima.",
+    "Tvrdnje o liječenju ili sprječavanju bolesti: zabranjene prema Uredbi 1924/2006 i bez osnove u izvoru."
+  ]
+}

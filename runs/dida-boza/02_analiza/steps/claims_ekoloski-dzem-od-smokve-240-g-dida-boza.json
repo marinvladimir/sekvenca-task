@@ -1,0 +1,18 @@
+{
+  "source_id": "S1",
+  "product": "Ekološki džem od smokve | 240 g - Dida Boža",
+  "claims": [],
+  "inconsistencies": [
+    "Izvor S1 je prazan: nema marke, opisa, svojstava, FAQ-a ni ocjena. Jedini podatak je naziv proizvoda, a polje variants sadrži samo prazan niz znakova."
+  ],
+  "forbidden": [
+    "Bilo koja nutritivna vrijednost (energija, šećeri, vlakna i sl.): nije navedena u izvoru.",
+    "Bilo kakva zdravstvena tvrdnja (probava, energija, imunitet, antioksidansi itd.): izvor nema odobrenu tvrdnju proizvođača.",
+    "Sastav, postotak voća, 'bez dodanog šećera', 'bez konzervansa', 'vegan', 'bez glutena': nije navedeno u izvoru.",
+    "Porijeklo i način proizvodnje ('domaće', 'ručno rađeno', 'iz lokalnih smokava', 'obiteljski recept'): izvor to ne navodi, a ime marke ne dokazuje ništa o tome.",
+    "Oznaka 'ekološki'/'bio' kao certificirana tvrdnja uz broj certifikata ili kontrolno tijelo: u nazivu stoji samo riječ 'Ekološki', bez certifikata. Prije objave je treba pravno provjeriti.",
+    "Upotreba i serviranje (uz sir, na kruh, u desertima): izvor to ne navodi.",
+    "Ocjene kupaca i recenzije: izvor ih nema (rating je null).",
+    "Cijene i akcije: ne uvrštavaju se."
+  ]
+}

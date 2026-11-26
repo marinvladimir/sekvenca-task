@@ -62,11 +62,14 @@ def run_analysis(run: Run, dry_run: bool = False) -> Dict[str, Any]:
         run.set_meta(PHASE, status="running", started_at=now_iso())
 
     products = [json.loads((run.dir / p).read_text(encoding="utf-8")) for p in brif["products"]]
+    from ..state import slugify
+    for p in products:  # stranice bez SKU-a (npr. Open Graph) — ključ iz naziva, da se koraci ne prepisuju
+        p["_key"] = str(p.get("sku") or slugify(p["name"])[:40])
 
     # (a) slike proizvoda → uloga + najbolja referenca
     image_roles: Dict[str, Any] = {}
     for p in products:
-        out = work / f"images_{p['sku']}.json"
+        out = work / f"images_{p['_key']}.json"
         files = [run.dir / i["file"] for i in p["images"] if i.get("file")]
         if dry_run:
             print(f"[dry] slike {p['name']}: {len(files)}")
@@ -81,7 +84,7 @@ def run_analysis(run: Run, dry_run: bool = False) -> Dict[str, Any]:
                 image_labels=[f.name for f in files],
                 effort="low",
                 log_path=log,
-                label=f"slike:{p['sku']}",
+                label=f"slike:{p['_key']}",
             )
             cached = res.model_dump()
             # Referenca smije biti samo slika označena kao upotrebljiva. Ako je model
@@ -112,7 +115,7 @@ def run_analysis(run: Run, dry_run: bool = False) -> Dict[str, Any]:
     # (b) dopuštene tvrdnje
     claims: Dict[str, Any] = {}
     for p in products:
-        out = work / f"claims_{p['sku']}.json"
+        out = work / f"claims_{p['_key']}.json"
         if dry_run:
             print(f"[dry] tvrdnje {p['name']}")
             continue
@@ -124,7 +127,7 @@ def run_analysis(run: Run, dry_run: bool = False) -> Dict[str, Any]:
                 text=load_prompt("02b_tvrdnje_user", product=_product_digest(p)),
                 effort="medium",
                 log_path=log,
-                label=f"tvrdnje:{p['sku']}",
+                label=f"tvrdnje:{p['_key']}",
             )
             cached = {"source_id": p["source_id"], **res.model_dump()}
             _save(out, cached)
@@ -137,7 +140,8 @@ def run_analysis(run: Run, dry_run: bool = False) -> Dict[str, Any]:
     extra = [p for p in posts if p.get("image") and not p.get("screenshot")]
     ig_paths = [settings.root / i["file"] for i in ig] + [run.dir / p["image"] for p in extra]
     ig_labels = [i["label"] for i in ig] + [f"IG:{p['code']}" for p in extra]
-    palette = measure_palette(ig_paths) if ig_paths else []
+    palette_src = ig_paths or [run.dir / i["file"] for p in products for i in p["images"] if i.get("file")]
+    palette = measure_palette(palette_src) if palette_src else []
     _save(work / "palette_measured.json", palette)
 
     # (d) analiza brenda

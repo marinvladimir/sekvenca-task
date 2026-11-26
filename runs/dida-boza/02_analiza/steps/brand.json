@@ -1,0 +1,285 @@
+{
+  "summary": "Analiza Instagrama za Didu Božu NIJE moguća: nema screenshotova, a feed profila (S5) nije dostupan bez prijave. Opisi, svojstva, cijene i ocjene proizvoda također nisu dohvaćeni (S1–S3 imaju samo naslove stranica, jer webshop učitava sadržaj JavaScriptom). Zato nema provjerenih nalaza o tonu, formatima, copyju, prikazu osoba ni angažmanu. Provjereno je samo ovo: tri proizvoda i njihovi nazivi (ekološki džem od smokve 240 g, ekološki sok od nara 0,75 L, Didin paket slastica), kategorije iz URL-ova (ekološki džemovi, ekološki sokovi, mix paketi) i izmjerena paleta, čiji izvor uzorka nije naveden. Sve ostalo (topao, domaći ton, obraćanje s „ti”, tradicijska estetika) preuzeto je iz brifa i označeno kao PRETPOSTAVKA. Prije izrade objava treba dobaviti 9–12 screenshotova feeda i opise proizvoda sa službene stranice.",
+  "audience": "Prema brifu: ljubitelji domaćih, ekoloških proizvoda u Hrvatskoj, kupci poklona i domaćinstva koja cijene tradiciju. To je tvrdnja iz brifa, a ne iz podataka. Dob, spol, lokacija i ponašanje publike nisu provjereni, a demografija i komentari nisu dostupni.",
+  "findings": [
+    {
+      "topic": "ton",
+      "statement": "Ton Instagrama nije provjerljiv jer nema screenshotova ni tekstova objava. Brif traži topao, domaći ton, ali to je željeni smjer, a ne opažanje postojećih objava.",
+      "status": "NEDOSTUPNO",
+      "evidence": []
+    },
+    {
+      "topic": "ton",
+      "statement": "Željeni ton iz brifa: topao, domaći, bliski razgovor, vjerojatno u ulozi „dide” koji govori iz iskustva. Naziv brenda i proizvod „Didin paket slastica” upućuju na obiteljsku, nostalgičnu personu, ali je to zaključak iz naziva.",
+      "status": "PRETPOSTAVKA",
+      "evidence": [
+        "S3",
+        "Brif: tone_notes"
+      ]
+    },
+    {
+      "topic": "publika",
+      "statement": "Ciljna publika prema brifu: ljubitelji domaćih ekoloških proizvoda, kupci poklona, tradicionalna domaćinstva. Podaci o stvarnoj publici profila (pratitelji, demografija) nisu dostupni.",
+      "status": "PRETPOSTAVKA",
+      "evidence": [
+        "Brif: audience"
+      ]
+    },
+    {
+      "topic": "publika",
+      "statement": "Demografija pratitelja, doseg i struktura komentatora nisu dostupni.",
+      "status": "NEDOSTUPNO",
+      "evidence": []
+    },
+    {
+      "topic": "teme",
+      "statement": "Asortiman prema nazivima stranica i URL-ovima: ekološki džemovi (džem od smokve, 240 g), ekološki sokovi (sok od nara, 0,75 L) i mix paketi (Didin paket slastica). Oznaka „ekološki” dio je naziva proizvoda u sva tri izvora (S1, S2) odnosno kategorije (S3 je u kategoriji mix paketa).",
+      "status": "PROVJERENO",
+      "evidence": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "topic": "teme",
+      "statement": "Teme koje brif traži: predstavljanje proizvoda, blagdanski pokloni, sezonski recepti. Što je brend dosad objavljivao nije poznato.",
+      "status": "PRETPOSTAVKA",
+      "evidence": [
+        "Brif: goals, inspiration"
+      ]
+    },
+    {
+      "topic": "teme",
+      "statement": "Opisi, sastav, svojstva, FAQ, cijene i ocjene proizvoda nisu dohvaćeni (polja su prazna jer se sadržaj učitava JavaScriptom). Bez njih se ne smiju pisati tvrdnje o sastavu, podrijetlu, certifikatima ni načinu proizvodnje, osim samog naziva „ekološki”.",
+      "status": "NEDOSTUPNO",
+      "evidence": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "topic": "stil",
+      "statement": "Vizualni stil Instagram feeda (kompozicija, pozadine, rekviziti, svjetlo) nije provjeren. Brif traži toplu, tradicijsku estetiku, što je smjer, a ne opis postojećeg stila.",
+      "status": "NEDOSTUPNO",
+      "evidence": []
+    },
+    {
+      "topic": "boje",
+      "statement": "Izmjerena paleta je dominantno bijela (#FFFFFF, 60,1 % piksela) s tamnim, gotovo crnim tonovima za tekst (#210E08, #10080B) i jednim jakim narančastim naglaskom (#F15014, 3,1 %). Ostalo su prigušeni zemljani, sivi i zeleni tonovi (#79716A, #BFB396, #26391D, #AE8A76) te tamni neutralni tonovi (#3D3339, #27232A). Izvor uzorka (webshop, logo ili proizvodne slike) nije naveden. Zato su uloge boja osim pozadine i teksta tumačenje, a ne dokaz. Tamni tonovi mogu dolaziti od fotografija proizvoda, a ne od grafičkog sustava.",
+      "status": "PRETPOSTAVKA",
+      "evidence": [
+        "Izmjerena paleta"
+      ]
+    },
+    {
+      "topic": "prikaz_proizvoda",
+      "statement": "Način prikaza proizvoda na Instagramu (packshot, kontekst, ruke, stol) nije provjeren. Poznati su samo proizvodi: staklenka džema od smokve (240 g), boca soka od nara (0,75 L) i paket slastica kao poklon-set. Točan sastav paketa nije dostupan.",
+      "status": "NEDOSTUPNO",
+      "evidence": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "topic": "prikaz_osoba",
+      "statement": "Prikaz osoba (Dida, obitelj, proizvođači, kupci) nije provjeren. Ne smije se pretpostaviti da postoji stvarna osoba „Dida Boža” niti pripisivati izjave stvarnim osobama (ograničenje iz brifa).",
+      "status": "NEDOSTUPNO",
+      "evidence": [
+        "Brif: constraints"
+      ]
+    },
+    {
+      "topic": "formati",
+      "statement": "Formati (karuseli, reelovi, statične fotografije, storyji, highlights) i učestalost objavljivanja nisu provjereni. Storyji su istekli, a feed nije dostupan bez prijave.",
+      "status": "NEDOSTUPNO",
+      "evidence": [
+        "S5"
+      ]
+    },
+    {
+      "topic": "copy",
+      "statement": "Duljina opisa, struktura, poziv na akciju, emojiji i hashtagovi nisu provjereni. Brif traži obraćanje s „ti”.",
+      "status": "NEDOSTUPNO",
+      "evidence": [
+        "Brif: tone_notes"
+      ]
+    },
+    {
+      "topic": "angažman",
+      "statement": "Lajkovi, komentari, spremanja, dijeljenja i doseg nisu dostupni. Ne mogu se rangirati objave niti reći što publici najbolje radi.",
+      "status": "NEDOSTUPNO",
+      "evidence": []
+    }
+  ],
+  "voice": {
+    "tone_words": [
+      "topao",
+      "domaći",
+      "tradicijski",
+      "blizak",
+      "pripovjedački"
+    ],
+    "address": "ti",
+    "emoji_usage": "NEDOSTUPNO: korištenje emojija na profilu nije provjereno. Preporuka je malo i tematski (voće, staklenka, poklon).",
+    "hashtags_seen": [],
+    "cta_patterns": [],
+    "do": [
+      "Obraćaj se s „ti” (zahtjev iz brifa), u toplom, razgovornom tonu.",
+      "Navodi samo tvrdnje koje stoje u nazivima proizvoda: „ekološki”, „džem od smokve 240 g”, „sok od nara 0,75 L”, „Didin paket slastica”.",
+      "Dodaj sezonske recepte u kojima su proizvodi sastojak, uz točne nazive proizvoda.",
+      "Pokloni se uokviruju kao „za nekoga do koga ti je stalo”, bez specifičnih obećanja o sadržaju paketa dok se on ne potvrdi sa stranice."
+    ],
+    "dont": [
+      "Ne izmišljaj cijene, popuste, rokove dostave, sastav ni zdravstvene tvrdnje.",
+      "Ne pripisuj izjave stvarnim osobama (Dida, kupci, proizvođači) i ne izmišljaj recenzije.",
+      "Ne tvrdi ništa o certifikatima, podrijetlu ili načinu proizvodnje dok nisu potvrđeni na službenoj stranici.",
+      "Ne prelazi na „vi” ni na hladan korporativni ton."
+    ]
+  },
+  "visual": {
+    "palette": [
+      {
+        "hex": "#FFFFFF",
+        "role": "pozadina (dominantna, 60,1 % piksela)",
+        "status": "PROVJERENO",
+        "evidence": "Izmjerena paleta, kind: svijetla/pozadina"
+      },
+      {
+        "hex": "#210E08",
+        "role": "tekst / tamni naglasak (vrlo tamna smeđa)",
+        "status": "PROVJERENO",
+        "evidence": "Izmjerena paleta, kind: tamna/tekst"
+      },
+      {
+        "hex": "#10080B",
+        "role": "sekundarna tamna / tekst",
+        "status": "PROVJERENO",
+        "evidence": "Izmjerena paleta, kind: tamna/tekst"
+      },
+      {
+        "hex": "#F15014",
+        "role": "akcent / CTA (jarka narančasta); uloga je tumačenje jer izvor uzorka nije poznat",
+        "status": "PRETPOSTAVKA",
+        "evidence": "Izmjerena paleta (3,1 %); uloga zaključena iz malog udjela i visoke zasićenosti"
+      },
+      {
+        "hex": "#26391D",
+        "role": "sekundarna tamnozelena (prirodni, ekološki dojam); može dolaziti iz fotografija",
+        "status": "PRETPOSTAVKA",
+        "evidence": "Izmjerena paleta (2,3 %); izvor uzorka nije naveden"
+      },
+      {
+        "hex": "#BFB396",
+        "role": "topli pješčano-bež ton, kandidat za pozadine i podloge",
+        "status": "PRETPOSTAVKA",
+        "evidence": "Izmjerena paleta (3,4 %); izvor uzorka nije naveden"
+      },
+      {
+        "hex": "#AE8A76",
+        "role": "topli zemljani ton, kandidat za sekundarne elemente",
+        "status": "PRETPOSTAVKA",
+        "evidence": "Izmjerena paleta (1,8 %); izvor uzorka nije naveden"
+      },
+      {
+        "hex": "#79716A",
+        "role": "neutralna topla siva (sekundarni tekst, linije)",
+        "status": "PRETPOSTAVKA",
+        "evidence": "Izmjerena paleta (4,1 %); izvor uzorka nije naveden"
+      },
+      {
+        "hex": "#3D3339",
+        "role": "tamna neutralna, vjerojatno sjene ili fotografija proizvoda",
+        "status": "PRETPOSTAVKA",
+        "evidence": "Izmjerena paleta (2,1 %)"
+      },
+      {
+        "hex": "#27232A",
+        "role": "tamna neutralna, vjerojatno sjene ili fotografija proizvoda",
+        "status": "PRETPOSTAVKA",
+        "evidence": "Izmjerena paleta (2,1 %)"
+      }
+    ],
+    "typography": "NEDOSTUPNO: fontovi se ne mogu odrediti bez screenshotova ni CSS-a. Za nove objave birati humanistički serif za naslove (tradicijski dojam) uz čitljiv sans za sitni tekst. To je preporuka, ne opis postojećeg stanja.",
+    "photo_style": "NEDOSTUPNO: stil fotografije na Instagramu nije vidljiv. Brif traži toplu tradicijsku estetiku (prirodno svjetlo, drvo, tkanina, sezonsko voće), što je smjer, a ne opažanje.",
+    "layout_patterns": [
+      "NEDOSTUPNO: postojeći obrasci kompozicije nisu provjereni.",
+      "Preporuka na temelju palete: velika bijela ili bež površina, tamni tekst, narančasta samo za jedan naglasak (cijena, CTA, oznaka sezone)."
+    ],
+    "product_presentation": "NEDOSTUPNO za Instagram. Poznato je samo da postoje tri proizvoda: džem od smokve 240 g (staklenka), sok od nara 0,75 L (boca) i Didin paket slastica (poklon-set). Njihov izgled i ambalaža nisu provjereni.",
+    "people_presentation": "NEDOSTUPNO: nije provjereno prikazuju li se osobe. Bez potvrde ne prikazivati ni imenovati stvarne osobe niti im pripisivati izjave."
+  },
+  "content_pillars": [
+    {
+      "name": "Proizvod u fokusu (prijedlog)",
+      "description": "Predstavljanje jednog proizvoda po objavi: džem od smokve 240 g, sok od nara 0,75 L, Didin paket slastica. Tekst se drži samo naziva i potvrđenih činjenica. Prijedlog iz cilja 1 u brifu, a ne opažen stup.",
+      "example_evidence": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "Blagdanski pokloni (prijedlog)",
+      "description": "Didin paket slastica kao poklon, uz kombinacije proizvoda i ideje „kome pokloniti”. Sadržaj paketa treba prvo potvrditi na stranici. Prijedlog iz cilja 2 u brifu.",
+      "example_evidence": [
+        "S3",
+        "Brif: goals"
+      ]
+    },
+    {
+      "name": "Sezonski recepti (prijedlog)",
+      "description": "Jednostavni recepti u kojima je proizvod sastojak (npr. smokva, nar), u toplom „ti” tonu. Prijedlog iz inspiracije u brifu.",
+      "example_evidence": [
+        "Brif: inspiration"
+      ]
+    },
+    {
+      "name": "Pitanja i reakcije (prijedlog)",
+      "description": "Objave koje traže odgovor u komentarima (omiljeni okus, uz što jedeš džem, kome bi poklonio paket). Prijedlog iz cilja 3 u brifu.",
+      "example_evidence": [
+        "Brif: goals"
+      ]
+    }
+  ],
+  "opportunities": [
+    "Prvo dobaviti podatke koji nedostaju: 9–12 screenshotova feeda (uključujući highlights i nekoliko najnovijih objava) te opise, sastav i cijene proizvoda sa stranice. Prave prilike se mogu odrediti tek tada.",
+    "Sezonski recepti s proizvodima kao sastojkom (npr. smokva, nar) koriste proizvode koje imamo i traže samo točne nazive. Format: karusel „sastojci, koraci, gotovo jelo”.",
+    "Blagdanski sadržaj za Didin paket slastica: „kome pokloniti” i raspakiravanje paketa. Sadržaj paketa prikazati tek nakon potvrde sa službene stranice.",
+    "Objave koje traže komentar (cilj 3), npr. „Uz što ti najbolje paše džem od smokve?” ili „Kome bi poklonio ovaj paket?”. CTA je pitanje u „ti” obliku, ne prodajni poziv.",
+    "Dosljedan vizualni sustav: bijela ili bež pozadina, tamni tekst, narančasti #F15014 samo kao jedan naglasak po objavi. Prije fiksiranja treba potvrditi što je zapravo izvor palete.",
+    "Priča o „Didi” i podrijetlu proizvoda samo ako se potvrdi sa službene stranice. Bez toga ostati na toplom tonu bez izmišljenih likova i citata."
+  ],
+  "unavailable_sources": [
+    {
+      "source": "S5 – Instagram profil (feed, objave, highlights)",
+      "reason": "Feed nije dostupan bez prijave, a nema priloženih screenshotova ni javnih podataka objava (lista objava je prazna). Ton, formati, copy, prikaz osoba, stil fotografije i hashtagovi nisu provjereni."
+    },
+    {
+      "source": "Instagram metrike i komentari",
+      "reason": "Lajkovi, komentari, spremanja, doseg i demografija pratitelja nisu dostupni. Ne mogu se rangirati objave ni izvoditi zaključci o angažmanu."
+    },
+    {
+      "source": "Instagram storyji",
+      "reason": "Storyji su istekli ili nisu dohvaćeni."
+    },
+    {
+      "source": "S1 – Ekološki džem od smokve",
+      "reason": "Dohvaćen je samo naslov stranice. Opis, sastav, svojstva, cijena, FAQ i ocjene nisu učitani (sadržaj se učitava JavaScriptom)."
+    },
+    {
+      "source": "S2 – Ekološki sok od nara",
+      "reason": "Dohvaćen je samo naslov stranice. Opis, sastav, svojstva, cijena, FAQ i ocjene nisu učitani."
+    },
+    {
+      "source": "S3 – Didin paket slastica",
+      "reason": "Dohvaćen je samo naslov stranice. Sadržaj paketa, opis, cijena i ocjene nisu učitani."
+    },
+    {
+      "source": "S4 – Naslovnica / logo",
+      "reason": "Zapisan je samo naslov „Naslovnica (logo)”. Vizualni opis loga, fontovi i boje brenda nisu dostupni, a izvor izmjerene palete nije naveden."
+    }
+  ]
+}

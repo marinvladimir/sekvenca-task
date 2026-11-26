@@ -1,0 +1,59 @@
+{
+  "objava": 3,
+  "naslov": "Što prvo na blagdanski stol?",
+  "cilj": "reakcije_komentari",
+  "format": "story_niz",
+  "proizvod": "Ekološki džem od smokve | 240 g - Dida Boža; Ekološki sok nar 0,75 L - Dida Boža; Didin paket slastica | Dida Boža - Dida Boža",
+  "koncept": "Niz od četiri storyja za brze reakcije. Dvije ankete (džem ili sok; kome bi poklonio paket), otvoreno pitanje o blagdanskoj tradiciji uz odgovor u poruci te završna poveznica na webshop. Ankete ne traže nikakvu činjenicu o proizvodu, samo osobni izbor.",
+  "obrazlozenje": "Treći cilj iz brifa su reakcije i komentari, a analiza predlaže pitanja poput „kome bi poklonio paket” i CTA kao pitanje u „ti” obliku, a ne prodajni poziv (Analiza: opportunities, content_pillars). Storyji su lagan format za interakciju. Provjereni podaci o angažmanu ne postoje, pa je format prijedlog, a ne nalaz. Sezonski okvir je advent.",
+  "kpi": "Broj glasova u anketama i odgovora na pitanje, te udio gledatelja koji dođu do zadnjeg kadra i kliknu poveznicu.",
+  "opis": "Niz storyja: dvije ankete, pitanje o blagdanskoj tradiciji (odgovori stižu u poruke) i poveznica na didaboza.hr. Odgovore iz poruka ne objavljujemo bez dopuštenja.",
+  "alt_text": "Niz od četiri storyja: anketa o džemu ili soku, anketa o poklonu, pitanje o blagdanskoj tradiciji i poveznica na didaboza.hr.",
+  "slajdovi": [
+    "04_izrada/objava_3/slajd_01.png",
+    "04_izrada/objava_3/slajd_02.png",
+    "04_izrada/objava_3/slajd_03.png",
+    "04_izrada/objava_3/slajd_04.png"
+  ],
+  "tekst_slajdova": [
+    {
+      "kicker": "Pitanje dana",
+      "headline": "Tvoj *izbor*",
+      "body": "Što ide prvo na blagdanski stol?",
+      "stat": "",
+      "options": [
+        "Ekološki džem od smokve",
+        "Ekološki sok od nara"
+      ],
+      "footnote": ""
+    },
+    {
+      "kicker": "Anketa",
+      "headline": "Poklon za *nekoga*",
+      "body": "Tko dobiva Didin paket slastica?",
+      "stat": "",
+      "options": [
+        "Netko iz obitelji",
+        "Netko od prijatelja",
+        "Ja"
+      ],
+      "footnote": ""
+    },
+    {
+      "kicker": "Reci nam",
+      "headline": "Tvoja *tradicija*",
+      "body": "Koja je tvoja blagdanska tradicija? Odgovori na ovaj story, rado ćemo pročitati.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Ponuda",
+      "headline": "Sve na *didaboza.hr*",
+      "body": "Pogledaj cijelu ponudu.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    }
+  ]
+}
