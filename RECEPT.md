@@ -30,7 +30,7 @@ Sheme strukturiranog izlaza su u `kadar/schemas.py`.
 1. Pristup modelu: `claude auth login` ili API ključ u `.env`.
 2. Brif i poveznice IG objava (`inputs/brief_<brend>.json`, `inputs/…/posts.txt`); screenshotovi su opcionalni.
 3. Pregled i odobrenje svakog kadra (`approve`, s napomenom što je pregledano).
-4. Ljudske odluke koje nadjačavaju AI: boje i obraćanje (`inputs/brand/brand.json`), smjernice za plan (`inputs/plan_notes_<brend>.md`), ispravci (`inputs/fixes_<brend>.json`).
+4. Ljudske odluke koje nadjačavaju AI: boje i obraćanje (`inputs/brand/brand.json`), smjernice za plan (`inputs/plan_notes_<brend>.md`), ispravci teksta (`inputs/fixes_<brend>.json`: unosi s `"phase": "03_plan"` primjenjuju se na plan odmah nakon generiranja, ostali na tekstove izrade naredbom `fix`). Ručna referenca proizvoda, ako webshop nema čisti packshot: `inputs/brand/<slug-proizvoda>.png`.
 5. Pri stvarnoj objavi: nativni stikeri u storyju (upute uz objavu).
 
 Nema neobjašnjenih ručnih dorada: svaka ljudska promjena je u `inputs/` i evidentirana u `HUMAN_EDITS.md`.

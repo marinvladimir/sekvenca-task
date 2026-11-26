@@ -12,5 +12,17 @@
     "original": "200-300 ml",
     "suggestion": "200–300 ml",
     "reason": "Provjera (krug 2): za raspon ide crtica, ne spojnica; AI lektor je naveo verzal pa doslovna zamjena nije uspjela."
+  },
+  {
+    "phase": "03_plan",
+    "original": "frendu",
+    "suggestion": "prijatelju",
+    "reason": "Ljudska dorada: \"frend\" nije uobičajen u govoru publike."
+  },
+  {
+    "phase": "03_plan",
+    "original": "svijet proteina",
+    "suggestion": "svijet gyma",
+    "reason": "Ljudska dorada: \"svijet proteina\" zvuči neprirodno."
   }
 ]

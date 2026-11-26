@@ -264,7 +264,7 @@ def apply_fixes(run: Run) -> Dict[str, Any]:
     fixes = [dict(f, source="AI lektor") for f in qa.get("language_fixes", [])]
     manual = settings.inputs_dir / f"fixes_{run.slug}.json"
     if manual.exists():
-        fixes += [dict(f, source="čovjek") for f in json.loads(manual.read_text(encoding="utf-8"))]
+        fixes += [dict(f, source="čovjek") for f in json.loads(manual.read_text(encoding="utf-8")) if f.get("phase") != "03_plan"]
     copy_path = run.phase_dir("04_izrada") / "copy.json"
     copy = json.loads(copy_path.read_text(encoding="utf-8"))
     log = []

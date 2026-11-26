@@ -59,8 +59,20 @@ def run_plan(run: Run) -> Dict[str, Any]:
         label="plan",
     ).model_dump()
 
+    # ljudske dorade plana (inputs/fixes_<run>.json, "phase": "03_plan") — dio recepta, ne ručna izmjena
+    fixes_path = settings.inputs_dir / f"fixes_{run.slug}.json"
+    applied = []
+    if fixes_path.exists():
+        import json as _json
+        text = _json.dumps(plan, ensure_ascii=False)
+        for fx in _json.loads(fixes_path.read_text(encoding="utf-8")):
+            if fx.get("phase") == "03_plan" and fx["original"] in text:
+                text = text.replace(fx["original"], fx["suggestion"])
+                applied.append(f'{fx["original"]} → {fx["suggestion"]}')
+        plan = _json.loads(text)
+
     problems = check_claims(plan, _allowed_claims(analysis))
-    output = {"plan": plan, "claim_check": problems, "human_notes": notes}
+    output = {"plan": plan, "claim_check": problems, "human_notes": notes, "human_edits": applied}
     run.save_output(PHASE, output)
     (run.phase_dir(PHASE) / "plan.md").write_text(render_markdown(output), encoding="utf-8")
     return output

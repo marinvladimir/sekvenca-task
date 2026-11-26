@@ -92,7 +92,20 @@ def run_analysis(run: Run, dry_run: bool = False) -> Dict[str, Any]:
             cached["best_reference"] = pick
             cached["best_reference_path"] = str(ref.relative_to(run.dir)) if ref else None
             if ref is None:
-                cached["warning"] = "Nijedna slika nije čisti packshot — potrebna ručna referenca (inputs/brand/<proizvod>.png)."
+                # ručna referenca: <brand_dir>/<slug-proizvoda>.png|jpg (npr. inputs/brand/just-whey.png)
+                from ..state import slugify
+                brand_dir = settings.root / brif["brief"].get("brand_dir", "inputs/brand")
+                manual = next((m for ext in (".png", ".jpg", ".jpeg", ".webp")
+                               for m in [brand_dir / f"{slugify(p['name'])[:60]}{ext}"] if m.exists()), None)
+                if manual:
+                    dest = files[0].parent / f"rucna_referenca{manual.suffix}"
+                    dest.write_bytes(manual.read_bytes())
+                    cached["best_reference"], cached["best_reference_path"] = dest.name, str(dest.relative_to(run.dir))
+                    cached["images"].append({"file": dest.name, "role": "packshot", "background": "ostalo", "extra_items": [],
+                                             "visible_label_text": "", "usable_as_reference": True, "reason": "ručna referenca (čovjek)"})
+                else:
+                    cached["warning"] = (f"Nijedna slika nije čisti packshot — dodaj ručnu referencu "
+                                         f"{brand_dir.relative_to(settings.root)}/{slugify(p['name'])[:60]}.png")
             _save(out, cached)
         image_roles[p["name"]] = cached
 

@@ -74,7 +74,9 @@ def run_delivery(run: Run) -> Dict[str, Any]:
             name = f"{prefix}_{i:02d}.png"
             shutil.copy(run.dir / rel, d / name)
             files.append(name)
-        (d / "opis.txt").write_text(post["opis"].strip() + "\n", encoding="utf-8")
+        story_note = ("NAPOMENA ZA OBJAVU (storyji nemaju opis objave; sav tekst je na kadrovima):\n"
+                      if post["format"] == "story_niz" else "")
+        (d / "opis.txt").write_text(story_note + post["opis"].strip() + "\n", encoding="utf-8")
         info = [f"# Objava {n}: {post['naslov']}", "",
                 f"- **Format:** {FORMATS.get(post['format'], post['format'])}, {len(files)} {'kadrova' if prefix == 'kadar' else 'slajdova'}",
                 f"- **Cilj:** {GOALS.get(post['cilj'], post['cilj'])}", f"- **Proizvod:** {post['proizvod']}",
@@ -130,9 +132,15 @@ def run_delivery(run: Run) -> Dict[str, Any]:
 
     usage = _usage(run)
     s = (qa or {}).get("summary", {})
+    import json as _json
+    brief_file = settings.inputs_dir / f"brief_{run.slug}.json"
+    choice = brif["brief"].get("brand_choice") or (
+        _json.loads(brief_file.read_text(encoding="utf-8")).get("brand_choice") if brief_file.exists() else "")
     readme = [f"# {info['brand']} — tri gotove objave", "",
-              f"Izrađeno receptom **Kadar** · Instagram: {info.get('instagram')} · {now_iso()[:10]}", "",
-              "| # | Objava | Format | Cilj |", "|---|---|---|---|"]
+              f"Izrađeno receptom **Kadar** · Instagram: {info.get('instagram')} · {now_iso()[:10]}", ""]
+    if choice:
+        readme += [f"**Zašto ovaj brend:** {choice}", ""]
+    readme += ["| # | Objava | Format | Cilj |", "|---|---|---|---|"]
     readme += [f"| {n} | [{p['naslov']}](objava_{n}/README.md) | {FORMATS.get(p['format'], p['format'])} | {GOALS.get(p['cilj'], p['cilj'])} |"
                for n, p, _ in posts_md]
     if qa:
@@ -151,7 +159,8 @@ def run_delivery(run: Run) -> Dict[str, Any]:
     for n, p, files in posts_md:
         readme += [f"## Objava {n}: {p['naslov']}", "", f"*{FORMATS.get(p['format'])} · {GOALS.get(p['cilj'])}*", "",
                    " ".join(f'<img src="objava_{n}/{f}" width="{150 if p["format"] == "story_niz" else 190}">' for f in files), "",
-                   "**Opis:**", "", "> " + p["opis"].strip().replace("\n", "\n> "), ""]
+                   ("**Napomena za objavu** (storyji nemaju opis):" if p["format"] == "story_niz" else "**Opis:**"), "",
+                   "> " + p["opis"].strip().replace("\n", "\n> "), ""]
     (out / "README.md").write_text("\n".join(readme) + "\n", encoding="utf-8")
 
     output = {"folder": str(out.relative_to(settings.root)), "posts": len(posts_md), "usage": usage,

@@ -2,6 +2,8 @@
 
 Izrađeno receptom **Kadar** · Instagram: https://www.instagram.com/gymbeamhr/ · 2026-11-26
 
+**Zašto ovaj brend:** GymBeam HR je preporučeni brend iz zadatka i dobar test recepta: ima prepoznatljiv vizualni identitet (narančasta, packshotovi, udarni naslovi), bogate i strukturirane podatke o proizvodima na webshopu (sastav, nutritivne vrijednosti, FAQ) te osjetljivu kategoriju dodataka prehrani, u kojoj se jasno vidi vrijedi li pravilo 'samo dopuštene tvrdnje'. Prosinac donosi i sezonski kontekst.
+
 | # | Objava | Format | Cilj |
 |---|---|---|---|
 | 1 | [Just Whey za početnike: 7 slajdova za spremanje](objava_1/README.md) | Karusel (feed, 1080×1350) | Edukacija — spremanja |
@@ -52,7 +54,7 @@ Dokumenti: [analiza brenda](dokumenti/analiza.md) · [plan](dokumenti/plan.md) �
 
 <img src="objava_3/kadar_01.png" width="150"> <img src="objava_3/kadar_02.png" width="150"> <img src="objava_3/kadar_03.png" width="150"> <img src="objava_3/kadar_04.png" width="150"> <img src="objava_3/kadar_05.png" width="150">
 
-**Opis:**
+**Napomena za objavu** (storyji nemaju opis):
 
 > Story niz od 5 kadrova: anketa, dva kviza i poveznica „Pogledaj D3“ na stranicu proizvoda (varijanta s packshota). Na svakom kadru najviše jedan emoji. Nakon objave spremi niz u highlight „Članci“ ili „Novosti“. #gymbeamhr #gbhealthy
 

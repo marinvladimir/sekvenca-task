@@ -13,3 +13,5 @@ Evidencija svake ljudske odluke koja je promijenila ili nadjačala AI prijedlog 
 | 7 | aplikacija | Generičko tamno sučelje; asseti vidljivi samo u praznim stanjima | Redizajn: hero s filmskom trakom, traka kadrova kao film s ilustracijama, ilustracija uz kadar | Čovjek: "izgleda kao AI slop, nije korišten moj dizajn" |
 | 8 | 05 provjera | Provjera bez testa | Zahtjev za temeljitim testom (~50 rezultata) i analizom → 143 provjere u 2 kruga | Čovjek je tražio mjerljiv QA, ne samo vizualni dojam |
 | 9 | 05 provjera | AI provjera: "uskladiti narančastu s #DE7419" | Odbačeno: zadržano #FF4500 (ljudska odluka #1); provjera sad dobiva ljudske odluke kao kontekst | Provjera ne smije poništavati svjesne ljudske odluke |
+
+> Dorade #4 i #5 recept primjenjuje sam: unosi s `"phase": "03_plan"` u `inputs/fixes_gymbeam-hr.json` primjenjuju se na plan odmah nakon generiranja, pa ponovno pokretanje daje isti rezultat bez ručnog rada.

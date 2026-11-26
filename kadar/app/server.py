@@ -214,7 +214,8 @@ def api_brief():
             s.save(ig_dir / f"upload_{i:02d}{ext}")
 
     brief = {
-        "brand": brand, "instagram": f.get("instagram", "").strip(), "website": f.get("website", "").strip(),
+        "brand": brand, "brand_choice": f.get("brand_choice", "").strip(),
+        "instagram": f.get("instagram", "").strip(), "website": f.get("website", "").strip(),
         "products": lines("products"), "audience": f.get("audience", ""), "goals": f.get("goals", ""),
         "inspiration": f.get("inspiration", ""), "tone_notes": f.get("tone_notes", ""),
         "constraints": f.get("constraints", ""), "language": f.get("language", "hrvatski") or "hrvatski",

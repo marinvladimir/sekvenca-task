@@ -216,7 +216,7 @@ async function act(kind, p, rewrite, codeOnly) {
 function briefForm() {
   const F = (n, l, ph = '', t = 'input') => `<label>${l}</label>${t === 'input' ? `<input name="${n}" placeholder="${esc(ph)}">` : `<textarea name="${n}" placeholder="${esc(ph)}"></textarea>`}`;
   return `<form id="briefForm" class="grid2">
-    <div>${F('brand','Naziv brenda *','npr. GymBeam HR')}${F('instagram','Instagram profil','https://www.instagram.com/…')}
+    <div>${F('brand','Naziv brenda *','npr. GymBeam HR')}${F('instagram','Instagram profil','https://www.instagram.com/…')}${F('brand_choice','Zašto ovaj brend (kratko)','','ta')}
       ${F('website','Službena web-stranica / webshop','https://…')}
       ${F('products','Poveznice proizvoda za promociju (jedna po retku)','https://…','ta')}
       ${F('instagram_posts','Poveznice Instagram objava (jedna po retku)','https://www.instagram.com/p/…','ta')}

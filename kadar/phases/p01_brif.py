@@ -26,6 +26,7 @@ IMAGE_EXT = {".png", ".jpg", ".jpeg", ".webp"}
 
 QUESTIONS = [
     ("brand", "Naziv brenda", ""),
+    ("brand_choice", "Zašto ovaj brend (kratko)", ""),
     ("instagram", "Instagram profil (URL)", ""),
     ("website", "Službena web-stranica / webshop", ""),
     ("products", "URL-ovi proizvoda za promociju (odvojeni zarezom)", ""),
