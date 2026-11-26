@@ -16,8 +16,8 @@
 | Objava | Slajd | Skupina | Provjera | Status | Detalj |
 |---|---|---|---|---|---|
 | 1 | 1 | slajd | Dimenzije | ✅ | 1080×1350 (očekivano 1080×1350) |
-| 1 | 1 | slajd | Tekst stane (bez preljeva) | ✅ | naslov 88 px |
-| 1 | 1 | slajd | Čitljiva veličina naslova (≥ 56 px) | ✅ | 88 px |
+| 1 | 1 | slajd | Tekst stane (bez preljeva) | ✅ | naslov 80 px |
+| 1 | 1 | slajd | Čitljiva veličina naslova (≥ 56 px) | ✅ | 80 px |
 | 1 | 1 | slajd | Logo i packshot učitani | ✅ | logo=True packshot=True |
 | 1 | 2 | slajd | Dimenzije | ✅ | 1080×1350 (očekivano 1080×1350) |
 | 1 | 2 | slajd | Tekst stane (bez preljeva) | ✅ | naslov 96 px |
@@ -81,7 +81,7 @@
 | 2 | 6 | slajd | Logo i packshot učitani | ✅ | logo=True packshot=None |
 | 2 | — | objava | Broj slajdova = plan | ✅ | 6 / plan 6 |
 | 2 | — | objava | Format odgovara planu | ✅ | karusel |
-| 2 | — | opis | Duljina opisa (40–2200 znakova) | ✅ | 442 znakova |
+| 2 | — | opis | Duljina opisa (40–2200 znakova) | ✅ | 444 znakova |
 | 2 | — | opis | Najviše 3 emojija u opisu | ✅ | 2 emojija |
 | 2 | — | opis | Hashtagovi (2–6, uključuje #gymbeamhr) | ✅ | #gymbeamhr #gbig #gbnutrition #gbwomen |
 | 2 | — | usklađenost | Bez zabranjenih tvrdnji, cijena i kodova | ✅ | nema |
@@ -95,7 +95,7 @@
 | 3 | 1 | slajd | Tekst stane (bez preljeva) | ✅ | naslov 120 px |
 | 3 | 1 | slajd | Čitljiva veličina naslova (≥ 56 px) | ✅ | 120 px |
 | 3 | 1 | slajd | Logo i packshot učitani | ✅ | logo=True packshot=None |
-| 3 | 1 | slajd | Sigurna zona storyja (250 px gore, 340 px dolje) | ✅ | tekst od 637 do 1210 px |
+| 3 | 1 | slajd | Sigurna zona storyja (250 px gore, 340 px dolje) | ✅ | tekst od 356 do 929 px |
 | 3 | 2 | slajd | Dimenzije | ✅ | 1080×1920 (očekivano 1080×1920) |
 | 3 | 2 | slajd | Tekst stane (bez preljeva) | ✅ | naslov 120 px |
 | 3 | 2 | slajd | Čitljiva veličina naslova (≥ 56 px) | ✅ | 120 px |

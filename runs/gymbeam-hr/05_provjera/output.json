@@ -14,7 +14,7 @@
       "group": "slajd",
       "check": "Tekst stane (bez preljeva)",
       "status": "pass",
-      "detail": "naslov 88 px"
+      "detail": "naslov 80 px"
     },
     {
       "post": 1,
@@ -22,7 +22,7 @@
       "group": "slajd",
       "check": "Čitljiva veličina naslova (≥ 56 px)",
       "status": "pass",
-      "detail": "88 px"
+      "detail": "80 px"
     },
     {
       "post": 1,
@@ -534,7 +534,7 @@
       "group": "opis",
       "check": "Duljina opisa (40–2200 znakova)",
       "status": "pass",
-      "detail": "442 znakova"
+      "detail": "444 znakova"
     },
     {
       "post": 2,
@@ -646,7 +646,7 @@
       "group": "slajd",
       "check": "Sigurna zona storyja (250 px gore, 340 px dolje)",
       "status": "pass",
-      "detail": "tekst od 637 do 1210 px"
+      "detail": "tekst od 356 do 929 px"
     },
     {
       "post": 3,

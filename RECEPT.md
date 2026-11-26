@@ -21,7 +21,7 @@ Demonstracija je izvedena naredbama iz `README.md` (odjeljak "Naredbeni redak"),
 |---|---|
 | 02 | `02a_slike_*` (uloga slika, izbor packshota), `02b_tvrdnje_*` (dopuštene tvrdnje s citatima), `02c_brend_*` (analiza brenda) |
 | 03 | `03_plan_*` |
-| 04 | `04_tekst_*` |
+| 04 | `04_tekst_*`, `04b_scene_*` (prompti za scene naslovnica i razigrani naslovi) |
 | 05 | `05_provjera_*` |
 
 Sheme strukturiranog izlaza su u `kadar/schemas.py`.
@@ -31,7 +31,8 @@ Sheme strukturiranog izlaza su u `kadar/schemas.py`.
 2. Brif i poveznice IG objava (`inputs/brief_<brend>.json`, `inputs/…/posts.txt`); screenshotovi su opcionalni.
 3. Pregled i odobrenje svakog kadra (`approve`, s napomenom što je pregledano).
 4. Ljudske odluke koje nadjačavaju AI: boje i obraćanje (`inputs/brand/brand.json`), smjernice za plan (`inputs/plan_notes_<brend>.md`), ispravci teksta (`inputs/fixes_<brend>.json`: unosi s `"phase": "03_plan"` primjenjuju se na plan odmah nakon generiranja, ostali na tekstove izrade naredbom `fix`). Ručna referenca proizvoda, ako webshop nema čisti packshot: `inputs/brand/<slug-proizvoda>.png`.
-5. Pri stvarnoj objavi: nativni stikeri u storyju (upute uz objavu).
+5. Opcionalno, kreativni sloj: `kadar scenes <brend>` napiše prompte; čovjek generira scene u alatu po izboru (bez proizvoda i logotipa) i spremi ih u `inputs/scenes/objava_N_slajd_NN.jpg`, a izabrani naslov upiše u `inputs/fixes_<brend>.json`. Render umeće pravi packshot i logo preko scene.
+6. Pri stvarnoj objavi: nativni stikeri u storyju (upute uz objavu).
 
 Nema neobjašnjenih ručnih dorada: svaka ljudska promjena je u `inputs/` i evidentirana u `HUMAN_EDITS.md`.
 

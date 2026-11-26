@@ -161,7 +161,7 @@ function head(p) {
   const runLabel = hasOut ? 'Ponovi' : 'Pokreni';
   let actions = '';
   if (!S.newBrief) {
-    if (p === '04_izrada' && hasOut) actions += `<button data-act="run" data-rewrite="1" ${running ? 'disabled' : ''}>Novi tekstovi</button>`;
+    if (p === '04_izrada' && hasOut) actions += `<button data-act="scenes" ${running ? 'disabled' : ''} title="Prompti za scene naslovnica i razigrani naslovi">Prompti za scene</button><button data-act="run" data-rewrite="1" ${running ? 'disabled' : ''}>Novi tekstovi</button>`;
     if (p === '05_provjera' && hasOut) actions += `<button data-act="fix" ${running ? 'disabled' : ''} title="Ispravci iz provjere → novi render → provjera u kodu">Primijeni ispravke</button>
       <button data-act="run" data-codeonly="1" ${running ? 'disabled' : ''}>Provjera bez AI</button>`;
     actions += `<button data-act="run" ${running || !prevOk ? 'disabled' : ''} title="${prevOk ? '' : 'Prvo odobri prethodni kadar'}">${runLabel}${p === '04_izrada' && hasOut ? ' render' : ''}</button>`;
@@ -193,7 +193,8 @@ function renderPanel() {
     if (p === '01_brif') body = d.brif ? briefView(d.brif) : empty(p, 'Brif još nije pokrenut.');
     if (p === '02_analiza') body = d.analysis_html ? decisions(d) + `<div class="md">${d.analysis_html}</div>` : empty(p, 'Analiza još nije napravljena. Odobri brif pa pokreni.');
     if (p === '03_plan') body = notesBox(d) + (d.plan_html ? `<div class="md">${d.plan_html}</div>` : empty(p, 'Plan još nije napravljen.'));
-    if (p === '04_izrada') body = d.posts ? postsView(d.posts) : empty(p, 'Objave još nisu izrađene.');
+    if (p === '04_izrada') body = (d.posts ? postsView(d.posts) : empty(p, 'Objave još nisu izrađene.'))
+      + (d.scenes_html ? `<details class="prod"><summary>Kreativni sloj: prompti za scene i prijedlozi naslova</summary><div class="md">${d.scenes_html}</div></details>` : '');
     if (p === '05_provjera') body = d.qa_html ? `<div class="md">${d.qa_html}</div>` : empty(p, 'Provjera još nije pokrenuta.');
     if (p === '06_isporuka') body = d.delivery ? `<p class="mono">Mapa: ${esc(d.delivery.folder)} · ${d.delivery.files.length} datoteka · ${d.delivery.usage.llm_calls} AI poziva · ${d.delivery.usage.llm_minutes} min generiranja</p><div class="md">${d.delivery_html}</div>` : empty(p, 'Isporuka još nije pripremljena.');
   }
@@ -208,6 +209,7 @@ async function act(kind, p, rewrite, codeOnly) {
   try {
     if (kind === 'run') await api(`/api/run/${S.slug}/${p}`, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ rewrite: !!rewrite, code_only: !!codeOnly }) });
     if (kind === 'fix') await api(`/api/fix/${S.slug}`, { method: 'POST' });
+    if (kind === 'scenes') await api(`/api/scenes/${S.slug}`, { method: 'POST' });
     if (kind === 'approve') { const r = await api(`/api/approve/${S.slug}/${p}`, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ note: ($('#note') || {}).value || '' }) }); S.view = r.next || p; }
     await load();
   } catch (e) { alert(e.message); }

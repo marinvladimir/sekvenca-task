@@ -279,7 +279,9 @@ def apply_fixes(run: Run) -> Dict[str, Any]:
                     if f["original"] in sl.get(key, ""):
                         sl[key] = sl[key].replace(f["original"], f["suggestion"]); hit = True
                 sl["options"] = [o.replace(f["original"], f["suggestion"]) for o in sl["options"]]
-        if not hit and post and f["original"] not in json.dumps(post, ensure_ascii=False):
+        blob = json.dumps(post, ensure_ascii=False).replace("*", "") if post else ""
+        if not hit and post and (f["suggestion"] in json.dumps(post, ensure_ascii=False)
+                                 or (f["suggestion"].replace("*", "") in blob and f["original"].replace("*", "") not in blob)):
             hit = "već primijenjeno"
         log.append({**f, "applied": hit})
     copy_path.write_text(json.dumps(copy, ensure_ascii=False, indent=2), encoding="utf-8")

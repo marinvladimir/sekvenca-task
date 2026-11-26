@@ -65,4 +65,10 @@
 - **Just Whey Grass-Fed Protein – GymBeam:** `ulazi/proizvodi/09_just_whey_salted_caramel_1_kg_gymbeam_1.png`
 - **Vitamin D3 1000 IU - GymBeam:** `ulazi/proizvodi/02_vitamin_d3_1000iu_120_caps_gymbeam.png`
 - **Proteinska pločica MoiMüv - GymBeam:** `ulazi/proizvodi/01_moimuv-cookie-and-cream-flavour-60-g-gymbeam-2-2_1.png`
+
+## Scene naslovnica (generirao čovjek iz promptova recepta, vidi `dokumenti/scene_prompti.md`)
+
+- `ulazi/scene/objava_1_slajd_01.jpg`
+- `ulazi/scene/objava_2_slajd_01.jpg`
+- `ulazi/scene/objava_3_slajd_01.jpg`
 - **Logo:** `ulazi/logo.svg` (dohvaćen sa službene stranice)

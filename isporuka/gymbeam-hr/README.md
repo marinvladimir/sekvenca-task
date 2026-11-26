@@ -10,13 +10,14 @@ Izrađeno receptom **Kadar** · Instagram: https://www.instagram.com/gymbeamhr/ 
 | 2 | [Kriza za slatkim: prosinac edition (MoiMüv)](objava_2/README.md) | Karusel (feed, 1080×1350) | Predstavljanje proizvoda |
 | 3 | [Zimska rutina: D3 kviz u storyju](objava_3/README.md) | Niz storyja (1080×1920) | Reakcije i komentari |
 
-**Provjera kvalitete** ([završni izvještaj](dokumenti/provjera.md) · [krug 1](dokumenti/provjera_krug1.md) · [krug 2](dokumenti/provjera_krug2.md)):
+**Provjera kvalitete** ([završni izvještaj](dokumenti/provjera.md) · [krug 1](dokumenti/provjera_krug1.md) · [krug 2](dokumenti/provjera_krug2.md) · [krug 3](dokumenti/provjera_krug3.md)):
 
 - krug 1 (kod + AI vizija): 143 provjera — ✅ 130 · ⚠️ 13 · ❌ 0
 - krug 2 (kod + AI vizija): 143 provjera — ✅ 135 · ⚠️ 8 · ❌ 0
+- krug 3, sa scenama (kod + AI vizija): 143 provjera — ✅ 134 · ⚠️ 9 · ❌ 0
 - završno nakon ispravaka: 113 provjera — ✅ 113 · ⚠️ 0 · ❌ 0
 
-**AI pozivi:** 17 · ukupno 18.6 min generiranja
+**AI pozivi:** 21 · ukupno 21.1 min generiranja
 
 Dokumenti: [analiza brenda](dokumenti/analiza.md) · [plan](dokumenti/plan.md) · [izvori i ulazi](izvori.md)
 
@@ -42,7 +43,7 @@ Dokumenti: [analiza brenda](dokumenti/analiza.md) · [plan](dokumenti/plan.md) �
 
 **Opis:**
 
-> Kolači na svakom stolu, a ti imaš plan 😉 MoiMüv pločica u dva okusa: uz kavu, na desertu ili u torbi. Cookies & cream ili krokant-karamel? Napiši u komentar, a pločice pronađi preko poveznice u opisu profila 👇
+> Kolači na svakom stolu, a ti imaš plan 😉 MoiMüv pločica u dva okusa – uz kavu, na desertu ili u torbi. Cookies & cream ili krokant-karamel? Napiši u komentaru, a pločice pronađi preko poveznice u opisu profila 👇
 > 
 > Sadrži zaslađivače. Pretjerana konzumacija može imati laksativne učinke. Može sadržavati tragove glutena, jaja, kikirikija, orašastih plodova, sumpornog dioksida i sulfita te sjemenki sezama.
 > 

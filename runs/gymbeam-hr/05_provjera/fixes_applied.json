@@ -16,5 +16,50 @@
     "reason": "Provjera (krug 2): za raspon ide crtica, ne spojnica; AI lektor je naveo verzal pa doslovna zamjena nije uspjela.",
     "source": "čovjek",
     "applied": "već primijenjeno"
+  },
+  {
+    "post": 1,
+    "slide": 1,
+    "original": "Just Whey za *početnike*",
+    "suggestion": "Protein bez *filozofije*",
+    "reason": "Naslov naslovnice: ljudskiji ton (delegirana odluka; prijedlozi iz kadra 04b).",
+    "source": "čovjek",
+    "applied": "već primijenjeno"
+  },
+  {
+    "post": 1,
+    "slide": 1,
+    "original": "Whey 101",
+    "suggestion": "Za početnike",
+    "reason": "Kicker usklađen s novim naslovom.",
+    "source": "čovjek",
+    "applied": "već primijenjeno"
+  },
+  {
+    "post": 2,
+    "slide": 1,
+    "original": "Kriza za *slatkim*?",
+    "suggestion": "Kriza za slatkim? *Opet?*",
+    "reason": "Nastavak njihove serije s malo samoironije.",
+    "source": "čovjek",
+    "applied": "već primijenjeno"
+  },
+  {
+    "post": 1,
+    "slide": 4,
+    "original": "Šejker, 200–300 ml",
+    "suggestion": "Šejker, 200 do 300 ml",
+    "reason": "Provjera (krug 3): crtica u fontu Anton izgleda kao spojnica; raspon riječima je nedvosmislen.",
+    "source": "čovjek",
+    "applied": "već primijenjeno"
+  },
+  {
+    "post": 2,
+    "slide": 4,
+    "original": "*na desert*",
+    "suggestion": "*za desert*",
+    "reason": "Provjera (krug 3): uobičajeno je „za desert”.",
+    "source": "čovjek",
+    "applied": "već primijenjeno"
   }
 ]

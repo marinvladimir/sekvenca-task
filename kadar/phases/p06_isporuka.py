@@ -91,7 +91,9 @@ def run_delivery(run: Run) -> Dict[str, Any]:
     docs = {"analiza.md": run.phase_dir("02_analiza") / "analiza.md", "plan.md": run.phase_dir("03_plan") / "plan.md",
             "provjera.md": run.phase_dir("05_provjera") / "provjera.md",
             "provjera_krug1.md": run.phase_dir("05_provjera") / "krug1_provjera.md",
-            "provjera_krug2.md": run.phase_dir("05_provjera") / "krug2_provjera.md"}
+            "provjera_krug2.md": run.phase_dir("05_provjera") / "krug2_provjera.md",
+            "provjera_krug3.md": run.phase_dir("05_provjera") / "krug3_provjera.md",
+            "scene_prompti.md": run.phase_dir("04_izrada") / "scene_prompts.md"}
     (out / "dokumenti").mkdir()
     for name, src in docs.items():
         if src.exists():
@@ -125,6 +127,18 @@ def run_delivery(run: Run) -> Dict[str, Any]:
             p = run.dir / img["best_reference_path"]
             shutil.copy(p, refs / p.name)
             src.append(f"- **{name}:** `ulazi/proizvodi/{p.name}`")
+    from .p04_izrada import scene_dir
+    sd = scene_dir(run)
+    scenes = sorted(sd.glob("objava_*")) if sd.exists() else []
+    if scenes:
+        (out / "ulazi" / "scene").mkdir(parents=True, exist_ok=True)
+        src += ["", "## Scene naslovnica (generirao čovjek iz promptova recepta, vidi `dokumenti/scene_prompti.md`)", ""]
+        for sc in scenes:
+            from PIL import Image
+            im = Image.open(sc).convert("RGB")
+            im.thumbnail((1080, 1920))
+            im.save(out / "ulazi" / "scene" / (sc.stem + ".jpg"), quality=85)
+            src.append(f"- `ulazi/scene/{sc.stem}.jpg`")
     if brif.get("logo"):
         shutil.copy(run.dir / brif["logo"]["file"], out / "ulazi" / Path(brif["logo"]["file"]).name)
         src.append(f"- **Logo:** `ulazi/{Path(brif['logo']['file']).name}` (dohvaćen sa službene stranice)")
@@ -145,7 +159,8 @@ def run_delivery(run: Run) -> Dict[str, Any]:
                for n, p, _ in posts_md]
     if qa:
         rounds = []
-        for label, f in (("krug 1", "krug1_output.json"), ("krug 2", "krug2_output.json")):
+        for label, f in (("krug 1", "krug1_output.json"), ("krug 2", "krug2_output.json"),
+                         ("krug 3, sa scenama", "krug3_output.json")):
             path = run.phase_dir("05_provjera") / f
             if path.exists():
                 r = json.loads(path.read_text(encoding="utf-8"))
@@ -153,7 +168,7 @@ def run_delivery(run: Run) -> Dict[str, Any]:
                 rounds.append(f"{label} (kod + AI vizija): {r['total']} provjera — ✅ {rs.get('pass', 0)} · ⚠️ {rs.get('warn', 0)} · ❌ {rs.get('fail', 0)}")
         rounds.append(f"završno nakon ispravaka: {qa['total']} provjera — ✅ {s.get('pass', 0)} · ⚠️ {s.get('warn', 0)} · ❌ {s.get('fail', 0)}")
         readme += ["", "**Provjera kvalitete** ([završni izvještaj](dokumenti/provjera.md) · [krug 1](dokumenti/provjera_krug1.md) · "
-                   "[krug 2](dokumenti/provjera_krug2.md)):", ""] + [f"- {x}" for x in rounds]
+                   "[krug 2](dokumenti/provjera_krug2.md) · [krug 3](dokumenti/provjera_krug3.md)):", ""] + [f"- {x}" for x in rounds]
     readme += ["", f"**AI pozivi:** {usage['llm_calls']} · ukupno {usage['llm_minutes']} min generiranja", "",
                "Dokumenti: [analiza brenda](dokumenti/analiza.md) · [plan](dokumenti/plan.md) · [izvori i ulazi](izvori.md)", ""]
     for n, p, files in posts_md:

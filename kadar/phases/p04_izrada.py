@@ -98,7 +98,15 @@ def run_create(run: Run, copy_only: bool = False) -> Dict[str, Any]:
             slides.append(s)
         story = planned["format"] == "story_niz"
         out_dir = phase_dir / f"objava_{planned['number']}"
-        pngs = render_post(slides, story, out_dir, run.dir, images, logo_dark, logo_white)
+        sd = scene_dir(run)
+        scenes = {}
+        for i in range(1, len(slides) + 1):
+            for ext in (".jpg", ".jpeg", ".png", ".webp"):
+                f = sd / f"objava_{planned['number']}_slajd_{i:02d}{ext}"
+                if f.exists():
+                    scenes[i] = f
+                    break
+        pngs = render_post(slides, story, out_dir, run.dir, images, logo_dark, logo_white, scenes)
         (out_dir / "opis.txt").write_text(final["caption"] + "\n", encoding="utf-8")
         meta = {
             "objava": planned["number"], "naslov": planned["title"], "cilj": planned["goal"],
@@ -113,3 +121,49 @@ def run_create(run: Run, copy_only: bool = False) -> Dict[str, Any]:
     output = {"posts": posts_out, "editor_notes": copy.get("editor_notes", [])}
     run.save_output(PHASE, output)
     return output
+
+
+# ---- kreativni sloj: scene za naslovnice + razigraniji naslovi -------------------
+
+def scene_dir(run: Run) -> Path:
+    brif = run.output("01_brif") or {}
+    base = (brif.get("brief") or {}).get("brand_dir", "inputs/brand")  # isti default kao renderer
+    return settings.root / Path(base).parent / "scenes"
+
+
+def run_creative(run: Run) -> Dict[str, Any]:
+    """Jedan AI poziv: prompti za scene naslovnica (čovjek ih generira u alatu po izboru) i 3 naslova po naslovnici."""
+    from ..schemas import CreativePack
+
+    plan = run.output("03_plan")["plan"]
+    analysis = run.output("02_analiza")["brand"]
+    covers = []
+    for p in plan["posts"]:
+        s = p["slides"][0]
+        covers.append({"post": p["number"], "slide": 1, "format": p["format"], "concept": p["concept"],
+                       "headline": s["headline"], "product": p["product"]})
+    pack = ask_structured(
+        schema=CreativePack,
+        system=load_prompt("04b_scene_system"),
+        text=load_prompt("04b_scene_user", style={"photo_style": analysis["visual"]["photo_style"],
+                                                  "pillars": analysis["content_pillars"], "voice": analysis["voice"]},
+                         brief=run.output("01_brif")["brief"], covers=covers),
+        effort="low",
+        log_path=run.phase_dir(PHASE) / "calls.jsonl",
+        label="scene",
+    ).model_dump()
+    out = run.phase_dir(PHASE) / "scene.json"
+    out.write_text(json.dumps(pack, ensure_ascii=False, indent=2), encoding="utf-8")
+    sd = scene_dir(run)
+    sd.mkdir(parents=True, exist_ok=True)
+    md = ["# Scene za naslovnice (ljudski korak)", "",
+          "Svaki prompt zalijepi u generator slika po izboru (omjer 4:5 za feed, 9:16 za story) i spremi sliku pod navedenim imenom.",
+          f"Mapa: `{sd.relative_to(settings.root)}/`. Zatim pokreni `create` — slajd dobiva scenu, a proizvod ostaje prava fotografija.", ""]
+    for sc in pack["scenes"]:
+        md += [f"## Objava {sc['post']}, slajd {sc['slide']} → `objava_{sc['post']}_slajd_{sc['slide']:02d}.jpg`", "",
+               "```", sc["prompt"], "```", f"*{sc['why']}*", ""]
+    md += ["# Prijedlozi naslova (izbor je ljudska odluka → inputs/fixes_<brend>.json)", ""]
+    for h in pack["headlines"]:
+        md += [f"- **Objava {h['post']}:** " + " · ".join(h["options"]) + f"  \n  *{h['why']}*"]
+    (run.phase_dir(PHASE) / "scene_prompts.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    return pack

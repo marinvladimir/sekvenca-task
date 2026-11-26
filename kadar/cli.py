@@ -140,6 +140,15 @@ def cmd_deliver(a: argparse.Namespace) -> None:
     print(f"KADAR 06 · ISPORUKA → {out['folder']}/README.md ({len(out['files'])} datoteka)")
 
 
+def cmd_scenes(a: argparse.Namespace) -> None:
+    from .phases.p04_izrada import run_creative, scene_dir
+
+    run = Run(a.run)
+    run_creative(run)
+    print(f"Prompti za scene i prijedlozi naslova → {run.phase_dir('04_izrada')}/scene_prompts.md")
+    print(f"Izgenerirane scene spremi u {scene_dir(run)} pa pokreni `create`.")
+
+
 def cmd_approve(a: argparse.Namespace) -> None:
     run = Run(a.run)
     if run.output(a.phase) is None:
@@ -228,6 +237,10 @@ def main(argv=None) -> None:
     s = sub.add_parser("deliver", help="KADAR 06: paket za predaju u isporuka/<run>/")
     s.add_argument("run")
     s.set_defaults(func=cmd_deliver)
+
+    s = sub.add_parser("scenes", help="KADAR 04b: prompti za scene naslovnica + razigraniji naslovi (opcionalno)")
+    s.add_argument("run")
+    s.set_defaults(func=cmd_scenes)
 
     s = sub.add_parser("approve", help="odobri kadar nakon ljudskog pregleda")
     s.add_argument("run")

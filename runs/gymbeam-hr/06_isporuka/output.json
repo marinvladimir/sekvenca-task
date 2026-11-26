@@ -2,10 +2,10 @@
   "folder": "isporuka/gymbeam-hr",
   "posts": 3,
   "usage": {
-    "llm_calls": 17,
-    "llm_minutes": 18.6,
-    "input_tokens": 437964,
-    "output_tokens": 122113
+    "llm_calls": 21,
+    "llm_minutes": 21.1,
+    "input_tokens": 537860,
+    "output_tokens": 137269
   },
   "qa_summary": {
     "pass": 113
@@ -17,6 +17,8 @@
     "dokumenti/provjera.md",
     "dokumenti/provjera_krug1.md",
     "dokumenti/provjera_krug2.md",
+    "dokumenti/provjera_krug3.md",
+    "dokumenti/scene_prompti.md",
     "izvori.md",
     "objava_1/README.md",
     "objava_1/opis.txt",
@@ -54,6 +56,9 @@
     "ulazi/logo.svg",
     "ulazi/proizvodi/01_moimuv-cookie-and-cream-flavour-60-g-gymbeam-2-2_1.png",
     "ulazi/proizvodi/02_vitamin_d3_1000iu_120_caps_gymbeam.png",
-    "ulazi/proizvodi/09_just_whey_salted_caramel_1_kg_gymbeam_1.png"
+    "ulazi/proizvodi/09_just_whey_salted_caramel_1_kg_gymbeam_1.png",
+    "ulazi/scene/objava_1_slajd_01.jpg",
+    "ulazi/scene/objava_2_slajd_01.jpg",
+    "ulazi/scene/objava_3_slajd_01.jpg"
   ]
 }

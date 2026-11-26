@@ -24,5 +24,40 @@
     "original": "svijet proteina",
     "suggestion": "svijet gyma",
     "reason": "Ljudska dorada: \"svijet proteina\" zvuči neprirodno."
+  },
+  {
+    "post": 1,
+    "slide": 1,
+    "original": "Just Whey za *početnike*",
+    "suggestion": "Protein bez *filozofije*",
+    "reason": "Naslov naslovnice: ljudskiji ton (delegirana odluka; prijedlozi iz kadra 04b)."
+  },
+  {
+    "post": 1,
+    "slide": 1,
+    "original": "Whey 101",
+    "suggestion": "Za početnike",
+    "reason": "Kicker usklađen s novim naslovom."
+  },
+  {
+    "post": 2,
+    "slide": 1,
+    "original": "Kriza za *slatkim*?",
+    "suggestion": "Kriza za slatkim? *Opet?*",
+    "reason": "Nastavak njihove serije s malo samoironije."
+  },
+  {
+    "post": 1,
+    "slide": 4,
+    "original": "Šejker, 200–300 ml",
+    "suggestion": "Šejker, 200 do 300 ml",
+    "reason": "Provjera (krug 3): crtica u fontu Anton izgleda kao spojnica; raspon riječima je nedvosmislen."
+  },
+  {
+    "post": 2,
+    "slide": 4,
+    "original": "*na desert*",
+    "suggestion": "*za desert*",
+    "reason": "Provjera (krug 3): uobičajeno je „za desert”."
   }
 ]

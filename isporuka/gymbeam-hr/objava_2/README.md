@@ -16,7 +16,7 @@ IG:04 („Kriza za slatkim“, krem #F3F0EB, ruke i packshot) jedan je od stilov
 ## Opis objave
 
 ```
-Kolači na svakom stolu, a ti imaš plan 😉 MoiMüv pločica u dva okusa: uz kavu, na desertu ili u torbi. Cookies & cream ili krokant-karamel? Napiši u komentar, a pločice pronađi preko poveznice u opisu profila 👇
+Kolači na svakom stolu, a ti imaš plan 😉 MoiMüv pločica u dva okusa – uz kavu, na desertu ili u torbi. Cookies & cream ili krokant-karamel? Napiši u komentaru, a pločice pronađi preko poveznice u opisu profila 👇
 
 Sadrži zaslađivače. Pretjerana konzumacija može imati laksativne učinke. Može sadržavati tragove glutena, jaja, kikirikija, orašastih plodova, sumpornog dioksida i sulfita te sjemenki sezama.
 

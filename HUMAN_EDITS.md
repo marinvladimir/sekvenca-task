@@ -15,3 +15,7 @@ Evidencija svake ljudske odluke koja je promijenila ili nadjačala AI prijedlog 
 | 9 | 05 provjera | AI provjera: "uskladiti narančastu s #DE7419" | Odbačeno: zadržano #FF4500 (ljudska odluka #1); provjera sad dobiva ljudske odluke kao kontekst | Provjera ne smije poništavati svjesne ljudske odluke |
 
 > Dorade #4 i #5 recept primjenjuje sam: unosi s `"phase": "03_plan"` u `inputs/fixes_gymbeam-hr.json` primjenjuju se na plan odmah nakon generiranja, pa ponovno pokretanje daje isti rezultat bez ručnog rada.
+
+| 10 | 04b scene | Naslovnice bez fotografije (samo grafika) | Čovjek je izgenerirao 3 scene iz promptova recepta (`inputs/scenes/`); render umeće pravi packshot i logo | Ocjena: objave su "sigurne", nedostaje fotografija i humor koji su potpis brenda |
+| 11 | 04b naslovi | "Just Whey za početnike", "Kriza za slatkim?" | "Protein bez filozofije", "Kriza za slatkim? Opet?" (izbor delegiran Claudeu uz uputu čovjeka: "više ljudski, manje AI") | Prirodniji, razigraniji ton u duhu brenda |
+| 12 | 04 izrada | Story sa scenom: anketa centrirana preko glavnog motiva (ruka s organizerom) | Na storyjima sa scenom tekst ide na vrh, motiv ostaje vidljiv (pravilo u predlošku) | Vizualni QA čovjeka |

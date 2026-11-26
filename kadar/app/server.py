@@ -170,6 +170,7 @@ def api_run(slug: str):
     notes = settings.inputs_dir / f"plan_notes_{slug}.md"
     data["plan_notes"] = notes.read_text(encoding="utf-8") if notes.exists() else ""
     data["brand"] = _read_json(_brand_dir(run) / "brand.json", {})
+    data["scenes_html"] = _md(run.phase_dir("04_izrada") / "scene_prompts.md")
     create = run.output("04_izrada")
     if create:
         data["posts"] = [{**p, "slajdovi": ["/files/" + str((run.dir / s).relative_to(settings.root)) for s in p["slajdovi"]]}
@@ -290,6 +291,13 @@ def api_fix(slug: str):
         build_gallery(run)
         run_qa(run, with_vision=False)
     return _start(slug, "05_provjera", work)
+
+
+@app.post("/api/scenes/<slug>")
+def api_scenes(slug: str):
+    from ..phases.p04_izrada import run_creative
+    run = Run(slug)
+    return _start(slug, "04_izrada", lambda: run_creative(run))
 
 
 @app.post("/api/approve/<slug>/<phase>")

@@ -4,7 +4,18 @@
 
 Postupak je razložen na **6 kadrova**. Svaki kadar sprema svoj izlaz na disk, a čovjek ga pregleda i odobri prije sljedećeg. Rad se zato može nastaviti od bilo koje spremljene faze.
 
-**Demonstracija:** GymBeam Hrvatska ([@gymbeamhr](https://www.instagram.com/gymbeamhr/)). Gotove objave, izvori i međurezultati nalaze se u [`isporuka/gymbeam-hr/`](isporuka/gymbeam-hr/README.md).
+**Demonstracija:** GymBeam Hrvatska ([@gymbeamhr](https://www.instagram.com/gymbeamhr/)).
+
+## Pregled u 2 minute (bez instalacije)
+
+| Što | Gdje |
+|---|---|
+| **Tri gotove objave** (slajdovi, opisi, cilj, format, obrazloženje) | [`isporuka/gymbeam-hr/`](isporuka/gymbeam-hr/README.md) |
+| **Upute i osvrt** (PDF, 2 str.) | [`Kadar_upute_i_osvrt.pdf`](Kadar_upute_i_osvrt.pdf) |
+| **Recept**: alati, modeli, postavke, ljudske radnje | [`RECEPT.md`](RECEPT.md) |
+| Analiza brenda · plan · provjera kvalitete | [`isporuka/gymbeam-hr/dokumenti/`](isporuka/gymbeam-hr/dokumenti/) |
+| Izvori i ulazne reference | [`isporuka/gymbeam-hr/izvori.md`](isporuka/gymbeam-hr/izvori.md) |
+| Promptovi | [`prompts/`](prompts/) |
 
 ---
 
@@ -71,6 +82,7 @@ $P -m kadar status gymbeam-hr                            # gdje smo / od čega n
 | **01 Brif** | brif (obrazac ili JSON), poveznice proizvoda i IG objava, opcionalno logo i screenshotovi | dohvaća činjenice i slike proizvoda (schema.org), službeni logo (SVG) te javne podatke IG objava (opis, datum, lajkovi, slika) | `01_brif/output.json` |
 | **02 Analiza** | izlaz 01 | bira čisti packshot (odbacuje promo kompozicije), izvlači **dopuštene tvrdnje s doslovnim citatima**, mjeri paletu kodom, analizira ton, publiku, teme, stil i prikaz proizvoda i osoba uz oznake **PROVJERENO / PRETPOSTAVKA / NEDOSTUPNO** | `analiza.md` |
 | **03 Plan** | odobrena analiza + ljudske smjernice | tri objave (cilj, format, koncept, slajdovi iz skupa predložaka, KPI, rizici) i odbačene ideje; kod provjerava da su sve tvrdnje s popisa dopuštenih | `plan.md` |
+| **04b Scene** *(opcionalno)* | plan + analiza | jedan AI poziv: prompti za fotografske ili nadrealne scene naslovnica u stilu brenda i 3 razigrana naslova; čovjek generira scene u alatu po izboru i bira naslov | `scene_prompts.md` → `inputs/scenes/` |
 | **04 Izrada** | odobreni plan | završni tekstovi i opisi (lektura, dosljedno „ti”), zatim **render u pregledniku**: HTML/CSS predložak → PNG 1080×1350 / 1080×1920 | `objava_N/slajd_XX.png`, `opis.txt` |
 | **05 Provjera** | gotove objave | **~140 provjera**: kod (dimenzije, preljev teksta, sigurna zona storyja, zabranjene tvrdnje, brojke prisutne u izvoru, obavezna upozorenja, obraćanje…) i AI vizija (proizvod vs referenca, logo, čitljivost, jezik, ton, CTA). Petlja dorade primjenjuje ispravke. | `provjera.md` |
 | **06 Isporuka** | odobreni kadrovi | slaže objave, izvore, ulaze i dokumente za predaju | `isporuka/<brend>/` |
@@ -85,6 +97,18 @@ Sve međurezultate sprema `runs/<brend>/<kadar>/` (`output.json`, `meta.json`, `
 - **Činjenice samo iz izvora.** Svaka tvrdnja ima doslovni citat i oznaku smije li u objavu (EU Uredba 1924/2006 za zdravstvene tvrdnje). Cijene, akcije i ocjene se ne koriste jer su promjenjive.
 - **Model bira samo iz zadanih okvira.** Plan bira između 10 rasporeda koje renderer zna nacrtati, a izrada mijenja samo tekst, dok raspored, pozadinu i proizvod preuzima iz plana.
 - **Čovjek odlučuje na svakom kadru.** Ljudske odluke (boje, obraćanje, smjernice, ispravci) spremaju se u `inputs/` i ulaze u prompt. Evidencija je u [`HUMAN_EDITS.md`](HUMAN_EDITS.md).
+
+## Arhitektura i širenje
+
+Kadar je složen kao proizvod, ne kao jednokratna skripta:
+
+- **Faze kao stroj stanja na disku** (`kadar/state.py`): svaki kadar ima izlaz, status i odobrenje; može se nastaviti, ponoviti ili pokrenuti iz aplikacije, CLI-ja ili agenta.
+- **Zamjenjivi AI backend** (`kadar/llm.py`): Claude Code ili Claude API, isti promptovi i sheme. Novi pružatelj je jedna funkcija.
+- **Neovisno o brendu:** brend je samo ulaz (`inputs/<brend>/`: brif, logo, boje, scene, ispravci). Scraper čita standardni schema.org (Magento, Shopify, WooCommerce).
+- **Rasporedi kao predlošci** (`kadar/render/templates/`): novi format objave je novi raspored u predlošku; plan ga automatski smije koristiti.
+- **API poslužitelj** (`kadar/app/server.py`): sučelje je tanak klijent nad REST API-jem.
+
+Put do SaaS-a (nije implementirano): pohrana runova u bazu i objektni spremnik umjesto diska, red poslova (npr. Celery ili RQ) umjesto niti, prijava i više klijenata, pružatelj slika za automatske scene, uvoz metrika iz Instagram Insightsa za petlju učenja (vidi PDF, odjeljak 9).
 
 ## Što može varirati pri ponavljanju
 

@@ -10,7 +10,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -64,7 +64,8 @@ def clean_slide(s: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def render_post(slides: List[Dict[str, Any]], story: bool, out_dir: Path, run_dir: Path,
-                product_images: Dict[str, Path], logo_dark: Path, logo_white: Path) -> List[Path]:
+                product_images: Dict[str, Path], logo_dark: Path, logo_white: Path,
+                scenes: Optional[Dict[int, Path]] = None) -> List[Path]:
     from playwright.sync_api import sync_playwright
 
     cfg = brand_config(run_dir)
@@ -86,11 +87,15 @@ def render_post(slides: List[Dict[str, Any]], story: bool, out_dir: Path, run_di
             s["bullets"] = [b.strip(" •-") for b in re.split(r"\s*[•;]\s*|\n", body) if b.strip(" •-")] \
                 if s["layout"] == "proizvod" and ("•" in body or ";" in body or "\n" in body) else []
             img = product_images.get(s.get("product") or "")
+            scene = (scenes or {}).get(idx)
+            if scene:
+                s["background"] = "scena"
             html = tmpl.render(
                 s=s, idx=idx, total=len(slides), story=story, W=W, H=H, c=cfg["colors"],
                 fonts=(HERE / "fonts").as_uri(), logo_dark=logo_dark.as_uri(), logo_white=logo_white.as_uri(),
                 product_img=img.as_uri() if img else None, handle=cfg.get("handle", ""),
                 link_label=cfg.get("link_label", ""), source=s.get("source", ""),
+                scene=scene.resolve().as_uri() if scene else None,
             )
             html_path = out_dir / f"_slajd_{idx:02d}.html"
             html_path.write_text(html, encoding="utf-8")

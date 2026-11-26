@@ -7,8 +7,8 @@
     "H": 1350,
     "overflow_v": false,
     "overflow_h": false,
-    "headline_px": 88,
-    "text_top": 768,
+    "headline_px": 80,
+    "text_top": 787,
     "text_bottom": 1211,
     "logo_ok": true,
     "product_ok": true
@@ -50,8 +50,8 @@
     "overflow_v": false,
     "overflow_h": false,
     "headline_px": 104,
-    "text_top": 407,
-    "text_bottom": 940,
+    "text_top": 346,
+    "text_bottom": 1001,
     "logo_ok": true,
     "product_ok": null
   },

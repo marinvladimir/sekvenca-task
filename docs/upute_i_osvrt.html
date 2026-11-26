@@ -36,18 +36,19 @@ th { background: #F3F0EB; }
 <tr><td>01 Brif</td><td>brif, poveznice</td><td>dohvaća činjenice i slike proizvoda (schema.org), službeni logo (SVG), javne podatke 12 IG objava</td><td>ulazi + registar izvora S1…</td></tr>
 <tr><td>02 Analiza</td><td>izlaz 01</td><td>bira čisti packshot, izvlači 70+ dopuštenih tvrdnji s doslovnim citatima, mjeri paletu kodom, analizira ton, publiku, teme i stil uz oznake <i>provjereno / pretpostavka / nedostupno</i></td><td><code>analiza.md</code></td></tr>
 <tr><td>03 Plan</td><td>analiza + ljudske smjernice</td><td>3 objave (cilj, format, koncept, slajdovi iz 10 predložaka, KPI, rizici) i odbačene ideje; kod provjerava tvrdnje</td><td><code>plan.md</code></td></tr>
-<tr><td>04 Izrada</td><td>odobreni plan</td><td>završni tekstovi (lektura, „ti”), render HTML/CSS → PNG 1080×1350 / 1080×1920</td><td>18 slajdova + opisi</td></tr>
+<tr><td>04 Izrada</td><td>odobreni plan</td><td>završni tekstovi (lektura, „ti”), render HTML/CSS → PNG 1080×1350 / 1080×1920; opcionalno 04b: prompti za fotografske scene naslovnica i razigraniji naslovi</td><td>18 slajdova + opisi</td></tr>
 <tr><td>05 Provjera</td><td>objave</td><td>143 provjere (kod + AI vizija) i petlja dorade (<code>fix</code>)</td><td><code>provjera.md</code></td></tr>
 <tr><td>06 Isporuka</td><td>odobreno</td><td>paket objava, izvora, ulaza i dokumenata</td><td><code>isporuka/gymbeam-hr/</code></td></tr>
 </table>
 
 <h2>3. Brend i tri objave</h2>
 <p><span class="k">Zašto GymBeam HR:</span> preporučeni brend iz zadatka s prepoznatljivim identitetom (narančasta, packshotovi, udarni naslovi), bogatim strukturiranim podacima na webshopu i osjetljivom kategorijom dodataka prehrani, na kojoj se vidi drži li se recept samo dopuštenih tvrdnji. Prosinac donosi i sezonski kontekst.</p>
-<p><span class="k">1 · Karusel (7)</span> „Just Whey za početnike”, cilj spremanja. <span class="k">2 · Karusel (6)</span> „Kriza za slatkim: prosinac” (MoiMüv), cilj interes za kupnju. <span class="k">3 · Niz storyja (5)</span> „D3 kviz”, cilj reakcije. Analiza je pokazala da na profilu nema edukativnih karusela i da tri izabrana proizvoda nemaju vlastitu objavu. Objava 2 nastavlja njihov format „Kriza za slatkim”, a objava 3 zamjenjuje pitanja u opisima, koja nisu dobivala komentare.</p>
+<p><span class="k">1 · Karusel (7)</span> „Protein bez filozofije” (Just Whey za početnike), cilj spremanja. <span class="k">2 · Karusel (6)</span> „Kriza za slatkim? Opet?” (MoiMüv), cilj interes za kupnju. <span class="k">3 · Niz storyja (5)</span> „D3 kviz”, cilj reakcije. Analiza je pokazala da na profilu nema edukativnih karusela i da tri izabrana proizvoda nemaju vlastitu objavu. Objava 2 nastavlja njihov format „Kriza za slatkim”, a objava 3 zamjenjuje pitanja u opisima, koja nisu dobivala komentare.</p>
 
 <h2>4. Ključne odluke</h2>
 <ul>
 <li><span class="k">Proizvod se ne generira.</span> Modeli za slike izobliče etikete i logo, pa se koriste stvarni packshotovi i službeni SVG logo, a dizajn i tekst renderira preglednik (točni č, ć, ž, š, đ). Prva slika u galeriji webshopa bila je promo kompozicija s čarapama; recept je odbacuje i bira čisti packshot varijante.</li>
+<li><span class="k">Fotografija bez rizika za proizvod.</span> Naslovnice imaju fotografske scene u stilu brenda (food, minimalizam s rukama, topli kućni kadar): recept piše prompte bez proizvoda i logotipa, čovjek generira scenu u alatu po izboru, a render preko nje umeće pravi packshot i logo.</li>
 <li><span class="k">Činjenice samo iz izvora.</span> Svaka tvrdnja ima citat i oznaku smije li u objavu (EU 1924/2006). Uhvaćene su i nedosljednosti samog izvora (22 / 22,5 / 22,8 g proteina), pa se koristi konzervativna vrijednost. Cijene i ocjene se ne koriste jer su promjenjive.</li>
 <li><span class="k">Model bira samo iz zadanih okvira.</span> Plan bira raspored iz skupa koji renderer zna nacrtati, a izrada mijenja samo tekst. Promptovi su zasebne datoteke u <code>prompts/</code>.</li>
 <li><span class="k">Bez dodatnog troška.</span> Zadani backend je Claude Code CLI s postojećom pretplatom; API je opcija.</li>
@@ -59,12 +60,13 @@ th { background: #F3F0EB; }
 <tr><td>Kalibracija (kod)</td><td>113</td><td>107</td><td>1</td><td>5</td><td>4 lažne uzbune testa ispravljene, 1 stvarna (premalen naslov)</td></tr>
 <tr><td>Krug 1 (kod + AI vizija)</td><td>143</td><td>130</td><td>13</td><td>0</td><td>8 ispravljeno, 2 odbačene s razlogom, 1 opcionalna</td></tr>
 <tr><td>Krug 2</td><td>143</td><td>135</td><td>8</td><td>0</td><td>uhvaćena i regresija iz kruga 1</td></tr>
+<tr><td>Krug 3 (sa scenama)</td><td>143</td><td>134</td><td>9</td><td>0</td><td>proizvod na scenama točan; 5 jezičnih sitnica ispravljeno</td></tr>
 <tr><td>Završno (kod)</td><td>113</td><td>113</td><td>0</td><td>0</td><td>—</td></tr>
 </table>
 <p>Primjeri: „u biu” → „u opisu profila”, kicker „Blagdansko izdanje” sugerirao je proizvod koji ne postoji, odgovor na kviz nije bio vidljiv, kvačice na Š i Č preklapale su se s retkom iznad. Odbačeno: prijedlog da se boja vrati na #DE7419, jer je to svjesna ljudska odluka; provjera od tada dobiva ljudske odluke kao kontekst.</p>
 
 <h2>6. Ljudski doprinos i primjer dorade</h2>
-<p>Ljudski dio rada: odluke o brendu (obraćanje „ti”, službena narančasta #FF4500 umjesto boje izmjerene iz prigušenih fotografija), lektura i ton tekstova, vizualni QA slajdova i aplikacije te završni QA. Sve je evidentirano u <code>HUMAN_EDITS.md</code> i <code>inputs/</code>.</p>
+<p>Ljudski dio rada: generiranje scena naslovnica, odluke o brendu (obraćanje „ti”, službena narančasta #FF4500 umjesto boje izmjerene iz prigušenih fotografija), lektura i ton tekstova, vizualni QA slajdova i aplikacije te završni QA. Sve je evidentirano u <code>HUMAN_EDITS.md</code> i <code>inputs/</code>.</p>
 <div class="box"><span class="k">Konkretan primjer (vizualni QA):</span> u prvom renderu veliki naslovi u fontu Anton preklapali su se s retkom ispod: kvačice na Č, Š i Ž dodirivale su prethodni redak, a golema brojka „22 g” naslov. AI je tekst ocijenio ispravnim; problem je uočio čovjek pregledom slajdova. Dorada: veći prored naslova, manje najveće veličine naslova i brojki, nedjeljivi razmaci (broj + jedinica, kratke riječi), a kasnije i automatska provjera preljeva i veličine naslova u kadru 05, da se greška ne ponovi.</div>
 
 <h2>7. Ograničenja</h2>
@@ -75,7 +77,7 @@ th { background: #F3F0EB; }
 </ul>
 
 <h2>8. Utrošeno vrijeme</h2>
-<p>Aktivni ljudski rad ≈ <span class="k">40 min</span> (odluke, Instagram ulazi, pregledi, QA). Rad AI agenta na izradi recepta i čekanje ≈ <span class="k">1 h 35 min</span>. Čisto generiranje unutar recepta: <span class="k">17 AI poziva, ≈ 19 min</span> (≈ 440k ulaznih i 120k izlaznih tokena). Detalji su u <code>TIMELOG.md</code> i <code>runs/…/calls.jsonl</code>.</p>
+<p>Aktivni ljudski rad ≈ <span class="k">55 min</span> (odluke, Instagram ulazi, scene, pregledi, QA). Rad AI agenta na izradi recepta i čekanje ≈ <span class="k">2 h</span>. Čisto generiranje unutar recepta: <span class="k">21 AI poziv, ≈ 21 min</span>. Detalji su u <code>TIMELOG.md</code> i <code>runs/…/calls.jsonl</code>.</p>
 
 <h2>9. Prijedlog unapređenja: učenje iz komentara, odobrenja i rezultata</h2>
 <ul>

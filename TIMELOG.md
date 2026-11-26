@@ -12,4 +12,5 @@
 | 2026-11-26 | 11:20–11:30 | 5 | 10 | Kritika dizajna aplikacije (redizajn s vlastitim assetima), zahtjev za QA testom; kadar 05 (143 provjere), petlja dorade, krug 2 |
 | 2026-11-26 | 11:30–11:55 | 2 | 23 | setup.sh, kadar 06 isporuka, gumbi u aplikaciji |
 | 2026-11-26 | 14:20–14:35 | 2 | 13 | README, RECEPT.md, /kadar za Claude Code, PDF |
-| | **Ukupno** | **39** | **96** | |
+| 2026-11-26 | 14:35–15:00 | 15 | 25 | Provjera Sekvence, kreativni sloj (scene + naslovi), generiranje 3 scene (čovjek), krug 3 provjere, isporuka, PDF |
+| | **Ukupno** | **54** | **121** | |

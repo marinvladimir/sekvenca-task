@@ -217,3 +217,24 @@ class VisionReview(BaseModel):
     findings: List[VisionFinding] = Field(description="točno jedan nalaz za svaku od 10 provjera")
     language_fixes: List[LanguageFix]
     overall: str
+
+
+# ---- kreativni sloj: scene za naslovnice (faza 04, opcionalno) -------------------
+
+class ScenePrompt(BaseModel):
+    post: int
+    slide: int
+    prompt: str = Field(description="prompt za generator slika na engleskom; scena BEZ proizvoda, logotipa i teksta; slobodan prostor desno-dolje za karticu s proizvodom")
+    why: str = Field(description="koji stil brenda iz analize scena nastavlja (s oznakom IG objave)")
+
+
+class HeadlineOptions(BaseModel):
+    post: int
+    slide: int
+    options: List[str] = Field(description="3 razigrana naslova u tonu brenda (pop-kultura, humor), s *naglaskom*; bez novih tvrdnji")
+    why: str
+
+
+class CreativePack(BaseModel):
+    scenes: List[ScenePrompt]
+    headlines: List[HeadlineOptions]
