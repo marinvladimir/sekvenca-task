@@ -1,0 +1,555 @@
+{
+  "summary": "GymBeam HR (@gymbeamhr, 7.817 objava, 42,2 tis. pratitelja, bio „Fitness, lifestyle i prehrana“) objavljuje na Instagramu mješavinu promocija, GymBeam odjeće i šaljivih objava s proizvodima koje parodiraju pop-kulturu: horoskop, Victoria's Secret anđeoska krila, beauty brendovi, kamen-škare-papir. Format kojim se brend prepoznaje su karuseli i reelsi. Vizualno se oslanjaju na narančastu boju (#DE7419) kao akcent u naslovima, packshotove GymBeam pakiranja i kratke udarne naslove. Naslovi su ili u zbijenom debelom groteskom pismu („ŽELITE OVO?“, „Horoskopski znakovi kao GymBeam proizvodi“) ili u širokom verzalu („BLACK FRIDAY“). Uz to se izmjenjuju tri vrste fotografije: lifestyle s mladim ženama u GymBeam odjeći, studijske snimke na neutralnoj sivoj ili toploj bijeloj pozadini te stilizirana food fotografija. U opisima prevladava obraćanje s „vi“ („Listajte“, „Pošaljite“, „Ne propustite“), a brif traži „ti“. Uobičajena su 1–3 emojija (najčešće 💪 i 👇), pitanje publici i promo kod. Na vidljivim objavama nema edukativnih karusela koji bi se spremali, a nijedan od tri proizvoda iz brifa nije vidljivo predstavljen u vlastitoj objavi. Just Whey se uopće ne pojavljuje, a Vitamin D3 se spominje samo u opisu Black Friday reela. Zato su edukacija za početnike, dosljedan ton s „ti“ i interaktivni storyji glavne prilike. Saves, doseg i storyji nisu dostupni.",
+  "audience": "Prema brifu publiku čine rekreativci i ljudi koji redovito treniraju, od oko 18 do 40 godina, u Hrvatskoj. Dio njih tek ulazi u svijet suplemenata. Vidljivi sadržaj više cilja žene: hashtag #gbwomen, kolekcije odjeće COSMO i PACE, influencerice @zanamari i djevojka s pločicom u IG:08, reference na Fenty, Huda Beauty i Victoria's Secret. Manji dio sadržaja cilja muškarce koji treniraju snagu (IG:07, bench press s Thor kantama). Iz tona i referenci zaključujemo da je jezgra publike vjerojatno 20–35 godina, sklona trendovima i popustima (PRETPOSTAVKA). Demografija pratitelja nije dostupna.",
+  "findings": [
+    {
+      "topic": "ton",
+      "statement": "Ton je razigran, pomalo drzak i pun aluzija na pop-kulturu: „Neki imaju pistu, a naša su krila za teretanu“, „Uppsss... i mi isto?“, „Pošaljite osobi koju smo pogodili“, „Znamo što uvijek pobjeđuje!“. Šala gotovo uvijek nosi sam proizvod, a ne poruku o treningu.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:02.png",
+        "IG:03.png",
+        "IG:04.png",
+        "IG:Dd3fuVAD5xS",
+        "S7",
+        "S8",
+        "S9",
+        "S12"
+      ]
+    },
+    {
+      "topic": "ton",
+      "statement": "U opisima objava brend se većinom obraća s „vi“: „Želite ovo?“, „Listajte, izaberite“, „Pošaljite osobi“, „Ne propustite Black Friday“, „Uvedite vitamine“, „Otkrijte“, a u biu „Pratite“. „Ti“ se pojavljuje samo na grafikama i kod influencerica: „PRONAĐI SVOJ ZNAK →“ na IG:02, „Postani GymBeam queen“ u IG:05. Brif traži „ti“, pa to odstupa od trenutne prakse.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:00_profil.png",
+        "IG:01.png",
+        "IG:02.png",
+        "IG:05.png",
+        "IG:07.png",
+        "IG:DgE5xBrHI5Z",
+        "S6",
+        "S7",
+        "S11",
+        "S13"
+      ]
+    },
+    {
+      "topic": "ton",
+      "statement": "Kod wellness proizvoda ton postaje svečaniji i više „premium“: „🍯 Nije samo med. Nešto izvanredno.“, „100 % novozelandski med. Ništa drugo.“. Tvrdnje se ondje iznose samouvjereno („prirodnim antibakterijskim djelovanjem“), što bi kod novih objava trebalo držati unutar službenih formulacija.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:Df67H0Sn600",
+        "S14"
+      ]
+    },
+    {
+      "topic": "publika",
+      "statement": "Ženska publika je naglašena: hashtagovi #gbwomen i #cosmo, kolekcije odjeće, beauty reference (#fenty, #hudabeauty) i žene kao glavni likovi u većini objava s ljudima (IG:05, IG:06, IG:08, IG:DePUSA1DjlP i pločice u mreži profila).",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:00_profil.png",
+        "IG:03.png",
+        "IG:05.png",
+        "IG:06.png",
+        "IG:08.png",
+        "IG:DePUSA1DjlP",
+        "IG:Dd3fuVAD5xS"
+      ]
+    },
+    {
+      "topic": "publika",
+      "statement": "Dob jezgre publike vjerojatno je 20–35 godina, a brend pretpostavlja da prepoznaje trendove (Victoria's Secret, Fenty, horoskop) i reagira na promo kodove. To je zaključak iz referenci i tona, a ne iz podataka.",
+      "status": "PRETPOSTAVKA",
+      "evidence": [
+        "IG:02.png",
+        "IG:03.png",
+        "IG:Dd3fuVAD5xS"
+      ]
+    },
+    {
+      "topic": "publika",
+      "statement": "Demografija pratitelja (dob, spol, lokacija) nije dostupna.",
+      "status": "NEDOSTUPNO",
+      "evidence": []
+    },
+    {
+      "topic": "teme",
+      "statement": "Glavne teme na vidljivim objavama su: promocije (Black Friday, besplatna BOX NOW dostava, kodovi FOOD10 i ZANAMARI5), kolekcije odjeće (COSMO, PACE), fit hrana i recepti (PB&J sendvič, pločice), parodije pop-kulture s proizvodima te wellness proizvodi (vitamini, manuka med).",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:01.png",
+        "IG:02.png",
+        "IG:03.png",
+        "IG:04.png",
+        "IG:05.png",
+        "IG:06.png",
+        "IG:07.png",
+        "IG:08.png",
+        "IG:DgE5xBrHI5Z",
+        "IG:Df67H0Sn600"
+      ]
+    },
+    {
+      "topic": "teme",
+      "statement": "Blagdanska sezona je već započela. U mreži profila je reel s adventskim kalendarom „MERRY FITMAS“ i natpisom „JINGLE ALL THE WHEY“. U IG:08 logo GymBeam nosi Djed Božićnjakovu kapu, a opis kaže „Blagdani su pred vratima… opremite se na vrijeme! 🎄“.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:00_profil.png",
+        "IG:08.png",
+        "S17"
+      ]
+    },
+    {
+      "topic": "teme",
+      "statement": "Na vidljivim objavama nema edukativnog sadržaja u obliku objašnjenja, npr. što je whey, kako ga pomiješati, čemu služi vitamin D ili mitova i činjenica. Postoji highlight „Članci“, ali njegov sadržaj nije vidljiv.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:00_profil.png",
+        "IG:01.png",
+        "IG:02.png",
+        "IG:03.png",
+        "IG:04.png",
+        "IG:06.png",
+        "IG:07.png",
+        "IG:08.png"
+      ]
+    },
+    {
+      "topic": "teme",
+      "statement": "Nijedan od tri proizvoda iz brifa nema vlastitu objavu na vidljivim objavama. Just Whey se ne pojavljuje nigdje. Vitamin D3 se spominje samo u opisu Black Friday reela („Vitamin C, D3, cink…“), a naslovna slika tog reela prikazuje Vitamin C, Yummies i Probiotics Lactospore. Registar izvora IG:04 opisuje kao MoiMüv pločicu, ali na samom pakiranju vidi se „GymBeam 20g PROTEIN BAR … CHOCOLATE-CARAMEL“ bez imena MoiMüv. MoiMüv je vidljiv samo kao proteinski keks i namaz u IG:02.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:02.png",
+        "IG:04.png",
+        "IG:DgE5xBrHI5Z",
+        "S9",
+        "S13"
+      ]
+    },
+    {
+      "topic": "stil",
+      "statement": "U objavama se izmjenjuju četiri prepoznatljiva vizualna stila: (1) grafički poster s crnom mrežastom pozadinom, krem okvirom, packshotovima na bijelim nakrivljenim kvadratima i oznakom „01 / 13“ (IG:02); (2) nadrealni kompoziti, npr. vrećica kreatina s pernatim anđeoskim krilima na modnoj pisti ili narančasti sjajni gel-oblici iznad prozirne posude na svijetlosivoj pozadini (IG:03, IG:Dd3fuVAD5xS); (3) minimalizam na toploj bijeloj pozadini sa stvarnim rukama koje igraju kamen-škare-papir (IG:04); (4) editorijalna ili lifestyle fotografija ljudi (IG:05–IG:08).",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:02.png",
+        "IG:03.png",
+        "IG:04.png",
+        "IG:Dd3fuVAD5xS",
+        "IG:05.png",
+        "IG:06.png",
+        "IG:07.png",
+        "IG:08.png"
+      ]
+    },
+    {
+      "topic": "stil",
+      "statement": "Food objave koriste zasićenu studijsku fotografiju s visokim slaganjem hrane na jednobojnoj ružičastoj pozadini (toranj PB&J sendviča). Packshotovi su izrezani kao naljepnice s bijelim rubom i nakrivljeni, a kod je na „poštanskoj markici“ s nazubljenim rubom: „ZGRABITE SASTOJKE UZ KOD FOOD10“.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:01.png"
+      ]
+    },
+    {
+      "topic": "boje",
+      "statement": "Narančasta #DE7419 je zaštitni akcent. Pojavljuje se u naslovima („GymBeam proizvodi“ na IG:02, „BLACK“ u „BLACK FRIDAY“ na IG:07), na pakiranjima (Creatine, Protein Bar, shaker, kutija za tablete) i u logu. Udio te boje u pikselima je mali (1,8 %), a prevladavaju bijela (#FFFFFF, 26,6 %), hladne sive (#C1C0C5, #59565A) i skoro crna (#171617).",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:02.png",
+        "IG:03.png",
+        "IG:04.png",
+        "IG:07.png",
+        "IG:DgE5xBrHI5Z"
+      ]
+    },
+    {
+      "topic": "boje",
+      "statement": "Topli neutralni tonovi (#F3F0EB, #A98E79, #694F48) dolaze iz pozadina i hrane: krem pozadina IG:04, kikiriki maslac i čokolada, drveni stolovi u kuhinjskim kadrovima (IG:01, IG:08, reel s vitaminima).",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:01.png",
+        "IG:04.png",
+        "IG:08.png",
+        "IG:DgE5xBrHI5Z"
+      ]
+    },
+    {
+      "topic": "boje",
+      "statement": "Na IG:01 je pozadina pastelno ružičasta, a u PACE kolekciji (IG:06) pojavljuje se neonska limeta. Te boje nisu u izmjerenoj paleti, pa su to sekundarne boje vezane uz pojedine kampanje.",
+      "status": "PRETPOSTAVKA",
+      "evidence": [
+        "IG:01.png",
+        "IG:06.png"
+      ]
+    },
+    {
+      "topic": "prikaz_proizvoda",
+      "statement": "Proizvodi se prikazuju na pet načina: (a) packshot kao naljepnica s bijelim rubom uz hranu (IG:01); (b) packshot na bijelom kvadratu na crnoj mreži (IG:02); (c) proizvod kao „glavni lik“ u nadrealnoj sceni s krilima na pisti (IG:03); (d) proizvod koji lebdi iznad stvarnih ruku na krem pozadini (IG:04); (e) proizvod u kontekstu: kolica puna Thor kanti i Protein Purebar pločica pored bench pressa (IG:07), pločica u ruci i na stolu (IG:08), bočice na drvenom stolu (reel s vitaminima), staklenka manuka meda na reflektirajućoj površini s narančastim pozadinskim svjetlom (IG:Df67H0Sn600). Pakiranje je uvijek prikazano čitljivo i s logom okrenutim prema kameri.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:01.png",
+        "IG:02.png",
+        "IG:03.png",
+        "IG:04.png",
+        "IG:07.png",
+        "IG:08.png",
+        "IG:DgE5xBrHI5Z",
+        "IG:Df67H0Sn600"
+      ]
+    },
+    {
+      "topic": "prikaz_osoba",
+      "statement": "Osobe su uglavnom mlade, vitke ili mišićave žene u GymBeam odjeći. Snimljene su u editorijalnim pozama: pozirajuća influencerica naslonjena na auto u sumrak (IG:05), sportašica s motion blurom i bljeskalicom (IG:06), model na ružičastoj prostirci s ružičastim rekvizitima na svijetlosivoj pozadini (IG:DePUSA1DjlP). Kućni kadrovi su opušteni: djevojka u kuhinji namiguje i grize pločicu (IG:08), ženska ruka slaže vitamine u narančastu kutijicu (reel). Muškarci se vide kod treninga snage: znojan, nasmijan par uz bench press (IG:07).",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:05.png",
+        "IG:06.png",
+        "IG:07.png",
+        "IG:08.png",
+        "IG:DePUSA1DjlP",
+        "IG:DgE5xBrHI5Z"
+      ]
+    },
+    {
+      "topic": "formati",
+      "statement": "Prevladavaju karuseli: IG:01 ima 5 slajdova, IG:02 ih ima 13, IG:03–IG:05 po 5, IG:06 7, IG:07 3. Uz to idu reelsi (vitamini, manuka, COSMO, adventski kalendar u mreži) i pojedinačne slike (IG:08). Reelsi koriste tekst preko slike u bijelom bold pismu, npr. „Spakirajte sa mnom moje dnevne vitamine.“ ili „i ništa“, gdje se riječi izmjenjuju jedna po jedna.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:00_profil.png",
+        "IG:01.png",
+        "IG:02.png",
+        "IG:03.png",
+        "IG:06.png",
+        "IG:07.png",
+        "IG:08.png",
+        "IG:DgE5xBrHI5Z",
+        "IG:Df67H0Sn600"
+      ]
+    },
+    {
+      "topic": "formati",
+      "statement": "Highlights su crni krugovi s bijelim linijskim ikonama: Zajednica, Novosti, Članci, Recepti, Outfiti, GymBeam A…, YouTube. Aktivni storyji i sadržaj highlighta nisu vidljivi.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:00_profil.png"
+      ]
+    },
+    {
+      "topic": "formati",
+      "statement": "Vidi se samo prvi slajd svakog karusela i naslovna slika svakog reela. Ostali slajdovi (npr. 12 horoskopskih znakova i recepti iz IG:01) i sam sadržaj videa nisu dostupni.",
+      "status": "NEDOSTUPNO",
+      "evidence": []
+    },
+    {
+      "topic": "copy",
+      "statement": "Naslovi na grafikama su kratki i udarni: „ŽELITE OVO?“ (zbijeni debeli verzal, narančasta s crveno-smeđim obrubom), „BLACK FRIDAY“ (široki debeli verzal, BLACK narančasto, FRIDAY bijelo), „Kriza za slatkim“ (geometrijski bold sans u tamnosivoj). Tu su i podnaslov u kurzivnom serifu „Ista teretana. Dvanaest različitih energija.“ te sitne razmaknute verzalne etikete „HOROSKOPSKO IZDANJE“ i „PRONAĐI SVOJ ZNAK →“.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:01.png",
+        "IG:02.png",
+        "IG:04.png",
+        "IG:07.png"
+      ]
+    },
+    {
+      "topic": "copy",
+      "statement": "Opisi su kratki, od 1 do 4 rečenice. Struktura je obično: promo informacija ili šala, zatim pitanje ili poziv na akciju, zatim 3–5 hashtagova, uvijek #gymbeamhr i/ili #gbig. Ima 1–3 emojija, najčešće 💪, 👇, ✨ i 🛒. Vidljive su i tipfeleri: „naša su krila su“ (IG:03) i „stogs“ (IG:08).",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:01.png",
+        "IG:02.png",
+        "IG:03.png",
+        "IG:04.png",
+        "IG:07.png",
+        "IG:08.png",
+        "S8",
+        "S17"
+      ]
+    },
+    {
+      "topic": "angažman",
+      "statement": "Vidljivi lajkovi na screenshotovima: IG:01 116, IG:02 35, IG:03 69, IG:04 64, IG:06 75, IG:07 11 (sat vremena nakon objave), IG:08 24. Collab s @zanamari (IG:05) ima 3.177 lajkova i, prema dohvaćenim podacima, 57 komentara, ali je komentiranje ograničeno. Reelsi imaju 5–28 lajkova. Najviše lajkova kod vlastitih objava skupljaju recept s kodom (IG:01) i odjeća ili lifestyle (IG:06).",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:01.png",
+        "IG:02.png",
+        "IG:03.png",
+        "IG:04.png",
+        "IG:05.png",
+        "IG:06.png",
+        "IG:07.png",
+        "IG:08.png",
+        "S10",
+        "S13",
+        "S14",
+        "S15"
+      ]
+    },
+    {
+      "topic": "angažman",
+      "statement": "Pitanja publici („Koji recept pripremate prvi? 1️⃣ 2️⃣ ili 3️⃣ 👇“, „Koji GymBeam „Anđeo“ danas ide s vama na trening? 👇“) prema dohvaćenim podacima imaju 0 komentara. Kod IG:01 se brojka lajkova razlikuje: na screenshotu je 116, a u dohvaćenim podacima 38.",
+      "status": "PROVJERENO",
+      "evidence": [
+        "IG:01.png",
+        "IG:03.png",
+        "S6",
+        "S8"
+      ]
+    },
+    {
+      "topic": "angažman",
+      "statement": "Spremanja (saves), dijeljenja, doseg, reakcije i odgovori na storyje te metrike reelsa (pregledi) nisu dostupni.",
+      "status": "NEDOSTUPNO",
+      "evidence": []
+    }
+  ],
+  "voice": {
+    "tone_words": [
+      "razigran",
+      "drzak",
+      "pop-kulturni",
+      "promotivan",
+      "kratak i udaran",
+      "samouvjeren"
+    ],
+    "address": "mješovito",
+    "emoji_usage": "Umjereno, 1–3 emojija po opisu, obično na kraju rečenice. Najčešći su 💪 (snaga, motivacija) i 👇 (uz pitanje publici). Uz promo idu 🛒💸 / 🚚📦, uz blagdane 🎄✨, uz wellness 🍯🌿🛡️, uz odjeću ⚡🤎, a uz šalu 😉😎.",
+    "hashtags_seen": [
+      "#gymbeamhr",
+      "#gbig",
+      "#gbfit",
+      "#gbhealthy",
+      "#gbwomen",
+      "#gbnutrition",
+      "#zdravahrana",
+      "#recepti",
+      "#blackfriday",
+      "#boxnow",
+      "#runningcollection",
+      "#pace",
+      "#cosmo",
+      "#novakolekcija",
+      "#mgo",
+      "#manukahoney",
+      "#fenty",
+      "#hudabeauty"
+    ],
+    "cta_patterns": [
+      "Pitanje s izborom brojeva: „Koji recept pripremate prvi? 1️⃣ 2️⃣ ili 3️⃣ 👇“",
+      "Tagiranje ili slanje prijatelju: „Pošaljite osobi koju smo pogodili.“",
+      "Pitanje uz proizvod: „Koji GymBeam „Anđeo“ danas ide s vama na trening? 👇“",
+      "Promo kod na grafici: „ZGRABITE SASTOJKE UZ KOD FOOD10“ / „Kod FOOD10 = 10% popusta…“",
+      "Hitnost: „Ne propustite Black Friday u GymBeamu!“, „opremite se na vrijeme!“",
+      "Usmjeravanje na link: „🛒 Obnovite zalihe ovog Black Fridaya, poveznica u opisu profila“",
+      "Navigacija kroz karusel: „Listajte, izaberite svoje favorite“, „PRONAĐI SVOJ ZNAK →“"
+    ],
+    "do": [
+      "Otvoriti kratkim udarnim naslovom od 2–4 riječi u debelom zbijenom ili širokom verzalu, s jednom riječi u narančastoj (#DE7419).",
+      "Proizvod staviti u središte šale ili trenda, kao u horoskopu, anđeoskim krilima ili kamen-škare-papir, ali pakiranje mora ostati čitljivo i logo točan.",
+      "Opis držati na 1–4 rečenice i završiti jednostavnim pitanjem ili izborom (1️⃣/2️⃣/3️⃣) uz 👇.",
+      "Uvijek dodati #gymbeamhr i #gbig, te tematski hashtag (#gbfit, #gbhealthy, #gbwomen, #gbnutrition).",
+      "Prema brifu dosljedno koristiti „ti“ („Listaj“, „Spremi“, „Pronađi svoj…“), jer na grafici „PRONAĐI SVOJ ZNAK →“ već tako radi.",
+      "Brojke preuzimati doslovno sa službene stranice, npr. „najmanje 22 g bjelančevina u dozi od 30 g“ (S1) ili „1000 IU, odnosno 25 μg“ (S2).",
+      "Uključiti zimski i blagdanski kontekst („Merry Fitmas“, blagdanski pokloni), kao što brend već radi."
+    ],
+    "dont": [
+      "Ne miješati „vi“ i „ti“ unutar iste objave.",
+      "Ne obećavati učinke izvan službenih formulacija: bez „čudesnih“ rezultata i bez zdravstvenih tvrdnji koje nisu na S1–S3.",
+      "Ne objavljivati s tipfelerima („stogs“, dupli „su“), nego uvesti lekturu.",
+      "Ne pretrpati opis s više od tri emojija ili hashtag-zidom.",
+      "Ne izmišljati cijene, postotke popusta ni citate stvarnih osoba ili influencera.",
+      "Ne mijenjati ni stilizirati logo i pakiranje, npr. pogrešnim imenom proizvoda na pakiranju."
+    ]
+  },
+  "visual": {
+    "palette": [
+      {
+        "hex": "#DE7419",
+        "role": "primarna/akcent: naglašena riječ u naslovu, pakiranja, shaker",
+        "status": "PROVJERENO",
+        "evidence": "IG:02.png („GymBeam proizvodi“), IG:07.png („BLACK“), IG:03.png (pakiranje kreatina), IG:DgE5xBrHI5Z (kutijica za tablete)"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "pozadina packshota / bijeli tekst preko fotografije",
+        "status": "PROVJERENO",
+        "evidence": "IG:02.png (bijeli kvadrati s proizvodima), IG:07.png („FRIDAY“), IG:08.png (naslov „Uživajte u besplatnoj dostavi“)"
+      },
+      {
+        "hex": "#171617",
+        "role": "tamna pozadina grafičkih postera / glavni tekst",
+        "status": "PROVJERENO",
+        "evidence": "IG:02.png (crna mrežasta pozadina), IG:04.png (naslov „Kriza za slatkim“), IG:06.png"
+      },
+      {
+        "hex": "#F3F0EB",
+        "role": "topla krem pozadina za minimalističke kadrove i okvire",
+        "status": "PROVJERENO",
+        "evidence": "IG:04.png (pozadina), IG:02.png (krem okvir)"
+      },
+      {
+        "hex": "#C1C0C5",
+        "role": "hladna svijetlosiva studijska pozadina",
+        "status": "PROVJERENO",
+        "evidence": "IG:Dd3fuVAD5xS, IG:DePUSA1DjlP"
+      },
+      {
+        "hex": "#59565A",
+        "role": "sekundarni tekst / sivi wordmark",
+        "status": "PROVJERENO",
+        "evidence": "IG:04.png (sivi logo „GymBeam“ na dnu)"
+      },
+      {
+        "hex": "#A98E79",
+        "role": "topli prirodni ton: hrana, drvo, koža",
+        "status": "PROVJERENO",
+        "evidence": "IG:01.png (kikiriki maslac, kruh), IG:08.png i IG:DgE5xBrHI5Z (drveni stol)"
+      },
+      {
+        "hex": "#694F48",
+        "role": "tamnosmeđi ton: čokolada, pakiranja waffera",
+        "status": "PROVJERENO",
+        "evidence": "IG:08.png (pakiranja Protein Wafer)"
+      },
+      {
+        "hex": "#DBD4D5",
+        "role": "svijetla rozo-siva: rekviziti i pozadine kod odjeće",
+        "status": "PROVJERENO",
+        "evidence": "IG:DePUSA1DjlP (prostirka i rekviziti)"
+      },
+      {
+        "hex": "#302B2A",
+        "role": "tamne sjene u teretani",
+        "status": "PROVJERENO",
+        "evidence": "IG:07.png (pozadina teretane)"
+      },
+      {
+        "hex": "#E8502A",
+        "role": "crvenkasto-narančasta boja kruga u logu (avatar)",
+        "status": "PRETPOSTAVKA",
+        "evidence": "Procjena prema avataru na IG:00_profil.png; nije u izmjerenoj paleti"
+      },
+      {
+        "hex": "#E8A3A8",
+        "role": "pastelno ružičasta pozadina za food objave",
+        "status": "PRETPOSTAVKA",
+        "evidence": "Procjena prema IG:01.png; nije u izmjerenoj paleti"
+      }
+    ],
+    "typography": "Naslovi su u jako zbijenom, debelom groteskom pismu (npr. „Horoskopski znakovi kao GymBeam proizvodi“ i „ŽELITE OVO?“, potonji s tamnim obrubom i blagim nagibom) ili u širokom, debelom verzalu („BLACK FRIDAY“). Kod mirnijih objava koristi se geometrijski bold sans u malim slovima („Kriza za slatkim“, „Uživajte u besplatnoj dostavi s BOX NOW“). Podnaslov za atmosferu je u kurzivnom serifu („Ista teretana. Dvanaest različitih energija.“). Sitne etikete su u razmaknutom verzalu („HOROSKOPSKO IZDANJE“, „PRONAĐI SVOJ ZNAK →“, „01 / 13“). Logo je kurzivni wordmark „GymBeam“ (Gym tanje, Beam deblje). Tekst u reelsima je bijeli bold sans, centriran pri vrhu kadra. Točni nazivi fontova nisu poznati.",
+    "photo_style": "Prisutna su četiri pristupa. (1) Studijska food fotografija visokog kontrasta: toranj PB&J sendviča na pastelno ružičastoj pozadini, s izrezanim packshotovima kao naljepnicama. (2) Nadrealni ili digitalni kompoziti: kreatin s pernatim krilima na reflektirajućoj modnoj pisti s ljubičastim svjetlima, narančasti gel-oblici iznad prozirne posude na sivoj pozadini. (3) Minimalizam s puno praznog prostora: krem pozadina, stvarne ruke i jedan packshot, odnosno staklenka meda s narančasto-jantarnim pozadinskim svjetlom i odrazom. (4) Lifestyle i editorijal: noćni bljesak s motion blurom (PACE), sumrak na otvorenom uz auto (COSMO), teretana s toplim prigušenim tonovima, prirodno dnevno svjetlo u svijetloj kuhinji (pločice, vitamini).",
+    "layout_patterns": [
+      "Naslov velikim pismom u gornjoj trećini, a ispod fotografija ili proizvod (IG:01, IG:02, IG:07).",
+      "Mreža od 2×3 packshota na bijelim, blago nakrivljenim kvadratima, s oznakom niza „01 / 13“ i navigacijom „PRONAĐI SVOJ ZNAK →“ u donjem rubu (IG:02).",
+      "Proizvod lijevo, kratki naslov desno, ruke ili ljudi u donjoj polovici, logo centriran na dnu (IG:04).",
+      "Ko-brendirana traka „GymBeam × BOX NOW“ s bijelim naslovom u dva reda preko donjeg dijela fotografije (IG:08).",
+      "Packshot-naljepnice i „markica“ s promo kodom postavljene dijagonalno preko food fotografije (IG:01).",
+      "Uspravni reel s jednim redom teksta pri vrhu i proizvodom u sredini kadra (IG:DgE5xBrHI5Z, IG:Df67H0Sn600)."
+    ],
+    "product_presentation": "Pakiranje je uvijek prikazano frontalno i čitljivo, s logom GymBeam: vrećice, staklenke, pločice, shakeri, Thor kante. Proizvod je ili izdvojen na bijelom ili neutralnom polju (packshot ili naljepnica), ili je dio scene: kolica pored bench pressa, ruka koja drži pločicu, bočice na kuhinjskom stolu. Ponekad je „junak“ nadrealne scene (anđeoska krila). Hrana se prikazuje kao primjer upotrebe, npr. sendvič s namazima. Nisu vidljivi infografički prikazi nutritivnih vrijednosti, doza ni usporedbi.",
+    "people_presentation": "Najčešće su to mlade, fit žene, influencerice ili modeli, u GymBeam odjeći. Poziraju samouvjereno i gledaju u kameru ili lagano u stranu. U kućnom kadru su opuštenije: namigivanje i zagriz pločice. Muškarci se pojavljuju kao mišićavi vježbači u stvarnoj akciji (bench press, nasmijani spotter, znojna majica). Osobe su prikazane estetizirano i aspiracijski, a nema rekreativaca „običnog“ izgleda ni početnika."
+  },
+  "content_pillars": [
+    {
+      "name": "Pop-kultura i humor s proizvodom",
+      "description": "Proizvodi se smještaju u trendove i memove: horoskop, Victoria's Secret anđeli, beauty brendovi, kamen-škare-papir. Poziva se na dijeljenje i tagiranje.",
+      "example_evidence": [
+        "IG:02.png",
+        "IG:03.png",
+        "IG:04.png",
+        "IG:Dd3fuVAD5xS"
+      ]
+    },
+    {
+      "name": "Promocije i pogodnosti",
+      "description": "Black Friday, besplatna BOX NOW dostava bez minimalnog iznosa, kodovi popusta (FOOD10, ZANAMARI5), s naglaskom na hitnost i blagdane.",
+      "example_evidence": [
+        "IG:07.png",
+        "IG:08.png",
+        "IG:01.png",
+        "IG:DgE5xBrHI5Z",
+        "S11",
+        "S17"
+      ]
+    },
+    {
+      "name": "GymBeam odjeća i kolekcije",
+      "description": "Lansiranje i prikaz kolekcija (COSMO, PACE running) kroz editorijalne fotografije i reelse s modelima i influencericama.",
+      "example_evidence": [
+        "IG:05.png",
+        "IG:06.png",
+        "IG:DePUSA1DjlP",
+        "IG:00_profil.png"
+      ]
+    },
+    {
+      "name": "Fit hrana i recepti",
+      "description": "Recepti i međuobroci s GymBeam namazima i pločicama, ponekad uz kod za kategoriju zdrave hrane. Na profilu postoji i highlight „Recepti“.",
+      "example_evidence": [
+        "IG:01.png",
+        "IG:04.png",
+        "IG:08.png",
+        "IG:00_profil.png"
+      ]
+    },
+    {
+      "name": "Wellness i dodaci prehrani",
+      "description": "Vitamini, imunitet i premium proizvodi (manuka med) kroz kratke produkt-reelse, sezonske i rutinske („Spakirajte sa mnom moje dnevne vitamine“).",
+      "example_evidence": [
+        "IG:DgE5xBrHI5Z",
+        "IG:Df67H0Sn600",
+        "S13",
+        "S14"
+      ]
+    },
+    {
+      "name": "Influenceri i zajednica",
+      "description": "Suradnje s influencericama (collab objave, osobni kodovi) i zajednica, na profilu kroz highlight „Zajednica“.",
+      "example_evidence": [
+        "IG:05.png",
+        "IG:08.png",
+        "IG:00_profil.png"
+      ]
+    }
+  ],
+  "opportunities": [
+    "Edukativni karuseli „za spremanje“ za početnike, kojih na vidljivim objavama nema. Primjeri: „Just Whey u 5 slajdova“ (najmanje 22 g bjelančevina u 30 g, tri izvora sirutke WPC/WPI/WPH, 200–300 ml vode i šejker, 1–3× dnevno; S1) ili „Vitamin D3 zimi“ (1000 IU = 25 μg, jedna kapsula dnevno, doprinosi normalnoj funkciji imunološkog sustava, kostiju i mišića; tijelo ga stvara uz sunčevu svjetlost; S2). Treba koristiti postojeći vizualni jezik: crna mreža, oznaka „01 / 0X“, narančasta naglašena riječ i završni slajd „Spremi za kasnije“.",
+    "Dosljedno obraćanje s „ti“ u opisima i na grafikama, prema brifu. Grafika „PRONAĐI SVOJ ZNAK →“ pokazuje da taj ton već pristaje brendu.",
+    "Vlastite objave za proizvode iz brifa: Just Whey se ne pojavljuje ni na jednoj vidljivoj objavi, Vitamin D3 samo u opisu reela, a MoiMüv pločica nije jasno prikazana pod svojim imenom. Prikladni su packshot formati kao u IG:01 ili IG:04 s doslovnim činjenicama (npr. MoiMüv cookies & cream: 22,6 g proteina u 60 g, izvor vlakana; S3).",
+    "Interaktivni storyji za reakcije i odgovore, jer pitanja u opisima ostaju bez komentara. Primjeri: anketa „Whey s vodom ili s mlijekom?“, kviz „Koliko IU je 25 μg?“, slider za okuse Just Wheya, „kamen-škare-papir“ s pločicom kao story igra, horoskop kao kviz sa stickerom. Storyji trenutno nisu vidljivi pa se njihova praksa ne može usporediti.",
+    "Formati koji razbijaju mitove i odgovaraju na česta pitanja, oslonjeni na FAQ sa službene stranice: „Zašto se nakon proteina osjećam teško?“ (laktoza, enzimi DigeZyme®; S1) ili „1000 IU ili 2000 IU?“ (S2, uz preporuku savjetovanja sa zdravstvenim djelatnikom).",
+    "Zimska i blagdanska serija, nastavak „MERRY FITMAS“ adventskog kalendara: poklon-vodič, jer Just Whey ima oznaku „POKLON“ i kategorije „Pokloni za nju/njega“ (S1), zimska rutina s D3 te recepti s Just Whey bez okusa za pečenje (S1 navodi da se može koristiti za pečenje).",
+    "Više stvarnih rekreativaca i početnika, a ne samo aspiracijskih modela, kao i više sadržaja za muškarce i trening snage izvan Black Friday kampanje, kako bi publika iz brifa (18–40, rekreativci) prepoznala sebe.",
+    "Uvesti lekturu prije objave (tipfeleri na IG:03 i IG:08) i provjeriti da naziv proizvoda u opisu odgovara pakiranju na slici."
+  ],
+  "unavailable_sources": [
+    {
+      "source": "Instagram storyji (aktivni) i sadržaj highlighta",
+      "reason": "Na screenshotovima se vide samo naslovne ikone highlighta (Zajednica, Novosti, Članci, Recepti, Outfiti, GymBeam A…, YouTube). Aktivni storyji i reakcije na njih nisu snimljeni."
+    },
+    {
+      "source": "Metrike spremanja, dijeljenja, dosega i pregleda reelsa",
+      "reason": "Te metrike su dostupne samo vlasniku profila (Insights). Javno se vide samo lajkovi i broj komentara."
+    },
+    {
+      "source": "Komentari na većini objava",
+      "reason": "Dohvaćeni podaci pokazuju 0–2 komentara. Kod IG:05 je komentiranje ograničeno, a vidljivo je samo nekoliko komentara."
+    },
+    {
+      "source": "Ostali slajdovi karusela i sadržaj reelsa",
+      "reason": "Dostupni su samo prvi slajd i naslovna slika. Ostali horoskopski znakovi (IG:02, 01/13), recepti (IG:01) i video sadržaj nisu vidljivi."
+    },
+    {
+      "source": "Demografija pratitelja",
+      "reason": "Nije javno dostupna. Procjena publike temelji se na brifu i sadržaju."
+    },
+    {
+      "source": "Pouzdan broj lajkova za IG:01",
+      "reason": "Screenshot pokazuje 116 lajkova, a dohvaćeni podaci 38. Nije moguće provjeriti koja je brojka točna."
+    },
+    {
+      "source": "Identitet pločice na IG:04",
+      "reason": "Registar izvora navodi MoiMüv, ali vidljivo pakiranje glasi „GymBeam 20g PROTEIN BAR … CHOCOLATE-CARAMEL“ bez imena MoiMüv."
+    }
+  ]
+}

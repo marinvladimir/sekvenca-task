@@ -1,0 +1,20 @@
+# tajne
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# radni direktoriji pokretanja; GymBeam demo run je uključen (nastavak od bilo kojeg kadra)
+runs/*
+!runs/.gitkeep
+!runs/gymbeam-hr/
+runs/**/.img_cache/
+runs/**/*.log
+
+.DS_Store
+.claude/launch.json

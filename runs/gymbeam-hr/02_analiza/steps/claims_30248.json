@@ -1,0 +1,228 @@
+{
+  "source_id": "S3",
+  "product": "Proteinska pločica MoiMüv - GymBeam (GymBeam Food), 60 g – okusi cookies & cream i krokant-karamel",
+  "claims": [
+    {
+      "text": "Proteini doprinose rastu i održavanju mišićne mase.",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "zahvaljujući svojim proteinima pridonosi rastu i održavanju mišićne mase",
+      "safe_for_post": true,
+      "note": "Tvrdnju koristiti samo u ovom obliku: 'doprinosi' ili 'pridonosi', i uvijek povezano s proteinima. Formulacija iz kratkog opisa ('potiče rast i održavanje mišićne mase') je pojačana i NE smije se koristiti."
+    },
+    {
+      "text": "Proteini doprinose održavanju normalnog zdravlja kostiju.",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "protein također pridonosi održavanju normalnog zdravlja kostiju",
+      "safe_for_post": true,
+      "note": "Samo u ovom obliku. Ne pisati 'jača kosti' ni 'sprječava osteoporozu'."
+    },
+    {
+      "text": "Visok udio proteina",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "description_long",
+      "exact_quote": "Može se pohvaliti visokim udjelom visokokvalitetnih mliječnih bjelančevina",
+      "safe_for_post": true,
+      "note": "Koristiti 'visok udio proteina' bez pridjeva 'visokokvalitetni', jer je on neodređen i nije potkrijepljen podacima."
+    },
+    {
+      "text": "19,8 g proteina po pločici (60 g)",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "properties.Proteina po dozi (g)",
+      "exact_quote": "\"Proteina po dozi (g)\": \"19.8\"",
+      "safe_for_post": true,
+      "note": "Uzeta je najniža (konzervativna) vrijednost. Tablice navode 22,6 g (cookies and cream) i 20,4 g (krokant-karamel) na 60 g. Ako se navodi vrijednost za određeni okus, treba je prvo provjeriti s proizvođačem."
+    },
+    {
+      "text": "Izvor vlakana",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "description_long",
+      "exact_quote": "izvor je vlakana",
+      "safe_for_post": true,
+      "note": "Cookies and cream ima 10,1 g/100 g (6,1 g/60 g), krokant-karamel 5,2 g/100 g (3,1 g/60 g). Ne pisati 'bogato vlaknima' ni 'visok udio vlakana'."
+    },
+    {
+      "text": "Malo šećera: 2,3–2,4 g šećera po pločici (60 g)",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "description_long / properties.Šećera po dozi (g)",
+      "exact_quote": "malo šećera",
+      "safe_for_post": true,
+      "note": "Cookies and cream: 4 g/100 g (2,4 g/60 g). Krokant-karamel: 3,9 g/100 g (2,3 g/60 g). NE pisati 'bez šećera' (\"Bez šećera\": \"Ne\")."
+    },
+    {
+      "text": "Energetska vrijednost po pločici (60 g): 221 kcal (cookies and cream) / 209 kcal (krokant-karamel)",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "description_long (tablice nutritivnih vrijednosti)",
+      "exact_quote": "922 kJ / 221 kcal",
+      "safe_for_post": true,
+      "note": "Za krokant-karamel izvor navodi '875 kJ/ 209 kca l'. Vrijednosti uvijek povezati s okusom."
+    },
+    {
+      "text": "Sadrži mliječne proteine",
+      "kind": "sastav",
+      "source_field": "description_long",
+      "exact_quote": "visokim sadržajem mliječnih proteina",
+      "safe_for_post": true,
+      "note": "Polje 'Vrsta proteina' kaže 'multi_source_blend', pa ne tvrditi da je mlijeko JEDINI izvor proteina."
+    },
+    {
+      "text": "Okusi: cookies & cream i krokant-karamel; pločica od 60 g, dostupno i pakiranje 20 x 60 g (krokant-karamel)",
+      "kind": "ostalo",
+      "source_field": "variants",
+      "exact_quote": "20 x 60 g - krokant-karamel",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Ne sadrži palmino ulje",
+      "kind": "sastav",
+      "source_field": "properties.Bez sadržaja (sastojci)",
+      "exact_quote": "palm oil free",
+      "safe_for_post": true,
+      "note": "Izvor je samo oznaka na engleskom, popis sastojaka nije dostupan. Preporučuje se brza provjera."
+    },
+    {
+      "text": "Bez kofeina i bez stimulansa",
+      "kind": "sastav",
+      "source_field": "properties.Bez sadržaja (sastojci) / properties.Sadrži stimulanse",
+      "exact_quote": "Bez kofeina, stimulant free",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Bez aspartama",
+      "kind": "sastav",
+      "source_field": "properties.Bez sadržaja (sastojci)",
+      "exact_quote": "aspartame free",
+      "safe_for_post": true,
+      "note": "Proizvod sadrži druge zaslađivače. Formulacija ne smije sugerirati da proizvod nema zaslađivača."
+    },
+    {
+      "text": "Bez dodanog šećera",
+      "kind": "sastav",
+      "source_field": "properties.Bez sadržaja (sastojci)",
+      "exact_quote": "no added sugar",
+      "safe_for_post": false,
+      "note": "Navedeno samo kao oznaka na engleskom, popis sastojaka nije dostupan, a polje 'Bez šećera' je 'Ne'. Prije objave treba pravna provjera i provjera sastojaka."
+    },
+    {
+      "text": "Bez GMO",
+      "kind": "sastav",
+      "source_field": "properties.Bez GMO",
+      "exact_quote": "\"Bez GMO\": \"Da\"",
+      "safe_for_post": false,
+      "note": "Za oznake 'bez GMO' vrijede posebna pravila i potrebna je dokumentacija. Treba pravna provjera."
+    },
+    {
+      "text": "Laboratorijski testirano u Njemačkoj (mikrobiologija, teški metali), neovisno ispitano od treće strane",
+      "kind": "porijeklo_proizvodnja",
+      "source_field": "properties.Laboratorijski testirano / Zemlja testiranja / Vrsta laboratorijskog ispitivanja / Neovisno ispitano (od treće strane)",
+      "exact_quote": "\"Vrsta laboratorijskog ispitivanja\": \"Mikrobiologija, Teški metali\"",
+      "safe_for_post": true,
+      "note": "Navesti točno koja su ispitivanja obavljena. Ne pisati 'klinički testirano' ni 'dokazana učinkovitost'."
+    },
+    {
+      "text": "Odlična kao snack, desert uz kavu ili snack nakon treninga",
+      "kind": "upotreba",
+      "source_field": "description_long",
+      "exact_quote": "odlična kao snack, desert uz kavu ili snack nakon treninga",
+      "safe_for_post": true,
+      "note": "'Nakon treninga' je prigoda za konzumaciju, a ne tvrdnja o oporavku."
+    },
+    {
+      "text": "Može se narezati na vrh deserta ili u zobene pahuljice, ili koristiti kao proteinska baza za kore za kolače sa sirom i cupcakese",
+      "kind": "upotreba",
+      "source_field": "description_long",
+      "exact_quote": "možete ga narezati na vrh deserta ili u zobene pahuljice",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Praktičan međuobrok za ponijeti u radnu torbu ili na planinarenje",
+      "kind": "upotreba",
+      "source_field": "description_long",
+      "exact_quote": "Nećete pogriješiti ako ga spakirate u svoju radnu torbu",
+      "safe_for_post": true,
+      "note": "Polje 'Prikladno za putovanja' je 'Ne'. Preporuka je pisati o svakodnevnom nošenju, a ne o putovanjima."
+    },
+    {
+      "text": "Pretjerana konzumacija može imati laksativne učinke. Sadrži zaslađivače.",
+      "kind": "upozorenje",
+      "source_field": "description_long",
+      "exact_quote": "Pretjerana konzumacija može imati laksativne učinke. Sadrži zaslađivače.",
+      "safe_for_post": true,
+      "note": "Preporučuje se navesti u opisu objave ili u komentarima ako se ističe sastav."
+    },
+    {
+      "text": "Može sadržavati tragove glutena, jaja, kikirikija, orašastih plodova, sumpornog dioksida i sulfita te sjemenki sezama.",
+      "kind": "upozorenje",
+      "source_field": "description_long",
+      "exact_quote": "Može sadržavati tragove glutena, jaja, kikirikija, orašastih plodova, sumpornog dioksida i sulfita te sjemenki sezama.",
+      "safe_for_post": true,
+      "note": "Proizvod nije bez glutena i nije bez laktoze (oba polja 'Ne')."
+    },
+    {
+      "text": "Čuvati na suhom mjestu izvan izravne sunčeve svjetlosti na sobnoj temperaturi.",
+      "kind": "upotreba",
+      "source_field": "properties.Uvjeti skladištenja",
+      "exact_quote": "Čuvati na suhom mjestu, zaštićeno od izravne sunčeve svjetlosti, na sobnoj temperaturi.",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Prosječna ocjena kupaca 4,7 (1060 ocjena)",
+      "kind": "ocjena_kupaca",
+      "source_field": "rating",
+      "exact_quote": "\"value\": 4.7, \"count\": 1060",
+      "safe_for_post": true,
+      "note": "Podatak se mijenja. Navesti datum dohvaćanja ('stanje na dan …') ili provjeriti neposredno prije objave."
+    },
+    {
+      "text": "#5 u kategoriji Proteinske pločice",
+      "kind": "ocjena_kupaca",
+      "source_field": "properties.Ocjena prodajne uspješnosti",
+      "exact_quote": "#5 u kategoriji Proteinske pločice",
+      "safe_for_post": false,
+      "note": "Interni poredak trgovine koji se mijenja (kao cijene/akcije), a metodologija nije poznata. Ne koristiti."
+    },
+    {
+      "text": "Može poboljšati trenutke blagostanja i savršeno se uklapa u zdrav način života",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "poboljšava vaše trenutke blagostanja",
+      "safe_for_post": false,
+      "note": "Općenite tvrdnje o blagostanju i zdravlju ('savršen spoj za zdrav način života') nisu odobrene tvrdnje. Ne koristiti."
+    }
+  ],
+  "inconsistencies": [
+    "Proteini po pločici (60 g): u polju 'Proteina po dozi (g)' piše 19,8 g, u tablici za krokant-karamel 20,4 g, a u tablici za cookies and cream 22,6 g. U tvrdnji je uzeta konzervativna vrijednost od 19,8 g.",
+    "Ugljikohidrati za krokant-karamel: u opisu (tablici) piše 34 g/100 g, a u svojstvima 34,7 g/100 g. Vrijednost po dozi je u oba izvora 20,8 g, što odgovara iznosu od 34,7 g/100 g.",
+    "Polje 'Aroma' kaže 'keksi i krema', ali nutritivne vrijednosti u svojstvima (349 kcal, 34,1 g proteina, 5,2 g vlakana) odgovaraju okusu krokant-karamel, a ne cookies and cream.",
+    "Vrsta proteina: opis navodi 'mliječne proteine', a svojstva 'multi_source_blend' i podrijetlo 'combination'.",
+    "'Bez šećera': 'Ne', dok 'Bez sadržaja' navodi 'no added sugar', a opis 'malo šećera'. Status dodanog šećera nije jasan bez popisa sastojaka.",
+    "'Prikladno za putovanja': 'Ne', a opis preporučuje nošenje u radnoj torbi i na planinarenje.",
+    "'Vegetarijanski': 'Ne' iako je glavni sastojak mlijeko. Razlog nije naveden.",
+    "Oba polja o djeci, trudnicama i dojiljama imaju vrijednost 'Ne', što je proturječno ili nejasno. Prikladnost za te skupine nije utvrđena.",
+    "Kratki opis kaže da protein 'potiče rast i održavanje mišićne mase', a dugi opis 'doprinosi/pridonosi'. Samo je ovaj drugi oblik prihvatljiv."
+  ],
+  "forbidden": [
+    "'Najbolja/najukusnija proteinska pločica', 'broj 1', 'najpopularnija': superlativi i usporedbe bez dokaza; poredak prodaje je promjenjiv i nije metodološki potkrijepljen.",
+    "'Potiče/ubrzava/brže gradi mišiće', 'za veće mišiće': pojačana zdravstvena tvrdnja. Dopušteno je samo 'proteini doprinose rastu i održavanju mišićne mase'.",
+    "'Vježbat ćeš brže/jače', 'poboljšava performanse': neodobrena tvrdnja (iz opisa proizvođača, ali nije prihvatljiva).",
+    "'Pomaže oporavku nakon treninga', 'daje energiju', 'za više energije': 'Oporavak' i 'Energija' su samo interne kategorije, a ne odobrene tvrdnje.",
+    "'Jača kosti', 'sprječava osteoporozu' ili bilo kakvo liječenje ili sprječavanje bolesti.",
+    "'Zdrava pločica', 'savršena za zdrav način života', 'poboljšava blagostanje': nespecifične zdravstvene tvrdnje.",
+    "'Pomaže mršavljenju', 'za dijetu', 'fit = manje kilograma': o tome u podacima nema ničega.",
+    "'Bez šećera' / 'sugar free': polje 'Bez šećera' je 'Ne'.",
+    "'Bez zaslađivača', 'prirodno zaslađeno', 'bez umjetnih zaslađivača': proizvod sadrži zaslađivače ('Bez umjetnih zaslađivača': 'Ne').",
+    "'Bez glutena', 'bez laktoze', 'vegansko', 'vegetarijansko', 'bez alergena': sva su ta polja 'Ne', a postoje i tragovi alergena.",
+    "'Visokokvalitetni/premium protein', '100 % mliječni protein': nije potkrijepljeno; vrsta proteina je 'multi_source_blend'.",
+    "'Bogato vlaknima': izvor navodi samo 'izvor vlakana'.",
+    "'Klinički testirano', 'dokazano djeluje': testiranje je obuhvatilo samo mikrobiologiju i teške metale.",
+    "'Prikladno za djecu/trudnice': podaci su nejasni i proturječni.",
+    "'Jedi koliko želiš': pretjerana konzumacija može imati laksativne učinke.",
+    "Bilo kakve cijene, popusti, 'akcija', 'Black Friday', 'SALE': promjenjivi podaci.",
+    "Konkretna količina proteina za okus (22,6 g / 20,4 g) bez provjere: podaci se razlikuju od vrijednosti 19,8 g u svojstvima."
+  ]
+}

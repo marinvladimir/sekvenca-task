@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kadar</title>
+<link rel="icon" href="/files/app/assets/favicon.svg">
+<link rel="stylesheet" href="/files/app/assets/theme.css">
+<style>
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); font-size: 15px; line-height: 1.55; }
+a { color: var(--accent); }
+.mono { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); }
+button, .btn { font: 600 14px var(--font-body); border-radius: var(--r-btn); padding: 10px 16px; cursor: pointer; border: 1px solid var(--border);
+  background: var(--surface-2); color: var(--text); }
+button.primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+button:disabled { opacity: .45; cursor: not-allowed; }
+input, textarea, select { font: 14px var(--font-body); background: var(--surface-2); color: var(--text); border: 1px solid var(--border);
+  border-radius: var(--r-input); padding: 9px 11px; width: 100%; box-sizing: border-box; }
+textarea { min-height: 72px; resize: vertical; }
+label { display: block; font-weight: 600; margin: 12px 0 6px; font-size: 13px; }
+
+header.app { position: relative; min-height: 236px; padding: 26px 32px 22px; display: flex; flex-direction: column; justify-content: space-between;
+  background: #0E1116 url('/files/app/assets/hero-banner.jpg') right center / auto 100% no-repeat; border-bottom: 1px solid var(--border); overflow: hidden; }
+header.app::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #0E1116 0%, #0E1116 30%, rgba(14,17,22,.55) 55%, rgba(14,17,22,0) 75%); }
+header.app > * { position: relative; }
+header.app .brandrow { display: flex; align-items: center; gap: 12px; }
+header.app .brandrow img { height: 40px; }
+header.app .brandrow .mono { color: var(--accent); }
+header.app h1 { font: 700 56px/1 var(--font-head); margin: 14px 0 6px; letter-spacing: -.02em; }
+header.app h1 em { font-style: normal; color: var(--accent); }
+header.app .tag { color: var(--text-muted); font-size: 16px; max-width: 460px; }
+header.app .right { display: flex; gap: 10px; align-items: center; margin-top: 18px; }
+header.app select { width: auto; min-width: 220px; }
+.rec-top { margin-left: 6px; }
+
+/* filmska traka: perforacija gore i dolje, kadrovi se pale teal kad su gotovi */
+.film { margin: 22px 24px 18px; background: #07090C; border-radius: 10px; padding: 26px 14px; position: relative; box-shadow: 0 0 0 1px var(--border); }
+.film::before, .film::after { content: ""; position: absolute; left: 14px; right: 14px; height: 10px;
+  background: linear-gradient(90deg, #262D37 0 14px, transparent 14px 26px) 0 0 / 26px 10px repeat-x; border-radius: 2px; }
+.film::before { top: 8px; } .film::after { bottom: 8px; }
+ol.timeline { list-style: none; display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin: 0; padding: 0; }
+.timeline li { cursor: pointer; border-radius: 6px; background: #12161C; padding: 8px; transition: transform .15s, box-shadow .15s; }
+.timeline li:hover { transform: translateY(-2px); }
+.timeline .frame { aspect-ratio: 772 / 608; border-radius: 4px; overflow: hidden; background: #1B2129; }
+.timeline .frame img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1) brightness(.45) contrast(1.1); transition: filter .2s; }
+.timeline .cap { padding: 8px 2px 2px; }
+.timeline .cap b { display: block; font: 600 15px var(--font-head); }
+.timeline .s-approved .frame img, .timeline .s-needs_review .frame img, .timeline .s-running .frame img, .timeline li.active .frame img { filter: none; }
+.timeline .s-approved { box-shadow: 0 0 0 2px var(--accent), 0 0 26px rgba(43,168,154,.35); }
+.timeline .s-approved .mono { color: var(--accent); }
+.timeline .s-needs_review { box-shadow: 0 0 0 2px var(--assumption); } .timeline .s-needs_review .mono { color: var(--assumption); }
+.timeline .s-running { box-shadow: 0 0 0 2px var(--rec); } .timeline .s-running .mono { color: var(--rec); }
+.timeline .s-failed { box-shadow: 0 0 0 2px var(--rec); }
+.timeline li.active { transform: translateY(-4px); background: #1A2029; }
+.timeline li.active .cap b { color: var(--accent); }
+
+main { padding: 0 24px 60px; }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-card); padding: 22px; }
+.panel-head { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+.panel-head h2 { font: 700 34px var(--font-head); margin: 4px 0 6px; letter-spacing: -.01em; }
+.panel-head .illu { width: 150px; border-radius: 8px; box-shadow: 0 0 0 1px var(--border); flex: none; }
+.panel { border-top: 3px solid var(--accent); }
+.panel-head .actions { margin-left: auto; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.io { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 16px 0 6px; }
+.io div { background: var(--surface-2); border-radius: 8px; padding: 10px 12px; font-size: 13px; }
+.io .mono { display: block; margin-bottom: 4px; }
+.status-line { display: flex; gap: 12px; align-items: center; min-height: 26px; margin: 10px 0; flex-wrap: wrap; }
+.err { color: var(--rec); white-space: pre-wrap; }
+.warn { color: var(--assumption); }
+.out { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 18px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.thumbs { display: flex; gap: 8px; flex-wrap: wrap; }
+.thumbs img { height: 110px; border-radius: 6px; background: #fff; box-shadow: 0 0 0 1px var(--border); }
+.prod { background: var(--surface-2); border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+.md { max-width: 980px; }
+.md img { border-radius: 6px; margin: 4px; box-shadow: 0 0 0 1px var(--border); }
+.md table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 10px 0; }
+.md th, .md td { border: 1px solid var(--border); padding: 6px 8px; vertical-align: top; text-align: left; }
+.md h1 { font: 700 24px var(--font-head); } .md h2 { font: 700 20px var(--font-head); margin-top: 26px; } .md h3 { font-size: 16px; }
+.md strong:is(:only-child) {}
+.post { border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 18px; }
+.post h3 { font: 700 20px var(--font-head); margin: 4px 0 8px; }
+.strip { display: flex; gap: 10px; overflow-x: auto; padding: 10px 0; }
+.strip img { height: 360px; border-radius: 6px; box-shadow: 0 0 0 1px var(--border); }
+.strip.story img { height: 440px; }
+.caption { white-space: pre-wrap; background: var(--surface-2); border-radius: 8px; padding: 12px 14px; }
+.empty { display: flex; gap: 18px; align-items: center; color: var(--text-muted); }
+.empty img { width: 200px; }
+.colors { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; }
+.colors label { margin: 0; } .colors input[type=color] { width: 56px; height: 36px; padding: 2px; }
+.note-input { max-width: 380px; }
+details summary { cursor: pointer; font-weight: 600; }
+@media (max-width: 860px) { ol.timeline { grid-template-columns: repeat(3, 1fr); } header.app h1 { font-size: 38px; } .panel-head .illu { display: none; } .io, .grid2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body class="grain">
+<header class="app">
+  <div>
+    <div class="brandrow"><img src="/files/app/assets/logo.svg" alt=""><span class="mono">AI recept · 6 kadrova</span></div>
+    <h1>Kadar<em>.</em></h1>
+    <div class="tag">Od Instagram brenda do tri gotove objave, kadar po kadar. Svaki kadar pregledava i odobrava čovjek.</div>
+  </div>
+  <div class="right">
+    <select id="runSel"></select>
+    <button id="newBtn">+ Novi brend</button>
+  </div>
+</header>
+<div class="film"><ol class="timeline" id="timeline"></ol></div>
+<main><div class="panel" id="panel"></div></main>
+
+<script>
+const S = { runs: [], phases: [], info: {}, slug: null, data: null, view: null, poll: null, newBrief: false };
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const STATUS = { pending: 'čeka', running: 'radi', needs_review: 'za pregled', approved: 'odobreno', failed: 'greška' };
+const EMPTY = { '01_brif':'empty-01-brif','02_analiza':'empty-02-analiza','03_plan':'empty-03-plan','04_izrada':'empty-04-izrada','05_provjera':'empty-05-provjera','06_isporuka':'empty-06-isporuka' };
+
+async function api(url, opts = {}) {
+  const r = await fetch(url, opts); const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error || r.statusText); return j;
+}
+async function init() {
+  const j = await api('/api/runs'); Object.assign(S, { runs: j.runs, phases: j.phases, info: j.info });
+  let saved = null; try { saved = localStorage.getItem('kadar.run'); } catch (e) {}
+  S.slug = (j.runs.find(r => r.slug === saved) || j.runs[0] || {}).slug || null;
+  renderRunSel(); if (S.slug) await load(); else { S.newBrief = true; render(); }
+}
+function renderRunSel() {
+  $('#runSel').innerHTML = S.runs.map(r => `<option value="${r.slug}" ${r.slug === S.slug ? 'selected' : ''}>${esc(r.brand)}</option>`).join('')
+    || '<option>— nema brendova —</option>';
+}
+$('#runSel').onchange = e => { S.slug = e.target.value; S.newBrief = false; S.view = null; try { localStorage.setItem('kadar.run', S.slug); } catch (e) {} load(); };
+$('#newBtn').onclick = () => { S.newBrief = true; S.view = '01_brif'; render(); };
+
+async function load() {
+  S.data = await api('/api/run/' + S.slug);
+  if (!S.view) S.view = S.data.next || '04_izrada';
+  render();
+  const running = S.data.job && S.data.job.state === 'running';
+  clearTimeout(S.poll); if (running) S.poll = setTimeout(load, 2000);
+}
+
+function render() { renderTimeline(); renderPanel(); }
+function renderTimeline() {
+  $('#timeline').innerHTML = S.phases.map(p => {
+    let st = (S.data && !S.newBrief) ? (S.data.phases[p].status || 'pending') : 'pending';
+    const job = S.data && S.data.job;
+    if (job && job.state === 'running' && job.phase === p) st = 'running';
+    return `<li class="s-${st} ${S.view === p ? 'active' : ''}" data-p="${p}">
+      <div class="frame"><img src="/files/app/assets/${EMPTY[p]}.jpg" alt=""></div>
+      <div class="cap"><span class="mono">${p.slice(0,2)} · ${STATUS[st] || st}</span><b>${esc(S.info[p].title)}</b></div></li>`;
+  }).join('');
+  document.querySelectorAll('#timeline li').forEach(li => li.onclick = () => { S.view = li.dataset.p; if (S.newBrief && S.view !== '01_brif') S.newBrief = false; render(); });
+}
+
+function head(p) {
+  const i = S.info[p], d = S.data, meta = (d && !S.newBrief) ? d.phases[p] : {};
+  const job = d && d.job, running = job && job.state === 'running', mine = running && job.phase === p;
+  const idx = S.phases.indexOf(p), prevOk = idx === 0 || (d && d.phases[S.phases[idx-1]].status === 'approved');
+  const hasOut = meta.status && meta.status !== 'pending' && meta.status !== 'running' && meta.status !== 'failed';
+  const runLabel = hasOut ? 'Ponovi' : 'Pokreni';
+  let actions = '';
+  if (!S.newBrief) {
+    if (p === '04_izrada' && hasOut) actions += `<button data-act="run" data-rewrite="1" ${running ? 'disabled' : ''}>Novi tekstovi</button>`;
+    if (p === '05_provjera' && hasOut) actions += `<button data-act="fix" ${running ? 'disabled' : ''} title="Ispravci iz provjere → novi render → provjera u kodu">Primijeni ispravke</button>
+      <button data-act="run" data-codeonly="1" ${running ? 'disabled' : ''}>Provjera bez AI</button>`;
+    actions += `<button data-act="run" ${running || !prevOk ? 'disabled' : ''} title="${prevOk ? '' : 'Prvo odobri prethodni kadar'}">${runLabel}${p === '04_izrada' && hasOut ? ' render' : ''}</button>`;
+    if (hasOut && meta.status !== 'approved') actions += `<input class="note-input" id="note" placeholder="Napomena pregleda (opcionalno)"><button class="primary" data-act="approve">Odobri kadar →</button>`;
+    if (meta.status === 'approved') actions += `<span class="chip chip--verified">Odobreno</span>`;
+  }
+  let status = '';
+  if (mine) status = `<span class="rec" id="rec">GENERIRA · ${fmt(Date.now()/1000 - job.started)}</span><span class="mono">AI radi u pozadini; možeš pregledavati druge kadrove.</span>`;
+  else if (job && job.state === 'error' && job.phase === p) status = `<span class="err">Greška: ${esc(job.error)}</span>`;
+  else if (meta.status === 'failed') status = `<span class="err">Greška: ${esc(meta.error)}</span>`;
+  else if (meta.review_note) status = `<span class="mono">Napomena pregleda: ${esc(meta.review_note)}</span>`;
+  const failed = meta.status === 'failed' || (job && job.state === 'error' && job.phase === p);
+  const illu = `/files/app/assets/${failed ? 'error' : EMPTY[p]}.jpg`;
+  return `<div class="panel-head"><img class="illu" src="${illu}" alt=""><div><span class="mono">Kadar ${p.slice(0,2)}</span><h2>${esc(i.title)}</h2></div>
+    <div class="actions">${actions}</div></div>
+    <div class="io"><div><span class="mono">Ulaz</span>${esc(i.input)}</div><div><span class="mono">Što radi</span>${esc(i.does)}</div><div><span class="mono">Izlaz</span>${esc(i.output)}</div></div>
+    <div class="status-line">${status}</div>`;
+}
+const fmt = s => { s = Math.max(0, Math.floor(s)); return String(Math.floor(s/60)).padStart(2,'0') + ':' + String(s%60).padStart(2,'0'); };
+setInterval(() => { const r = $('#rec'); const j = S.data && S.data.job; if (r && j && j.state === 'running') r.textContent = 'GENERIRA · ' + fmt(Date.now()/1000 - j.started); }, 1000);
+
+function empty(p, text) { return `<div class="empty"><img class="empty-card" src="/files/app/assets/${EMPTY[p]}.jpg" alt=""><p>${text}</p></div>`; }
+
+function renderPanel() {
+  const p = S.view || '01_brif'; let body = '';
+  if (S.newBrief) body = briefForm();
+  else {
+    const d = S.data, st = d.phases[p].status;
+    if (p === '01_brif') body = d.brif ? briefView(d.brif) : empty(p, 'Brif još nije pokrenut.');
+    if (p === '02_analiza') body = d.analysis_html ? decisions(d) + `<div class="md">${d.analysis_html}</div>` : empty(p, 'Analiza još nije napravljena. Odobri brif pa pokreni.');
+    if (p === '03_plan') body = notesBox(d) + (d.plan_html ? `<div class="md">${d.plan_html}</div>` : empty(p, 'Plan još nije napravljen.'));
+    if (p === '04_izrada') body = d.posts ? postsView(d.posts) : empty(p, 'Objave još nisu izrađene.');
+    if (p === '05_provjera') body = d.qa_html ? `<div class="md">${d.qa_html}</div>` : empty(p, 'Provjera još nije pokrenuta.');
+    if (p === '06_isporuka') body = d.delivery ? `<p class="mono">Mapa: ${esc(d.delivery.folder)} · ${d.delivery.files.length} datoteka · ${d.delivery.usage.llm_calls} AI poziva · ${d.delivery.usage.llm_minutes} min generiranja</p><div class="md">${d.delivery_html}</div>` : empty(p, 'Isporuka još nije pripremljena.');
+  }
+  $('#panel').innerHTML = head(p) + `<div class="out">${body}</div>`;
+  $('#panel').querySelectorAll('[data-act]').forEach(b => b.onclick = () => act(b.dataset.act, p, b.dataset.rewrite, b.dataset.codeonly));
+  const f = $('#briefForm'); if (f) f.onsubmit = submitBrief;
+  const n = $('#saveNotes'); if (n) n.onclick = saveNotes;
+  const c = $('#saveBrand'); if (c) c.onclick = saveBrand;
+}
+
+async function act(kind, p, rewrite, codeOnly) {
+  try {
+    if (kind === 'run') await api(`/api/run/${S.slug}/${p}`, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ rewrite: !!rewrite, code_only: !!codeOnly }) });
+    if (kind === 'fix') await api(`/api/fix/${S.slug}`, { method: 'POST' });
+    if (kind === 'approve') { const r = await api(`/api/approve/${S.slug}/${p}`, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ note: ($('#note') || {}).value || '' }) }); S.view = r.next || p; }
+    await load();
+  } catch (e) { alert(e.message); }
+}
+
+function briefForm() {
+  const F = (n, l, ph = '', t = 'input') => `<label>${l}</label>${t === 'input' ? `<input name="${n}" placeholder="${esc(ph)}">` : `<textarea name="${n}" placeholder="${esc(ph)}"></textarea>`}`;
+  return `<form id="briefForm" class="grid2">
+    <div>${F('brand','Naziv brenda *','npr. GymBeam HR')}${F('instagram','Instagram profil','https://www.instagram.com/…')}
+      ${F('website','Službena web-stranica / webshop','https://…')}
+      ${F('products','Poveznice proizvoda za promociju (jedna po retku)','https://…','ta')}
+      ${F('instagram_posts','Poveznice Instagram objava (jedna po retku)','https://www.instagram.com/p/…','ta')}
+      <label>Logo (SVG/PNG, opcionalno; inače se dohvaća sa stranice)</label><input type="file" name="logo" accept=".svg,.png,.jpg,.jpeg,.webp">
+      <label>Screenshotovi objava (opcionalno)</label><input type="file" name="screenshots" multiple accept="image/*"></div>
+    <div>${F('audience','Publika','','ta')}${F('goals','Ciljevi objava','npr. spremanja, komentari, prodaja','ta')}
+      ${F('inspiration','Uzori i inspiracija','','ta')}${F('tone_notes','Ton i stil','','ta')}
+      ${F('constraints','Ograničenja (što se ne smije)','','ta')}${F('language','Jezik objava','hrvatski')}
+      <p><button class="primary" type="submit">Spremi brif i pokreni kadar 01 →</button></p></div></form>`;
+}
+async function submitBrief(e) {
+  e.preventDefault();
+  try { const fd = new FormData(e.target); await api('/api/brief', { method: 'POST', body: fd });
+    const j = await api('/api/runs'); S.runs = j.runs; S.slug = (j.runs.find(r => r.brand === fd.get('brand')) || j.runs[j.runs.length-1]).slug;
+    S.newBrief = false; S.view = '01_brif'; renderRunSel(); await load();
+  } catch (err) { alert(err.message); }
+}
+function briefView(b) {
+  const br = b.brief;
+  return `<div class="grid2"><div>
+      <p><span class="mono">Brend</span><br><b>${esc(br.brand)}</b> · <a href="${esc(br.instagram)}" target="_blank">${esc(br.instagram)}</a> · <a href="${esc(br.website)}" target="_blank">${esc(br.website)}</a></p>
+      <p><span class="mono">Publika</span><br>${esc(br.audience)}</p><p><span class="mono">Ciljevi</span><br>${esc(br.goals)}</p>
+      <p><span class="mono">Ton</span><br>${esc(br.tone_notes)}</p><p><span class="mono">Ograničenja</span><br>${esc(br.constraints)}</p>
+      ${b.warnings.length ? `<p class="warn">⚠ ${b.warnings.map(esc).join('<br>⚠ ')}</p>` : '<p class="chip chip--verified">Bez upozorenja</p>'}
+    </div><div>
+      ${b.logo ? `<p><span class="mono">Logo (dohvaćen)</span><br><img src="${b.logo}" style="height:36px;background:#fff;padding:8px;border-radius:6px"></p>` : ''}
+      <span class="mono">Proizvodi</span>
+      ${b.products.map(p => `<div class="prod"><a href="${esc(p.url)}" target="_blank"><b>${esc(p.name)}</b></a>
+        <div class="mono">${p.properties} svojstava · ${p.faq} FAQ</div><div class="thumbs">${p.images.map(i => `<img src="${i}">`).join('')}</div></div>`).join('')}
+    </div></div>
+    <h3>Instagram (${b.posts.length} objava, ${b.instagram.length} screenshotova)</h3>
+    <div class="thumbs">${b.posts.filter(p => p.img).map(p => `<a href="${esc(p.url)}" target="_blank" title="${esc(p.date + ' · ' + p.caption)}"><img src="${p.img}"></a>`).join('')}
+      ${b.instagram.map(i => `<a href="${i.img}" target="_blank" title="${esc(i.label)}"><img src="${i.img}"></a>`).join('')}</div>`;
+}
+function decisions(d) {
+  const c = (d.brand && d.brand.colors) || {}, addr = (d.brand && d.brand.address) || 'ti';
+  return `<details open class="prod"><summary>Ljudske odluke (nadjačavaju analizu)</summary>
+    <div class="colors" style="margin-top:10px">
+      <label>Primarna<br><input type="color" id="c_brand" value="${c.brand || '#FF4500'}"></label>
+      <label>Tamna<br><input type="color" id="c_dark" value="${c.dark || '#171617'}"></label>
+      <label>Svijetla<br><input type="color" id="c_light" value="${c.light || '#F3F0EB'}"></label>
+      <label>Obraćanje<br><select id="addr"><option ${addr==='ti'?'selected':''}>ti</option><option ${addr==='vi'?'selected':''}>vi</option></select></label>
+      <button id="saveBrand">Spremi odluke</button></div></details>`;
+}
+async function saveBrand() {
+  try { await api('/api/brand/' + S.slug, { method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ colors: { brand: $('#c_brand').value.toUpperCase(), dark: $('#c_dark').value.toUpperCase(), light: $('#c_light').value.toUpperCase() }, address: $('#addr').value }) });
+    await load(); } catch (e) { alert(e.message); }
+}
+function notesBox(d) {
+  return `<details ${d.plan_html ? '' : 'open'} class="prod"><summary>Ljudske smjernice za plan (ulaze u prompt)</summary>
+    <textarea id="notes" style="min-height:120px;margin-top:10px">${esc(d.plan_notes)}</textarea>
+    <p><button id="saveNotes">Spremi smjernice</button> <span class="mono">Nakon spremanja pokreni "Ponovi" za novi plan.</span></p></details>`;
+}
+async function saveNotes() {
+  try { await api('/api/notes/' + S.slug, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ text: $('#notes').value }) }); alert('Spremljeno.'); }
+  catch (e) { alert(e.message); }
+}
+const GOALS = { edukacija_spremanja:'Edukacija · spremanja', predstavljanje_proizvoda:'Predstavljanje proizvoda', interes_za_kupnju:'Interes za kupnju', reakcije_komentari:'Reakcije i komentari' };
+function postsView(posts) {
+  return posts.map(p => `<div class="post"><span class="mono">Objava ${p.objava}</span><h3>${esc(p.naslov)}</h3>
+    <span class="chip">${esc(p.format.replace('_',' '))}</span> <span class="chip chip--assumption">${esc(GOALS[p.cilj] || p.cilj)}</span> <span class="chip">${p.slajdovi.length} slajdova</span>
+    <div class="strip ${p.format === 'story_niz' ? 'story' : ''}">${p.slajdovi.map(s => `<a href="${s}" target="_blank"><img src="${s}?v=${Date.now()}"></a>`).join('')}</div>
+    <div class="grid2"><div><span class="mono">Opis objave</span><div class="caption">${esc(p.opis)}</div></div>
+      <div><span class="mono">Zašto ovako</span><p>${esc(p.obrazlozenje)}</p><span class="mono">KPI</span><p>${esc(p.kpi)}</p></div></div></div>`).join('');
+}
+init().catch(e => { $('#panel').innerHTML = `<p class="err">${esc(e.message)}</p>`; });
+</script>
+</body>
+</html>

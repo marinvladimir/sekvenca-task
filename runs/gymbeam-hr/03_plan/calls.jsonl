@@ -1,0 +1,1 @@
+{"at": "2026-11-26T10:02:52+00:00", "label": "plan", "backend": "claude-code", "model": "claude-opus-5-5", "effort": "high", "images": 0, "turns": 2, "input_tokens": 42879, "output_tokens": 16044, "seconds": 147.9, "notional_cost_usd": 0.663904, "subtype": "success"}

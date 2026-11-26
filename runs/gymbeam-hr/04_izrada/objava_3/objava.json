@@ -1,0 +1,74 @@
+{
+  "objava": 3,
+  "naslov": "Zimska rutina: D3 kviz u storyju",
+  "cilj": "reakcije_komentari",
+  "format": "story_niz",
+  "proizvod": "Vitamin D3 1000 IU - GymBeam",
+  "koncept": "Interaktivni niz od 5 kadrova za prosinac. Počinje anketom o vitaminima u dnevnoj rutini. Slijede kviz „Koliko IU je 25 μg?“, kadar s otkrivanjem točnog odgovora i packshotom te kviz o dnevnoj dozi. Završava se kadrom s poveznicom, odobrenim tvrdnjama i upozorenjima. Vizual prati vitaminski reel (IG:DgE5xBrHI5Z): topli drveni stol i ženska ruka, s bijelim bold tekstom pri vrhu kadra i narančastim #FF4500 stickerima.",
+  "obrazlozenje": "Analiza navodi da pitanja u opisima ostaju bez komentara (IG:01, IG:03, S6, S8). Kao priliku izravno predlaže interaktivne storyje, uključujući upravo kviz „Koliko IU je 25 μg?“. Vitamin D3 se dosad spominjao samo u opisu Black Friday reela (IG:DgE5xBrHI5Z), pa ovo je njegovo prvo samostalno predstavljanje. Wellness je postojeći stup sadržaja („Spakirajte sa mnom moje dnevne vitamine“), a format rutine pristaje zimskom razdoblju bez obećanja vezanih uz sezonu. Kviz s brojkama ujedno educira početnike o oznakama na etiketi.",
+  "kpi": "Glavni KPI je stopa interakcije, odnosno broj glasova u anketi i kvizovima podijeljen s pregledima 1. kadra. Mjerimo i zadržavanje od 1. do 5. kadra (izlasci) te klikove na poveznicu u 5. kadru. Ovo je prvo mjerenje, jer metrike storyja dosad nisu bile dostupne.",
+  "opis": "Story niz od 5 kadrova: anketa, dva kviza i poveznica „Pogledaj D3“ na stranicu proizvoda (varijanta s packshota). Na svakom kadru najviše jedan emoji. Nakon objave spremi niz u highlight „Članci“ ili „Novosti“. #gymbeamhr #gbhealthy",
+  "alt_text": "Niz storyja na toplom drvenom stolu sa ženskom rukom i bočicom GymBeam Vitamina D3 1000 IU, s bijelim podebljanim tekstom pri vrhu i narančastim stickerima za anketu i kviz. Zadnji kadar navodi dozu od jedne kapsule, odobrene tvrdnje i upozorenja te ima poveznicu „Pogledaj D3“.",
+  "slajdovi": [
+    "04_izrada/objava_3/slajd_01.png",
+    "04_izrada/objava_3/slajd_02.png",
+    "04_izrada/objava_3/slajd_03.png",
+    "04_izrada/objava_3/slajd_04.png",
+    "04_izrada/objava_3/slajd_05.png"
+  ],
+  "tekst_slajdova": [
+    {
+      "kicker": "Zimska rutina",
+      "headline": "Brzo *pitanje*",
+      "body": "Imaš li vitamine u dnevnoj rutini?",
+      "stat": "",
+      "options": [
+        "Da, svaki dan 💪",
+        "Tek krećem"
+      ],
+      "footnote": ""
+    },
+    {
+      "kicker": "Kviz",
+      "headline": "Zagonetka s *etikete*",
+      "body": "Koliko IU je 25 μg vitamina D3?",
+      "stat": "",
+      "options": [
+        "100 IU",
+        "1000 IU",
+        "2500 IU"
+      ],
+      "footnote": ""
+    },
+    {
+      "kicker": "Odgovor",
+      "headline": "1000 IU = *25 μg*",
+      "body": "Toliko sadrži jedna kapsula GymBeam Vitamina D3. To je 500 % preporučenog dnevnog unosa.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Kviz 2",
+      "headline": "Još jedno *pitanje*",
+      "body": "Koliko kapsula dnevno preporučuje etiketa?",
+      "stat": "",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "footnote": ""
+    },
+    {
+      "kicker": "1 kapsula, bilo kad",
+      "headline": "Vitamin *D3* 1000 IU",
+      "body": "Vitamin D pridonosi normalnoj funkciji imunološkog sustava i podržava pravilan rad mišića. Ne prekoračuj preporučenu dnevnu dozu. Nije za djecu, trudnice i dojilje.",
+      "stat": "",
+      "options": [
+        "Pogledaj D3"
+      ],
+      "footnote": "Proizvod nije zamjena za uravnoteženu i raznoliku prehranu. Čuvaj izvan dohvata djece."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "objava": 1,
+  "naslov": "Just Whey za početnike: 7 slajdova za spremanje",
+  "cilj": "edukacija_spremanja",
+  "format": "karusel",
+  "proizvod": "Just Whey Grass-Fed Protein – GymBeam",
+  "koncept": "Kratki vodič za nekoga tko tek kreće s proteinom. Pokriva što ima u mjerici, od čega je, kako ga pomiješati i koliko ga uzimati. Jedan mit razbija pitanje laktoze, a blagdanski slajd pokazuje Just Whey bez okusa u pečenju („Merry Fitmas“). Vizualno ga oblikujemo kao GymBeam poster: tamna mrežasta pozadina, oznaka „01 / 07“, jedna riječ u narančastoj #FF4500 i zadnji slajd „Spremi“.",
+  "obrazlozenje": "Analiza utvrđuje da na vidljivim objavama nema edukativnih karusela i da se Just Whey ne pojavljuje nigdje (analiza, teme; IG:01–IG:08). Kao prvu priliku navodi upravo „Just Whey u 5 slajdova“. Karusel je glavni format brenda (IG:02 ima 13 slajdova, IG:03–IG:05 po 5). Oznaka niza i poziv na listanje preuzeti su iz IG:02 („01 / 13“, „PRONAĐI SVOJ ZNAK →“), a ondje se već koristi i „ti“. Blagdanski slajd nastavlja „MERRY FITMAS / JINGLE ALL THE WHEY“ iz mreže profila. Publika iz brifa traži jednostavna objašnjenja, pa svaki slajd nosi jednu informaciju i brojke doslovno sa S1.",
+  "kpi": "Glavni KPI je omjer spremanja i dosega, s ciljem iznad prosjeka profila za karusele (prvo mjerenje postaje referentna vrijednost, jer saves dosad nisu dostupni). Sporedni KPI su dijeljenja putem DM-a (poziv „pošalji prijatelju“) i postotak pratitelja koji dođu do 7. slajda.",
+  "opis": "Tek ulaziš u svijet gyma? Ovo su osnove u 7 slajdova 💪 Spremi objavu za prvi šejk i pošalji je prijatelju koji tek kreće. Koji okus ti je prvi na popisu? 👇\n\nJust Whey nije bez laktoze i nije namijenjen djeci; trudnice i dojilje trebaju se posavjetovati s liječnikom.\n\n#gymbeamhr #gbig #gbnutrition #gbfit",
+  "alt_text": "Karusel od sedam slajdova na tamnoj mrežastoj pozadini s naslovima u verzalu i jednom narančastom riječi, uz packshot prozirne posude Just Whey sa srebrnim poklopcem. Slajdovi objašnjavaju sadržaj mjerice, vrste sirutke, pripremu u šejkeru, laktozu i pečenje s verzijom bez okusa.",
+  "slajdovi": [
+    "04_izrada/objava_1/slajd_01.png",
+    "04_izrada/objava_1/slajd_02.png",
+    "04_izrada/objava_1/slajd_03.png",
+    "04_izrada/objava_1/slajd_04.png",
+    "04_izrada/objava_1/slajd_05.png",
+    "04_izrada/objava_1/slajd_06.png",
+    "04_izrada/objava_1/slajd_07.png"
+  ],
+  "tekst_slajdova": [
+    {
+      "kicker": "Whey 101",
+      "headline": "Just Whey za *početnike*",
+      "body": "Sve što trebaš znati prije prvog šejka.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "U jednoj mjerici",
+      "headline": "*Bjelančevina* u mjerici od 30 g",
+      "body": "Jedna mjerica = 30 g = 108 kcal (457 kJ). Bjelančevine doprinose povećanju i održavanju mišićne mase.",
+      "stat": "22 g",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Što je u posudi",
+      "headline": "*Izvora* sirutke u mjerici",
+      "body": "Koncentrat (WPC), izolat (WPI) i hidrolizat (WPH). Hidrolizat je enzimski razgrađen na kraće peptide.",
+      "stat": "3",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Priprema",
+      "headline": "Šejker, 200–300 ml, *gotovo*",
+      "body": "1 mjerica (30 g) + 200–300 ml vode ili mlijeka. Protresi nekoliko sekundi, bez grudica. Uzimaj 1–3× dnevno, najviše 90 g dnevno.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Laktoza",
+      "headline": "Mit ili *činjenica*?",
+      "body": "",
+      "stat": "",
+      "options": [
+        "„Whey je bez laktoze.“",
+        "Just Whey nije bez laktoze jer sadrži sirutku iz mlijeka."
+      ],
+      "footnote": "Proizvod nije namijenjen djeci; trudnice i dojilje trebaju se posavjetovati s liječnikom."
+    },
+    {
+      "kicker": "Merry Fitmas",
+      "headline": "Pečeš za *blagdane*?",
+      "body": "Uzmi Just Whey bez okusa. Nema sladila ni arome, a možeš ga koristiti za pečenje ili u slanim receptima.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Za kasnije",
+      "headline": "*Spremi* za prvi šejk",
+      "body": "Pošalji prijatelju koji tek kreće u gym. Sve okuse pogledaj na gymbeam.hr.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "images": [
+    {
+      "file": "01_bzet.jpg",
+      "role": "promo_kompozicija",
+      "background": "boja_brenda",
+      "extra_items": [
+        "bijele GymBeam čarape (3 para)",
+        "znak +"
+      ],
+      "visible_label_text": "GymBeam JUST WHEY GRASS FED WHEY PROTEIN DIGESTIVE ENZYMES | VITAMINS + MINERALS | STEVIA SWEETENED CHOCOLATE MILKSHAKE NET WT. 2000 g",
+      "usable_as_reference": false,
+      "reason": "Poklon čarape i znak + uz proizvod; crni poklopac odstupa od standardnog pakiranja"
+    },
+    {
+      "file": "02_evg.jpg",
+      "role": "promo_kompozicija",
+      "background": "boja_brenda",
+      "extra_items": [
+        "bijela ženska majica GymBeam",
+        "crna muška majica GymBeam",
+        "znak +"
+      ],
+      "visible_label_text": "GymBeam JUST WHEY GRASS FED WHEY PROTEIN DIGESTIVE ENZYMES | VITAMINS + MINERALS | STEVIA SWEETENED CHOCOLATE MILKSHAKE NET WT. 1000 g",
+      "usable_as_reference": false,
+      "reason": "Poklon majice i znak + uz proizvod"
+    },
+    {
+      "file": "03_ghbe.jpg",
+      "role": "promo_kompozicija",
+      "background": "boja_brenda",
+      "extra_items": [
+        "bijela ženska majica GymBeam",
+        "crna muška majica GymBeam",
+        "znak +"
+      ],
+      "visible_label_text": "GymBeam JUST WHEY GRASS FED WHEY PROTEIN DIGESTIVE ENZYMES | VITAMINS + MINERALS | STEVIA SWEETENED CHOCOLATE MILKSHAKE",
+      "usable_as_reference": false,
+      "reason": "Poklon majice i znak +; manja doza drugačijeg oblika"
+    },
+    {
+      "file": "04_tzm.jpg",
+      "role": "promo_kompozicija",
+      "background": "boja_brenda",
+      "extra_items": [
+        "crna ženska majica GymBeam",
+        "crna muška majica GymBeam",
+        "znak +"
+      ],
+      "visible_label_text": "GymBeam JUST WHEY GRASS FED WHEY PROTEIN DIGESTIVE ENZYMES | VITAMINS + MINERALS | STEVIA SWEETENED CHOCOLATE MILKSHAKE NET WT. 1000 g",
+      "usable_as_reference": false,
+      "reason": "Poklon majice i znak + uz proizvod"
+    },
+    {
+      "file": "05_just_whey_unflavored_1_kg_gymbeam_2.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "GymBeam JUST WHEY GRASS FED WHEY PROTEIN DIGESTIVE ENZYMES | VITAMINS + MINERALS | NO SWEETENER UNFLAVORED NET. WT. 1000 g",
+      "usable_as_reference": true,
+      "reason": "Čisti packshot samo proizvoda na bijeloj pozadini"
+    },
+    {
+      "file": "06_just_whey_unflavored_2_kg_gymbeam_3.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "GymBeam JUST WHEY GRASS FED WHEY PROTEIN DIGESTIVE ENZYMES | VITAMINS + MINERALS | NO SWEETENER UNFLAVORED NET. WT. 2000 g",
+      "usable_as_reference": true,
+      "reason": "Čisti packshot 2 kg varijante na bijeloj pozadini"
+    },
+    {
+      "file": "07_just_whey_vanilla_icecream_1_kg_gymbeam_1.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "GymBeam JUST WHEY GRASS FED WHEY PROTEIN DIGESTIVE ENZYMES | VITAMINS + MINERALS | STEVIA SWEETENED VANILLA ICE CREAM NET WT. 1000 g",
+      "usable_as_reference": true,
+      "reason": "Čisti packshot okusa vanilija na bijeloj pozadini"
+    },
+    {
+      "file": "08_just_whey_unflavored_1_kg_gymbeam_1.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "GymBeam JUST WHEY GRASS FED WHEY PROTEIN DIGESTIVE ENZYMES | VITAMINS + MINERALS | NO SWEETENER UNFLAVORED NET. WT. 1000 g",
+      "usable_as_reference": true,
+      "reason": "Čisti packshot, ekvivalent slike 05"
+    },
+    {
+      "file": "09_just_whey_salted_caramel_1_kg_gymbeam_1.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "GymBeam JUST WHEY GRASS FED WHEY PROTEIN DIGESTIVE ENZYMES | VITAMINS + MINERALS | STEVIA SWEETENED SALTED CARAMEL NET WT. 1000g",
+      "usable_as_reference": true,
+      "reason": "Čisti packshot, narančasti akcenti dobro pristaju boji brenda"
+    },
+    {
+      "file": "10_just_whey_white_chocolate_coconut_1_kg_gymbeam_1.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "GymBeam JUST WHEY GRASS FED WHEY PROTEIN DIGESTIVE ENZYMES | VITAMINS + MINERALS | STEVIA SWEETENED WHITE CHOCOLATE COCONUT NET WT. 1000 g",
+      "usable_as_reference": true,
+      "reason": "Čisti packshot okusa bijela čokolada-kokos"
+    }
+  ],
+  "best_reference": "09_just_whey_salted_caramel_1_kg_gymbeam_1.png",
+  "packaging_description": "Prozirna plastična posuda zaobljenog, bačvastog oblika (1 kg / 2 kg) kroz koju se vidi prah. Ima srebrni metalni navojni poklopac s rebrastim rubom. Široka bijela etiketa omotana je oko sredine posude. Na vrhu etikete je tanka traka u boji okusa (karamel narančasta, siva, krem, plava, smeđa), ispod nje fini točkasti uzorak. Raspored teksta odozgo prema dolje: mali logo „GymBeam” (Gym tankim, Beam podebljanim slovima); veliki crni kondenzirani naslov „JUST WHEY” sa sjenom u boji okusa; razmaknuti natpis „GRASS FED WHEY PROTEIN”; red „DIGESTIVE ENZYMES | VITAMINS + MINERALS | STEVIA SWEETENED” (kod Unflavored piše „NO SWEETENER”), s okomitim crticama u boji okusa; pravokutna pločica u boji okusa s nazivom okusa bijelim ili tamnim slovima; na dnu „NET WT. 1000 g”. Ispod etikete se opet vidi prah. U promo verzijama se pojavljuje i crni poklopac.",
+  "best_reference_path": "01_brif/products/just-whey-grass-fed-protein-gymbeam/images/09_just_whey_salted_caramel_1_kg_gymbeam_1.png"
+}

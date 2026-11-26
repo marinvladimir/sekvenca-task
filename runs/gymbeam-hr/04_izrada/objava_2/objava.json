@@ -1,0 +1,70 @@
+{
+  "objava": 2,
+  "naslov": "Kriza za slatkim: prosinac edition (MoiMüv)",
+  "cilj": "predstavljanje_proizvoda",
+  "format": "karusel",
+  "proizvod": "Proteinska pločica MoiMüv - GymBeam",
+  "koncept": "Nastavak prepoznatljive objave „Kriza za slatkim“ (IG:04) u blagdanskom ruhu. Minimalistička krem pozadina, prave ruke i packshot MoiMüv pločice u oba okusa. Karusel predstavlja pločicu pod njezinim imenom i nudi tri prosinačka načina upotrebe: desert uz kavu, topping za blagdanski desert i zobene pahuljice, pločica u radnoj torbi. Završava izborom okusa u komentarima.",
+  "obrazlozenje": "IG:04 („Kriza za slatkim“, krem #F3F0EB, ruke i packshot) jedan je od stilova kojima se brend prepoznaje. Analiza ipak bilježi da na pakiranju u toj objavi piše „GymBeam 20g PROTEIN BAR“, a ne MoiMüv. MoiMüv pločica dakle još nije jasno predstavljena. Analiza kao priliku izravno predlaže packshot formate iz IG:01 i IG:04. Food i recept sadržaj (IG:01) donosi najviše lajkova među vlastitim objavama, pa ideje za upotrebu imaju smisla. Pitanje s dva izbora okusa jednostavnije je od otvorenih pitanja koja su ostala bez komentara (IG:03).",
+  "kpi": "Glavni KPI su klikovi na poveznicu u biu i posjeti profilu po dosegu, kao signal interesa za kupnju. Sporedni KPI su broj komentara s odgovorom na pitanje o okusu (cilj je više od 0–2 komentara, koliko je zabilježeno dosad) i omjer spremanja (ideje za desert).",
+  "opis": "Kolači na svakom stolu, a ti imaš plan 😉 MoiMüv pločica u dva okusa: uz kavu, na desertu ili u torbi. Cookies & cream ili krokant-karamel? Napiši u komentar, a pločice pronađi preko poveznice u opisu profila 👇\n\nSadrži zaslađivače. Pretjerana konzumacija može imati laksativne učinke. Može sadržavati tragove glutena, jaja, kikirikija, orašastih plodova, sumpornog dioksida i sulfita te sjemenki sezama.\n\n#gymbeamhr #gbig #gbnutrition #gbwomen",
+  "alt_text": "Karusel od šest slajdova na minimalističkoj krem pozadini s rukama koje drže bijele MoiMüv proteinske pločice u okusima cookies & cream i krokant-karamel. Slajdovi navode udio proteina i ideje za blagdane: uz kavu, na desertu i u radnoj torbi.",
+  "slajdovi": [
+    "04_izrada/objava_2/slajd_01.png",
+    "04_izrada/objava_2/slajd_02.png",
+    "04_izrada/objava_2/slajd_03.png",
+    "04_izrada/objava_2/slajd_04.png",
+    "04_izrada/objava_2/slajd_05.png",
+    "04_izrada/objava_2/slajd_06.png"
+  ],
+  "tekst_slajdova": [
+    {
+      "kicker": "Blagdanski plan",
+      "headline": "Kriza za *slatkim*?",
+      "body": "Blagdani su, kolači su posvuda. Imamo plan.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "U jednoj pločici",
+      "headline": "*Proteina* u pločici od 60 g",
+      "body": "Visok udio proteina. Proteini doprinose rastu i održavanju mišićne mase.",
+      "stat": "19,8 g",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Upoznaj",
+      "headline": "*MoiMüv* proteinska pločica",
+      "body": "Cookies & cream • Krokant-karamel • Izvor vlakana • Malo šećera: 2,3–2,4 g po pločici (60 g)",
+      "stat": "",
+      "options": [],
+      "footnote": "Sadrži zaslađivače. Pretjerana konzumacija može imati laksativne učinke. Može sadržavati tragove glutena, jaja, kikirikija, orašastih plodova, sumpornog dioksida i sulfita te sjemenki sezama."
+    },
+    {
+      "kicker": "Blagdanski trik",
+      "headline": "Uz kavu ili *na desert*",
+      "body": "Pojedi je kao desert uz kavu. Nareži je preko blagdanskog deserta ili u zobene pahuljice, ili je iskoristi kao proteinsku bazu za koru kolača sa sirom.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Prosinačka gužva",
+      "headline": "Ubaci je u *torbu*",
+      "body": "Praktičan međuobrok za radnu torbu, za dane kad s posla trčiš na trening.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    },
+    {
+      "kicker": "Tvoj izbor",
+      "headline": "Cookies & cream *ili* krokant-karamel?",
+      "body": "Napiši u komentar 👇 Pločice pronađi na gymbeam.hr, poveznica je u opisu profila.",
+      "stat": "",
+      "options": [],
+      "footnote": ""
+    }
+  ]
+}

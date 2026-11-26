@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="hr"><head><meta charset="utf-8">
+<title>Kadar — upute i osvrt</title>
+<style>
+@font-face { font-family: Inter; src: url('../kadar/render/fonts/Inter-Variable.ttf'); font-weight: 100 900; }
+@page { size: A4; margin: 13mm 14mm 12mm; }
+* { box-sizing: border-box; }
+body { font: 8.6pt/1.38 Inter, sans-serif; color: #14202E; margin: 0; }
+h1 { font-size: 17pt; margin: 0 0 1mm; letter-spacing: -.01em; }
+h1 em { font-style: normal; color: #1A7A70; }
+.sub { color: #5C6670; margin-bottom: 3mm; }
+h2 { font-size: 10.2pt; margin: 3.2mm 0 1.2mm; color: #12233A; border-bottom: 1.2pt solid #1A7A70; padding-bottom: .6mm; }
+p { margin: 0 0 1.4mm; }
+ul, ol { margin: 0 0 1.4mm; padding-left: 4.5mm; }
+li { margin: 0 0 .5mm; }
+code { font-family: ui-monospace, Menlo, monospace; font-size: 7.8pt; background: #ECE9E2; padding: 0 1mm; border-radius: 1mm; }
+table { border-collapse: collapse; width: 100%; margin: .6mm 0 1.6mm; font-size: 7.9pt; }
+th, td { border: .5pt solid #D9D4CA; padding: .8mm 1.3mm; text-align: left; vertical-align: top; }
+th { background: #F3F0EB; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.box { background: #F3F0EB; border-left: 2pt solid #1A7A70; padding: 1.6mm 2.4mm; margin: 1mm 0 1.6mm; }
+.k { font-weight: 700; }
+.small { font-size: 7.6pt; color: #5C6670; }
+.pb { break-before: page; }
+</style></head><body>
+
+<h1>Kadar<em>.</em> — od Instagram brenda do tri gotove objave</h1>
+<div class="sub"><b>Marin Vladimir</b> · Praktičan zadatak AI Products · Brend: GymBeam Hrvatska (@gymbeamhr) · Upute i osvrt · studeni 2026.</div>
+
+<h2>1. Kako pokrenuti i podesiti</h2>
+<p><code>./setup.sh</code> instalira sve preduvjete (Python okruženje, pakete, Chromium za render i provjerava Claude Code CLI), a <code>./run.sh</code> otvara lokalnu web aplikaciju na <code>127.0.0.1:8770</code>. Isti postupak može se pokrenuti naredbama (<code>python -m kadar …</code>) ili u Claude Codeu naredbom <code>/kadar</code>. <span class="k">Jedina ručna radnja</span> je pristup modelu: <code>claude auth login</code> (zadano, Claude pretplata) ili <code>ANTHROPIC_API_KEY</code> uz <code>KADAR_LLM_BACKEND=api</code> u <code>.env</code> (primjer bez ključeva: <code>.env.example</code>). Model: Claude Opus 5.5 sa strukturiranim JSON izlazom validiranim shemom. Novi brend se zadaje obrascem u aplikaciji: web, poveznice proizvoda i IG objava, publika, ciljevi, ton, ograničenja te opcionalno logo i screenshotovi.</p>
+
+<h2>2. Pregled faza (6 kadrova, svaki sprema izlaz i čeka ljudsko odobrenje)</h2>
+<table>
+<tr><th>Kadar</th><th>Ulaz</th><th>Što radi</th><th>Izlaz</th></tr>
+<tr><td>01 Brif</td><td>brif, poveznice</td><td>dohvaća činjenice i slike proizvoda (schema.org), službeni logo (SVG), javne podatke 12 IG objava</td><td>ulazi + registar izvora S1…</td></tr>
+<tr><td>02 Analiza</td><td>izlaz 01</td><td>bira čisti packshot, izvlači 70+ dopuštenih tvrdnji s doslovnim citatima, mjeri paletu kodom, analizira ton, publiku, teme i stil uz oznake <i>provjereno / pretpostavka / nedostupno</i></td><td><code>analiza.md</code></td></tr>
+<tr><td>03 Plan</td><td>analiza + ljudske smjernice</td><td>3 objave (cilj, format, koncept, slajdovi iz 10 predložaka, KPI, rizici) i odbačene ideje; kod provjerava tvrdnje</td><td><code>plan.md</code></td></tr>
+<tr><td>04 Izrada</td><td>odobreni plan</td><td>završni tekstovi (lektura, „ti”), render HTML/CSS → PNG 1080×1350 / 1080×1920</td><td>18 slajdova + opisi</td></tr>
+<tr><td>05 Provjera</td><td>objave</td><td>143 provjere (kod + AI vizija) i petlja dorade (<code>fix</code>)</td><td><code>provjera.md</code></td></tr>
+<tr><td>06 Isporuka</td><td>odobreno</td><td>paket objava, izvora, ulaza i dokumenata</td><td><code>isporuka/gymbeam-hr/</code></td></tr>
+</table>
+
+<h2>3. Tri objave</h2>
+<p><span class="k">1 · Karusel (7)</span> „Just Whey za početnike”, cilj spremanja. <span class="k">2 · Karusel (6)</span> „Kriza za slatkim: prosinac” (MoiMüv), cilj interes za kupnju. <span class="k">3 · Niz storyja (5)</span> „D3 kviz”, cilj reakcije. Analiza je pokazala da na profilu nema edukativnih karusela i da tri izabrana proizvoda nemaju vlastitu objavu. Objava 2 nastavlja njihov format „Kriza za slatkim”, a objava 3 zamjenjuje pitanja u opisima, koja nisu dobivala komentare.</p>
+
+<h2>4. Ključne odluke</h2>
+<ul>
+<li><span class="k">Proizvod se ne generira.</span> Modeli za slike izobliče etikete i logo, pa se koriste stvarni packshotovi i službeni SVG logo, a dizajn i tekst renderira preglednik (točni č, ć, ž, š, đ). Prva slika u galeriji webshopa bila je promo kompozicija s čarapama; recept je odbacuje i bira čisti packshot varijante.</li>
+<li><span class="k">Činjenice samo iz izvora.</span> Svaka tvrdnja ima citat i oznaku smije li u objavu (EU 1924/2006). Uhvaćene su i nedosljednosti samog izvora (22 / 22,5 / 22,8 g proteina), pa se koristi konzervativna vrijednost. Cijene i ocjene se ne koriste jer su promjenjive.</li>
+<li><span class="k">Model bira samo iz zadanih okvira.</span> Plan bira raspored iz skupa koji renderer zna nacrtati, a izrada mijenja samo tekst. Promptovi su zasebne datoteke u <code>prompts/</code>.</li>
+<li><span class="k">Bez dodatnog troška.</span> Zadani backend je Claude Code CLI s postojećom pretplatom; API je opcija.</li>
+</ul>
+
+<h2>5. Provjera rezultata</h2>
+<table>
+<tr><th>Krug</th><th>Provjera</th><th>✅</th><th>⚠️</th><th>❌</th><th>Ishod</th></tr>
+<tr><td>Kalibracija (kod)</td><td>113</td><td>107</td><td>1</td><td>5</td><td>4 lažne uzbune testa ispravljene, 1 stvarna (premalen naslov)</td></tr>
+<tr><td>Krug 1 (kod + AI vizija)</td><td>143</td><td>130</td><td>13</td><td>0</td><td>8 ispravljeno, 2 odbačene s razlogom, 1 opcionalna</td></tr>
+<tr><td>Krug 2</td><td>143</td><td>135</td><td>8</td><td>0</td><td>uhvaćena i regresija iz kruga 1</td></tr>
+<tr><td>Završno (kod)</td><td>113</td><td>113</td><td>0</td><td>0</td><td>—</td></tr>
+</table>
+<p>Primjeri: „u biu” → „u opisu profila”, kicker „Blagdansko izdanje” sugerirao je proizvod koji ne postoji, odgovor na kviz nije bio vidljiv, kvačice na Š i Č preklapale su se s retkom iznad. Odbačeno: prijedlog da se boja vrati na #DE7419, jer je to svjesna ljudska odluka; provjera od tada dobiva ljudske odluke kao kontekst.</p>
+
+<h2>6. Ljudski doprinos i primjer dorade</h2>
+<p>Ljudski dio rada: odluke o brendu (obraćanje „ti”, službena narančasta #FF4500 umjesto boje izmjerene iz prigušenih fotografija), lektura i ton tekstova, vizualni QA slajdova i aplikacije te završni QA. Sve je evidentirano u <code>HUMAN_EDITS.md</code> i <code>inputs/</code>.</p>
+<div class="box"><span class="k">Konkretan primjer (vizualni QA):</span> u prvom renderu veliki naslovi u fontu Anton preklapali su se s retkom ispod: kvačice na Č, Š i Ž dodirivale su prethodni redak, a golema brojka „22 g” naslov. AI je tekst ocijenio ispravnim; problem je uočio čovjek pregledom slajdova. Dorada: veći prored naslova, manje najveće veličine naslova i brojki, nedjeljivi razmaci (broj + jedinica, kratke riječi), a kasnije i automatska provjera preljeva i veličine naslova u kadru 05, da se greška ne ponovi.</div>
+
+<h2>7. Ograničenja</h2>
+<ul>
+<li>Feed profila nije dostupan bez prijave; koriste se javni podaci objava iz poveznica i screenshotovi. Spremanja, doseg i storyji nisu dostupni, a broj lajkova razlikuje se između izvora (38 naspram 116), pa je angažman samo okviran.</li>
+<li>Ankete, kvizovi i link u storyju su grafika; pri objavi se postavljaju nativni stikeri (upute uz objavu).</li>
+<li>Objave su grafičke, s pravim packshotom, bez fotografija scena. Tekstovi variraju između pokretanja jer je model nedeterministički, dok su izvori, packshotovi, boje, rasporedi i pravila provjere stabilni.</li>
+</ul>
+
+<h2>8. Utrošeno vrijeme</h2>
+<p>Aktivni ljudski rad ≈ <span class="k">40 min</span> (odluke, Instagram ulazi, pregledi, QA). Rad AI agenta na izradi recepta i čekanje ≈ <span class="k">1 h 35 min</span>. Čisto generiranje unutar recepta: <span class="k">17 AI poziva, ≈ 19 min</span> (≈ 440k ulaznih i 120k izlaznih tokena). Detalji su u <code>TIMELOG.md</code> i <code>runs/…/calls.jsonl</code>.</p>
+
+<h2>9. Prijedlog unapređenja: učenje iz komentara, odobrenja i rezultata</h2>
+<ul>
+<li><span class="k">Podaci:</span> (a) Instagram Insights po objavi (spremanja, dijeljenja, doseg, zadržavanje po slajdu, glasovi u anketi, klikovi na link); (b) komentari, klasificirani po temi i tonu; (c) ljudske odluke iz recepta (napomene uz odobrenje, <code>HUMAN_EDITS</code>, ispravci, odbačeni prijedlozi provjere).</li>
+<li><span class="k">Što se mijenja:</span> „memorija brenda” uz analizu, tj. odobreni i uspješni primjeri kao uzori u promptu plana i teksta; težine rasporeda i formata prema KPI-ju; pravila provjere iz ponavljajućih ljudskih ispravaka (npr. preljev, „u biu”); popis zabranjenih formulacija iz odbijenih tekstova.</li>
+<li><span class="k">Kako dokazati da je nova verzija bolja:</span> fiksni evaluacijski skup od 10–20 brifova (različiti brendovi). Stara i nova verzija rade na istim ulazima, a mjere se prolaznost provjere (❌ i ⚠️ po objavi), broj ljudskih ispravaka do odobrenja i slijepa ljudska ocjena po rubrici (brend, točnost, jasnoća, kreativnost). U produkciji se A/B testom usporedi omjer spremanja i dosega kroz 4–6 tjedana. Nova verzija ulazi samo ako nije lošija ni na jednom kriteriju točnosti.</li>
+</ul>
+<p class="small">Repozitorij: <code>README.md</code> (pokretanje), <code>RECEPT.md</code> (alati, modeli, postavke, ljudske radnje), <code>isporuka/gymbeam-hr/</code> (objave, izvori, međurezultati), <code>prompts/</code>, <code>.claude/commands/kadar.md</code>.</p>
+</body></html>

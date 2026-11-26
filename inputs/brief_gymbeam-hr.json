@@ -1,0 +1,17 @@
+{
+  "brand": "GymBeam HR",
+  "instagram": "https://www.instagram.com/gymbeamhr/",
+  "website": "https://gymbeam.hr",
+  "products": [
+    "https://gymbeam.hr/protein-just-whey-gymbeam.html",
+    "https://gymbeam.hr/vitamin-d3-1000-iu-gymbeam.html",
+    "https://gymbeam.hr/proteinska-plocica-moimuv-gymbeam.html"
+  ],
+  "audience": "Rekreativci i ljudi koji redovito treniraju (cca 18–40), u Hrvatskoj; dio publike tek ulazi u svijet suplemenata i traži jednostavna objašnjenja.",
+  "goals": "1) edukacija koja se sprema (saves), 2) predstavljanje proizvoda s interesom za kupnju, 3) više reakcija i odgovora u storyjima.",
+  "inspiration": "Postojeći GymBeam stil (jarko narančasta, packshotovi, kratki udarni naslovi); edukativni karuseli kakve rade fitness i nutricionistički profili.",
+  "tone_notes": "Energično, prijateljski, obraćanje s 'ti', bez pretjerivanja i bez 'čudesnih' obećanja.",
+  "constraints": "Bez izmišljenih svojstava, cijena i izjava stvarnih osoba; samo tvrdnje sa službene stranice; logo i pakiranje moraju ostati točni; zimska sezona (prosinac).",
+  "language": "hrvatski",
+  "instagram_screenshots_dir": "inputs/instagram"
+}

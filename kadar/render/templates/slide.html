@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: 'Anton'; src: url('{{ fonts }}/Anton-Regular.ttf'); }
+@font-face { font-family: 'Inter'; src: url('{{ fonts }}/Inter-Variable.ttf'); font-weight: 100 900; }
+:root { --brand: {{ c.brand }}; --dark: {{ c.dark }}; --light: {{ c.light }}; --white: #FFFFFF;
+  --W: {{ W }}px; --H: {{ H }}px; --pad: 80px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: var(--W); height: var(--H); overflow: hidden; }
+body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+.slide { position: relative; width: var(--W); height: var(--H); padding: var(--pad); display: flex; flex-direction: column; overflow: hidden; }
+.bg-brand    { background: var(--brand); color: var(--white); --accent: var(--dark);  --card: var(--white); }
+.bg-tamna    { background: var(--dark);  color: var(--white); --accent: var(--brand); --card: var(--white); }
+.bg-svijetla { background: var(--light); color: var(--dark);  --accent: var(--brand); --card: var(--white); }
+.bg-bijela   { background: var(--white); color: var(--dark);  --accent: var(--brand); --card: var(--white); }
+.deco { position: absolute; right: -260px; top: -220px; width: 900px; height: 900px; border-radius: 50%;
+  border: 150px solid currentColor; opacity: .07; pointer-events: none; }
+.bg-svijetla .deco, .bg-bijela .deco { color: var(--brand); opacity: .10; }
+.top { display: flex; justify-content: space-between; align-items: center; height: 56px; position: relative; z-index: 2; }
+.top img.logo { height: 44px; }
+.counter { font: 600 26px 'Inter'; letter-spacing: .1em; opacity: .8; }
+.story .top { margin-top: 150px; margin-bottom: 40px; }
+.content { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; gap: 34px; position: relative; z-index: 2; }
+.kicker { align-self: flex-start; font: 800 28px 'Inter'; text-transform: uppercase; letter-spacing: .1em;
+  padding: 12px 22px; border-radius: 999px; background: var(--accent); color: var(--white); }
+h1 { font-family: 'Anton', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 1.16; font-size: 128px; padding-top: .08em; }
+h1 em { font-style: normal; color: var(--accent); }
+h1 .unit { text-transform: none; }
+.body { font-size: 40px; line-height: 1.32; font-weight: 500; max-width: 900px; }
+.bg-brand .body, .bg-brand .footnote { font-weight: 650; }
+.stat { font-family: 'Anton'; font-size: 260px; line-height: 1; color: var(--accent); margin-bottom: 10px; }
+.bg-brand .stat { color: var(--white); }
+.card { background: #FFFFFF; border-radius: 36px; display: flex; align-items: center; justify-content: center;
+  overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,.18); }
+.card img { width: 100%; height: 100%; object-fit: contain; }
+.bottom { margin-top: 28px; display: flex; justify-content: space-between; align-items: flex-end; position: relative; z-index: 2;
+  font: 700 26px 'Inter'; letter-spacing: .06em; text-transform: uppercase; }
+.story .bottom { margin-bottom: 260px; }
+.footnote { position: relative; z-index: 2; font: 600 28px/1.35 'Inter'; opacity: .95; margin: 18px 0 22px; max-width: 920px; }
+.swipe { display: inline-flex; align-items: center; gap: 14px; }
+.swipe::after { content: ""; width: 64px; height: 4px; background: currentColor; }
+
+.L-naslovnica .content { justify-content: flex-end; }
+.L-naslovnica.has-product .content { padding-right: 470px; }
+.L-naslovnica > .card { position: absolute; right: 70px; bottom: 170px; width: 420px; height: 520px; transform: rotate(4deg); z-index: 3; }
+.story.L-naslovnica > .card { bottom: 420px; }
+.L-savjet .num { font-family: 'Anton'; font-size: 180px; line-height: 1; color: var(--accent); }
+.L-savjet h1 { font-size: 104px; }
+.L-mit_cinjenica h1 { font-size: 104px; }
+.L-mit_cinjenica .box { border-radius: 30px; padding: 40px 44px; }
+.L-mit_cinjenica .myth { border: 4px dashed currentColor; }
+.L-mit_cinjenica .myth .t { text-decoration: line-through; text-decoration-thickness: 4px; opacity: .85; }
+.L-mit_cinjenica .fact { background: var(--card); color: var(--dark); }
+.L-mit_cinjenica .lab { font: 800 26px 'Inter'; letter-spacing: .12em; margin-bottom: 14px; }
+.L-mit_cinjenica .fact .lab { color: var(--brand); }
+.L-mit_cinjenica .t { font-size: 44px; line-height: 1.25; font-weight: 700; }
+.L-proizvod .content { justify-content: flex-start; gap: 28px; }
+.L-proizvod .card { height: 500px; flex: none; }
+.story.L-proizvod .card { height: 800px; }
+.L-proizvod h1 { font-size: 92px; }
+.L-proizvod ul { list-style: none; display: grid; gap: 14px; }
+.L-proizvod li { font-size: 34px; font-weight: 600; padding-left: 44px; position: relative; line-height: 1.25; }
+.L-proizvod li::before { content: ""; position: absolute; left: 0; top: 10px; width: 22px; height: 22px; border-radius: 6px; background: var(--accent); }
+.bg-brand.L-proizvod li::before { background: var(--white); }
+.L-poziv .save { width: 120px; height: 150px; background: var(--accent); clip-path: polygon(0 0,100% 0,100% 100%,50% 76%,0 100%); }
+.bg-brand.L-poziv .save { background: var(--white); }
+.L-poziv .comment { width: 140px; height: 110px; background: var(--accent); border-radius: 30px; position: relative; }
+.L-poziv .comment::after { content: ""; position: absolute; left: 26px; bottom: -30px; border: 18px solid transparent; border-top: 22px solid var(--accent); border-left: 4px solid var(--accent); }
+.bg-brand.L-poziv .comment { background: var(--white); } .bg-brand.L-poziv .comment::after { border-top-color: var(--white); border-left-color: var(--white); }
+.sticker { background: var(--white); color: var(--dark); border-radius: 36px; padding: 44px; box-shadow: 0 24px 60px rgba(0,0,0,.22); }
+.sticker .q { font: 800 46px/1.2 'Inter'; text-align: center; margin-bottom: 34px; }
+.poll { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.poll div { border-radius: 22px; background: #F1F1F1; padding: 34px 18px; text-align: center; font: 800 40px 'Inter'; color: var(--brand); }
+.quiz { display: grid; gap: 18px; }
+.quiz div { border-radius: 22px; background: #F1F1F1; padding: 26px 30px; font: 700 36px 'Inter'; display: flex; gap: 22px; align-items: center; }
+.quiz div::before { content: attr(data-l); width: 52px; height: 52px; border-radius: 50%; background: var(--brand); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center; font: 800 26px 'Inter'; flex: none; }
+.linksticker { align-self: center; display: inline-flex; gap: 16px; align-items: center; background: var(--white); color: var(--brand);
+  border-radius: 20px; padding: 24px 40px; font: 800 38px 'Inter'; letter-spacing: .04em; text-transform: uppercase; box-shadow: 0 20px 50px rgba(0,0,0,.2); }
+.L-story_otkrivanje .card { height: 640px; flex: none; }
+.L-story_poveznica .card { height: 480px; flex: none; }
+</style>
+</head>
+<body>
+<div class="slide L-{{ s.layout }} bg-{{ s.background }}{{ ' has-product' if product_img }}{{ ' story' if story }}">
+  <div class="deco"></div>
+  <div class="top">
+    <img class="logo" src="{{ logo_white if s.background in ('brand','tamna') else logo_dark }}" alt="logo">
+    {% if total > 1 and not story %}<div class="counter">{{ '%02d' % idx }} / {{ '%02d' % total }}</div>{% endif %}
+  </div>
+  <div class="content">
+  {% if s.layout == 'naslovnica' %}
+    {% if s.kicker %}<div class="kicker">{{ s.kicker }}</div>{% endif %}
+    <h1 class="fit">{{ s.headline_html|safe }}</h1>
+    {% if s.body %}<div class="body">{{ s.body }}</div>{% endif %}
+  {% elif s.layout == 'cinjenica' %}
+    {% if s.kicker %}<div class="kicker">{{ s.kicker }}</div>{% endif %}
+    <div class="stat">{{ s.stat }}</div>
+    <h1 class="fit" style="font-size:96px">{{ s.headline_html|safe }}</h1>
+    {% if s.body %}<div class="body">{{ s.body }}</div>{% endif %}
+  {% elif s.layout == 'savjet' %}
+    {% if s.kicker and s.kicker|length <= 3 and s.kicker[0].isdigit() %}<div class="num">{{ s.kicker }}</div>
+    {% elif s.kicker %}<div class="kicker">{{ s.kicker }}</div>{% endif %}
+    <h1 class="fit">{{ s.headline_html|safe }}</h1>
+    {% if s.body %}<div class="body">{{ s.body }}</div>{% endif %}
+  {% elif s.layout == 'mit_cinjenica' %}
+    <h1 class="fit">{{ s.headline_html|safe }}</h1>
+    <div class="box myth"><div class="lab">MIT</div><div class="t">{{ s.options[0] if s.options else '' }}</div></div>
+    <div class="box fact"><div class="lab">ČINJENICA</div><div class="t">{{ s.options[1] if s.options|length > 1 else s.body }}</div></div>
+  {% elif s.layout == 'proizvod' %}
+    {% if product_img %}<div class="card"><img src="{{ product_img }}"></div>{% endif %}
+    <h1 class="fit">{{ s.headline_html|safe }}</h1>
+    {% if s.bullets %}<ul>{% for b in s.bullets %}<li>{{ b }}</li>{% endfor %}</ul>{% elif s.body %}<div class="body">{{ s.body }}</div>{% endif %}
+  {% elif s.layout == 'poziv' %}
+    <div class="{{ 'comment' if 'komentar' in (s.body ~ s.headline)|lower else 'save' }}"></div>
+    <h1 class="fit">{{ s.headline_html|safe }}</h1>
+    {% if s.body %}<div class="body">{{ s.body }}</div>{% endif %}
+  {% elif s.layout == 'story_anketa' %}
+    {% if s.kicker %}<div class="kicker">{{ s.kicker }}</div>{% endif %}
+    <h1 class="fit" style="font-size:120px">{{ s.headline_html|safe }}</h1>
+    <div class="sticker"><div class="q">{{ s.body or s.headline }}</div>
+      <div class="poll">{% for o in s.options[:2] %}<div>{{ o }}</div>{% endfor %}</div></div>
+  {% elif s.layout == 'story_kviz' %}
+    {% if s.kicker %}<div class="kicker">{{ s.kicker }}</div>{% endif %}
+    <h1 class="fit" style="font-size:120px">{{ s.headline_html|safe }}</h1>
+    <div class="sticker"><div class="q">{{ s.body or s.headline }}</div>
+      <div class="quiz">{% for o in s.options[:4] %}<div data-l="{{ 'ABCD'[loop.index0] }}">{{ o }}</div>{% endfor %}</div></div>
+  {% elif s.layout == 'story_otkrivanje' %}
+    {% if s.kicker %}<div class="kicker">{{ s.kicker }}</div>{% endif %}
+    <h1 class="fit" style="font-size:124px">{{ s.headline_html|safe }}</h1>
+    {% if s.body %}<div class="body">{{ s.body }}</div>{% endif %}
+    {% if product_img %}<div class="card"><img src="{{ product_img }}"></div>{% endif %}
+  {% elif s.layout == 'story_poveznica' %}
+    {% if s.kicker %}<div class="kicker">{{ s.kicker }}</div>{% endif %}
+    <h1 class="fit" style="font-size:124px">{{ s.headline_html|safe }}</h1>
+    {% if s.body %}<div class="body">{{ s.body }}</div>{% endif %}
+    {% if product_img %}<div class="card"><img src="{{ product_img }}"></div>{% endif %}
+    <div class="linksticker">{{ link_label }}</div>
+  {% endif %}
+  </div>
+  {% if s.layout == 'naslovnica' and product_img %}<div class="card"><img src="{{ product_img }}"></div>{% endif %}
+  {% if source %}<div class="footnote">{{ source }}</div>{% endif %}
+  <div class="bottom">
+    <span>{{ handle }}</span>
+    {% if total > 1 and idx < total and not story %}<span class="swipe">Listaj</span>{% endif %}
+  </div>
+</div>
+<script>
+Promise.all([document.fonts.load('400 100px Anton'), document.fonts.load('600 40px Inter')]).then(() => document.fonts.ready).then(() => {
+  const content = document.querySelector('.content');
+  document.querySelectorAll('h1.fit').forEach(h => {
+    let size = parseFloat(getComputedStyle(h).fontSize);
+    // širina najduže riječi mjeri se kroz Range (scrollWidth ne vidi preljev jedne duge riječi)
+    const widest = () => { const r = document.createRange(); r.selectNodeContents(h);
+      return Math.max(...Array.from(r.getClientRects()).map(x => x.right)) - h.getBoundingClientRect().left; };
+    const tooBig = () => widest() > h.clientWidth + 2 || content.scrollHeight > content.clientHeight + 2;
+    while (tooBig() && size > 40) { size -= 4; h.style.fontSize = size + 'px'; }
+  });
+  // mjerenja za kadar 05 (provjera): preljev, veličina naslova, granice teksta
+  const sl = document.querySelector('.slide').getBoundingClientRect();
+  const texts = Array.from(document.querySelectorAll('h1, .body, .sticker, .kicker, .stat, ul, .box, .linksticker, .footnote'));
+  const tops = texts.map(e => e.getBoundingClientRect().top), bots = texts.map(e => e.getBoundingClientRect().bottom);
+  const h1 = document.querySelector('h1');
+  document.body.dataset.metrics = JSON.stringify({
+    overflow_v: content.scrollHeight > content.clientHeight + 2,
+    overflow_h: Array.from(document.querySelectorAll('h1.fit')).some(h => { const r = document.createRange(); r.selectNodeContents(h);
+      return Math.max(...Array.from(r.getClientRects()).map(x => x.right)) > h.getBoundingClientRect().right + 2; }),
+    headline_px: h1 ? parseFloat(getComputedStyle(h1).fontSize) : null,
+    text_top: tops.length ? Math.round(Math.min(...tops) - sl.top) : null,
+    text_bottom: bots.length ? Math.round(Math.max(...bots) - sl.top) : null,
+    logo_ok: (() => { const l = document.querySelector('img.logo'); return !!(l && l.complete && l.naturalWidth > 0); })(),
+    product_ok: (() => { const i = document.querySelector('.card img'); return i ? (i.complete && i.naturalWidth > 0) : null; })(),
+  });
+  document.body.dataset.ready = '1';
+});
+</script>
+</body>
+</html>

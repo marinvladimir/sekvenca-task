@@ -1,0 +1,248 @@
+{
+  "source_id": "S2",
+  "product": "Vitamin D3 1000 IU - GymBeam (S2)",
+  "claims": [
+    {
+      "text": "Jedna kapsula sadrži 25 μg (1000 IU) vitamina D3, što je 500 % preporučenog dnevnog unosa.",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "description_long (Nutritivne vrijednosti)",
+      "exact_quote": "Vitamin D3 25 μg (1000 IU) 500 %",
+      "safe_for_post": true,
+      "note": "Iste vrijednosti navode FAQ (\"1000 IU (25 mcg)\") i properties (\"Količina aktivne tvari po dnevnoj dozi\": \"25\"). Stranica piše \"RDI\" i uz to navodi fusnotu \"(8400 kJ / 2000 kcal)\", koja se odnosi na energiju, a ne na vitamine. U objavi napisati \"500 % preporučenog dnevnog unosa\" i ne prenositi tu fusnotu."
+    },
+    {
+      "text": "Vitamin D3 u obliku kolekalciferola",
+      "kind": "sastav",
+      "source_field": "description_long",
+      "exact_quote": "oblik vitamina D (kolekalciferol)",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Softgel kapsule; vitamin D3 otopljen u ulju šafranike",
+      "kind": "sastav",
+      "source_field": "faq + properties.Capsule Type",
+      "exact_quote": "vitamin D3 otopljen u ulju šafranike",
+      "safe_for_post": true,
+      "note": "Ulje šafranike spominje samo FAQ. Nema potpunog popisa sastojaka, pa bi prije objave trebalo provjeriti deklaraciju."
+    },
+    {
+      "text": "Pakiranje od 60 kapsula (dostupno i 120 i 365 kapsula)",
+      "kind": "ostalo",
+      "source_field": "properties.Kapsule + variants",
+      "exact_quote": "60 kaps.",
+      "safe_for_post": true,
+      "note": "Uz dozu od 1 kapsule dnevno, 60 kapsula traje 60 dana."
+    },
+    {
+      "text": "Vitamin D doprinosi normalnoj funkciji imunološkog sustava",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "doprinosi pravilnom funkcioniranju imunološkog sustava",
+      "safe_for_post": true,
+      "note": "Koristiti samo ovu formulaciju. Kratki opis piše \"optimalnu funkciju imunološkog sustava\". To je pojačan oblik i ne smije se koristiti."
+    },
+    {
+      "text": "Vitamin D pridonosi pravilnoj apsorpciji fosfora i kalcija",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "pridonosi pravilnoj apsorpciji fosfora i kalcija",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Vitamin D pridonosi normalnoj razini kalcija u krvi",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "pridonosi normalnoj razini kalcija u krvi",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Vitamin D podupire održavanje zdravih kostiju i zuba",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "podupire održavanje zdravih kostiju i zuba",
+      "safe_for_post": true,
+      "note": "Ne pisati \"jača kosti\" niti spominjati sprječavanje osteoporoze."
+    },
+    {
+      "text": "Vitamin D podržava pravilan rad mišića",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "podržava pravilan rad mišića",
+      "safe_for_post": true,
+      "note": "Tvrdnja se odnosi na funkciju mišića. Ne pisati o rastu mišića, snazi ni oporavku."
+    },
+    {
+      "text": "Vitamin D ima ulogu u procesu diobe stanica",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "igra ulogu u procesu diobe stanica",
+      "safe_for_post": true,
+      "note": "Ne nadograđivati rečenicom iz izvora \"Oni zauzvrat čine svaki dio našeg tijela\"."
+    },
+    {
+      "text": "Vitamin D tijelo može proizvesti zahvaljujući sunčevoj svjetlosti",
+      "kind": "ostalo",
+      "source_field": "description_long",
+      "exact_quote": "Njegovu proizvodnju pokreću sunčeve zrake na koži",
+      "safe_for_post": false,
+      "note": "Rečenica u izvoru (\"može proizvesti samo zahvaljujući sunčevoj svjetlosti\") je dvosmislena. Ovo je opća informacija, a ne odobrena tvrdnja o proizvodu. Prije objave potrebna je provjera."
+    },
+    {
+      "text": "Bez glutena, bez laktoze, bez šećera, bez umjetnih zaslađivača, bez GMO",
+      "kind": "sastav",
+      "source_field": "properties",
+      "exact_quote": "\"Bez glutena\": \"Da\", \"Bez laktoze\": \"Da\"",
+      "safe_for_post": true,
+      "note": "FAQ to potvrđuje: \"ne sadrže gluten, laktozu i šećer\". Za \"Bez šećera\", \"Bez umjetnih zaslađivača\" i \"Bez GMO\" properties također navode \"Da\"."
+    },
+    {
+      "text": "Bez kofeina i stimulansa, bez soje, mlijeka, kazeina, jaja, kikirikija i orašastih plodova",
+      "kind": "sastav",
+      "source_field": "properties.Bez sadržaja (sastojci)",
+      "exact_quote": "Bez kofeina, stimulant free, palm oil free, egg free, peanut free, nut free, Bez kazeina, Bez mlijeka, Bez soje",
+      "safe_for_post": true,
+      "note": "Izraz \"Bez glavnih alergena\" bolje je ne koristiti bez provjere deklaracije."
+    },
+    {
+      "text": "Aktivna tvar je životinjskog podrijetla; proizvod nije veganski ni vegetarijanski",
+      "kind": "porijeklo_proizvodnja",
+      "source_field": "properties",
+      "exact_quote": "\"Podrijetlo aktivne tvari\": \"Životinjski\"",
+      "safe_for_post": true,
+      "note": "Properties: \"Veganski\": \"Ne\", \"Vegetarijanski\": \"Ne\"."
+    },
+    {
+      "text": "Laboratorijski testirano i neovisno ispitano (treća strana) u Njemačkoj: mikrobiologija, teški metali, sadržaj aktivnih tvari",
+      "kind": "porijeklo_proizvodnja",
+      "source_field": "properties",
+      "exact_quote": "\"Neovisno ispitano (od treće strane)\": \"Da\"",
+      "safe_for_post": true,
+      "note": "Properties: \"Vrsta laboratorijskog ispitivanja\": \"Mikrobiologija, Teški metali, Sadržaj aktivnih tvari\", \"Zemlja testiranja\": \"Germany\"."
+    },
+    {
+      "text": "Preporučena dnevna doza: 1 kapsula, u bilo koje vrijeme",
+      "kind": "upotreba",
+      "source_field": "properties",
+      "exact_quote": "\"Preporučena dnevna doza\": \"1\"",
+      "safe_for_post": true,
+      "note": "Properties: \"Kada koristiti\": \"U bilo koje vrijeme\", \"Maksimalna dnevna doza\": \"1 kapsula\"."
+    },
+    {
+      "text": "Prikladno za putovanja",
+      "kind": "upotreba",
+      "source_field": "properties.Prikladno za putovanja",
+      "exact_quote": "\"Prikladno za putovanja\": \"Da\"",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Preporučena dnevna doza ne smije se prekoračiti. Proizvod nije zamjena za uravnoteženu i raznoliku prehranu.",
+      "kind": "upozorenje",
+      "source_field": "description_long (Upozorenje)",
+      "exact_quote": "Preporučena dnevna doza ne smije se prekoračiti. Ovaj proizvod nije zamjena za uravnoteženu i raznoliku prehranu.",
+      "safe_for_post": true,
+      "note": "Preporučuje se uvrstiti u objavu ili opis objave."
+    },
+    {
+      "text": "Nije za djecu, trudnice i dojilje. Čuvati izvan dohvata djece.",
+      "kind": "upozorenje",
+      "source_field": "description_long (Upozorenje) + properties",
+      "exact_quote": "Nije za djecu, trudnice i dojilje.",
+      "safe_for_post": true,
+      "note": "Ovo je konzervativnija verzija. FAQ trudnicama i dojiljama samo savjetuje da se posavjetuju s liječnikom (vidi nedosljednosti)."
+    },
+    {
+      "text": "Čuvati na suhom mjestu do 25 °C, zaštititi od mraza i izravne sunčeve svjetlosti",
+      "kind": "upozorenje",
+      "source_field": "description_long",
+      "exact_quote": "Čuvati na suhom mjestu na temperaturi do 25°C",
+      "safe_for_post": true,
+      "note": "Konzervativnije od \"na sobnoj temperaturi\" iz properties."
+    },
+    {
+      "text": "Ocjena kupaca 4,9 od 721 recenzije",
+      "kind": "ocjena_kupaca",
+      "source_field": "rating",
+      "exact_quote": "\"value\": 4.9, \"count\": 721",
+      "safe_for_post": true,
+      "note": "Ocjena se mijenja. Ako se koristi, navesti datum (stanje 26. 11. 2026.), npr. \"4,9/5 prema 721 recenziji na GymBeam.hr\"."
+    },
+    {
+      "text": "Pogodan za osobe koje koriste GLP-1 lijekove",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "pogodan za osobe koje koriste GLP-1 lijekove",
+      "safe_for_post": false,
+      "note": "Tvrdnja se odnosi na lijekove i bolesna stanja. Nije odobrena tvrdnja i zahtijeva pravnu i medicinsku provjeru."
+    },
+    {
+      "text": "Djeluje na mnoge biološke procese u tijelu",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "djeluje na mnoge biološke procese u tijelu",
+      "safe_for_post": false,
+      "note": "Uopćena tvrdnja, nije među odobrenima."
+    },
+    {
+      "text": "Sveobuhvatna briga o zdravlju / idealan za svakoga tko želi podržati svoje zdravlje",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "pružiti Vam sveobuhvatnu brigu o zdravlju",
+      "safe_for_post": false,
+      "note": "Općenita tvrdnja o zdravlju. Po čl. 10(3) Uredbe 1924/2006 smije se koristiti samo uz odobrenu specifičnu tvrdnju, a i tada je \"sveobuhvatna\" pretjerano."
+    },
+    {
+      "text": "Standardna količina za dnevno održavanje razine vitamina D",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "faq",
+      "exact_quote": "standardna količina koja se često koristi za dnevno održavanje razine vitamina D",
+      "safe_for_post": false,
+      "note": "Nije odobrena tvrdnja. Implicira učinak na status vitamina D u tijelu."
+    },
+    {
+      "text": "Optimalna funkcija imunološkog sustava",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_short",
+      "exact_quote": "Podržava optimalnu funkciju imunološkog sustava",
+      "safe_for_post": false,
+      "note": "\"Optimalnu\" pojačava odobrenu tvrdnju. Koristiti \"doprinosi normalnoj/pravilnoj funkciji\"."
+    },
+    {
+      "text": "Rang prodaje: #5 u kategoriji Vitamin D",
+      "kind": "ostalo",
+      "source_field": "properties.Ocjena prodajne uspješnosti",
+      "exact_quote": "#5 u kategoriji Vitamin D",
+      "safe_for_post": false,
+      "note": "Podatak se mijenja i nije jasno na koje razdoblje i tržište se odnosi, pa se lako može protumačiti kao zavaravajuće oglašavanje."
+    }
+  ],
+  "inconsistencies": [
+    "Trudnice i dojilje: upozorenje u opisu i property \"Nije pogodno za djecu, trudnice i dojilje.: Da\" kažu da proizvod NIJE za njih. FAQ i property \"Trudnice i dojilje trebaju se posavjetovati s liječnikom…: Ne\" kažu samo da se posavjetuju s liječnikom. U objavi koristiti strožu verziju: \"Nije za djecu, trudnice i dojilje.\"",
+    "Skladištenje: opis kaže \"do 25°C\", a properties \"na sobnoj temperaturi\". Koristiti \"do 25 °C\".",
+    "\"Broj dana korištenja po pakiranju: 60-365\" ne odgovara pakiranju od 60 kapsula uz 1 kapsulu dnevno (60 dana). Raspon se vjerojatno odnosi na sve varijante (60/120/365).",
+    "\"Mješavina: čisti oblik\" i \"Standardizirani ekstrakt: Da\" ne slažu se međusobno, a ni s FAQ-om koji kaže da je vitamin D3 otopljen u ulju šafranike. Ulje se ne spominje u properties i nema popisa sastojaka.",
+    "Fusnota uz RDI navodi \"(8400 kJ / 2000 kcal)\", što je referenca za energiju, a ne za vitamine. Stranica koristi \"RDI\" umjesto \"preporučeni unos (PU/NRV)\".",
+    "Kratki opis kaže \"optimalnu funkciju imunološkog sustava\", a dugi opis \"pravilnom funkcioniranju\". Koristiti \"pravilnom/normalnom\".",
+    "Rečenica \"Vitamin D tijelo također može proizvesti samo zahvaljujući sunčevoj svjetlosti\" je dvosmislena: \"samo\" se može čitati kao \"isključivo\"."
+  ],
+  "forbidden": [
+    "\"Jača imunitet\", \"štiti od prehlade/gripe/virusa\", \"sprječava bolesti\": to su tvrdnje o sprječavanju bolesti ili pojačane tvrdnje, zabranjene za hranu i dodatke prehrani.",
+    "\"Optimalni imunitet\" ili \"maksimalna podrška imunitetu\": pojačava odobrenu tvrdnju \"doprinosi normalnoj funkciji\".",
+    "\"Sprječava/liječi osteoporozu\", \"jača kosti\", \"liječi nedostatak vitamina D\": tvrdnje o liječenju i sprječavanju bolesti su zabranjene.",
+    "\"Gradi mišiće\", \"povećava snagu\", \"ubrzava oporavak\", \"bolji rezultati u teretani\": izvor podržava samo \"pravilan rad mišića\".",
+    "\"Daje energiju\", \"protiv umora\", \"podiže raspoloženje\", \"zamjena za sunce zimi\": izvor to ne navodi.",
+    "\"Siguran uz GLP-1 lijekove\" / \"idealan uz Ozempic\" i sl.: povezivanje s lijekovima i bolesnim stanjima nije odobrena tvrdnja.",
+    "\"Najbolji vitamin D\", \"broj 1\", \"bestseller\": usporedbe se ne mogu dokazati, a rang prodaje se mijenja.",
+    "\"Sveobuhvatna briga o zdravlju\", \"za cjelokupno zdravlje\": općenita tvrdnja bez specifične odobrene tvrdnje.",
+    "\"Veganski\" ili \"biljni\": aktivna tvar je životinjskog podrijetla, a proizvod nije veganski ni vegetarijanski.",
+    "\"BIO/organski\": property \"BIO: Ne\".",
+    "\"Bez plastike\" / \"eko pakiranje\": property \"Bez plastičnog pakiranja: Ne\".",
+    "\"Siguran za trudnice\" / \"za cijelu obitelj i djecu\": proizvod nije za djecu, trudnice i dojilje.",
+    "\"Uzmi više kapsula za jači učinak\": najveća dnevna doza je 1 kapsula i ne smije se prekoračiti.",
+    "\"Bez ikakvih nuspojava\" / \"100 % siguran\": izvor to ne tvrdi, već upućuje na savjet zdravstvenog djelatnika.",
+    "Cijene, popusti i oznaka \"10 %\" iz \"Etikete proizvoda\": promjenjivi podaci i akcije se ne uvrštavaju."
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "source_id": "S1",
+  "product": "Just Whey Grass-Fed Protein – GymBeam (S1)",
+  "claims": [
+    {
+      "text": "Jedna mjerica od 30 g sadrži 22 g bjelančevina.",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "properties.Proteini",
+      "exact_quote": "1 porcija (30 g): 22 g",
+      "safe_for_post": true,
+      "note": "Izvor navodi tri vrijednosti: 22 g (tablica i opis, 'najmanje 22 g'), 22,5 g (FAQ) i 22,8 g (Proteina po dozi). Koristi se najniža vrijednost, 22 g. Može se napisati i 'najmanje 22 g' prema opisu."
+    },
+    {
+      "text": "Jedna doza od 30 g sadrži 6,5 g BCAA i puni spektar esencijalnih aminokiselina.",
+      "kind": "sastav",
+      "source_field": "description_long",
+      "exact_quote": "puni spektar esencijalnih aminokiselina i 6,5 g BCAA",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Energetska vrijednost jedne porcije (30 g) je 457 kJ / 108 kcal.",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "properties.Energetska vrijednost",
+      "exact_quote": "1 porcija (30 g): 457 kJ / 108 kcal",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Jedna porcija (30 g) sadrži 1,6 g masti, 1,7 g ugljikohidrata i 0,11 g soli.",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "properties.Masti / Ugljikohidrati / Sol",
+      "exact_quote": "1 porcija (30 g): 1.6 g",
+      "safe_for_post": true,
+      "note": "Citat je za masti. Za ugljikohidrate piše '1 porcija (30 g): 1.7 g', a za sol '1 porcija (30 g): 0.11 g'."
+    },
+    {
+      "text": "Šećeri po porciji od 30 g",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "properties.od kojih šećeri / Šećera po dozi (g) / faq",
+      "exact_quote": "1 porcija (30 g): 1.6 g",
+      "safe_for_post": false,
+      "note": "Izvor navodi 1,6 g (tablica), 1,8 g (Šećera po dozi) i 2,2 g (FAQ). Ako se vrijednost ipak mora navesti, konzervativnija je 2,2 g, ali najbolje ju je izostaviti dok se ne provjeri deklaracija."
+    },
+    {
+      "text": "Tri izvora bjelančevina sirutke u jednoj mjerici: koncentrat (WPC), izolat (WPI) i hidrolizat (WPH).",
+      "kind": "sastav",
+      "source_field": "description_long",
+      "exact_quote": "Koncentrat, izolat i hidrolizat u jednoj mjerici",
+      "safe_for_post": true,
+      "note": "Polje 'Metoda obrade proteina' navodi samo 'koncentrat' (vidi nedosljednosti)."
+    },
+    {
+      "text": "Hidrolizat je enzimski razgrađen na kraće peptide.",
+      "kind": "sastav",
+      "source_field": "description_long",
+      "exact_quote": "enzimski razgrađen na kraće peptide",
+      "safe_for_post": true,
+      "note": "Ne dodavati da se zbog toga 'brže apsorbira' ili 'brže djeluje'."
+    },
+    {
+      "text": "Sirutka iz mlijeka krava koje slobodno pasu travu.",
+      "kind": "porijeklo_proizvodnja",
+      "source_field": "description_long",
+      "exact_quote": "protein sirutke iz mlijeka krava koje slobodno pasu travu",
+      "safe_for_post": true,
+      "note": "Podržava i polje 'Podrijetlo životinjskih sastojaka': 'Hranjeni travom, Uzgojeno na pašnjaku'."
+    },
+    {
+      "text": "Sirutka prolazi membransku ultrafiltraciju pri niskim temperaturama.",
+      "kind": "porijeklo_proizvodnja",
+      "source_field": "description_long",
+      "exact_quote": "prolazi membransku ultrafiltraciju pri niskim temperaturama",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Bez punila i zgušnjivača.",
+      "kind": "sastav",
+      "source_field": "description_long",
+      "exact_quote": "bez punila i zgušnjivača",
+      "safe_for_post": true,
+      "note": "Ne proširivati na 'bez aditiva' jer okusne varijante sadrže sladila (sukraloza, steviol glikozidi) i arome."
+    },
+    {
+      "text": "Gotov proizvod izrađuje se u vlastitom pogonu proizvođača.",
+      "kind": "porijeklo_proizvodnja",
+      "source_field": "description_long",
+      "exact_quote": "Gotov proteinski proizvod proizvodimo u vlastitom pogonu",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Neovisni laboratoriji ispituju proizvod na teške metale, mikrobiološke parametre, aminokiselinski profil i nutritivne vrijednosti.",
+      "kind": "porijeklo_proizvodnja",
+      "source_field": "description_long",
+      "exact_quote": "šaljemo u neovisne laboratorije na ispitivanja teških metala, mikrobioloških parametara, aminokiselinskog profila i nutritivnih vrijednosti",
+      "safe_for_post": true,
+      "note": "Polje 'Vrsta laboratorijskog ispitivanja' navodi samo mikrobiologiju i teške metale. Najsigurnije je navesti samo ta dva ispitivanja ili uputiti na CoA dokumente."
+    },
+    {
+      "text": "Proizvod je uvršten na Cologne List®, popis dodataka prehrani s minimaliziranim dopinškim rizikom.",
+      "kind": "porijeklo_proizvodnja",
+      "source_field": "description_long",
+      "exact_quote": "uvršten na Cologne List® , popis dodataka prehrani s minimaliziranim dopinškim rizikom",
+      "safe_for_post": true,
+      "note": "Ne pisati 'bez dopinga', '100 % čisto' ni 'certificirano za sportaše'. Rizik je minimaliziran, a ne isključen."
+    },
+    {
+      "text": "Sadrži šest probavnih enzima: pet u patentiranom kompleksu DigeZyme® te bromelain.",
+      "kind": "sastav",
+      "source_field": "description_long",
+      "exact_quote": "pet u patentiranom kompleksu DigeZyme® te bromelain",
+      "safe_for_post": true,
+      "note": "Navodi se samo prisutnost enzima, bez ikakvog učinka na probavu, nadutost ili podnošljivost. FAQ pogrešno kaže da DigeZyme® čini šest enzima."
+    },
+    {
+      "text": "Obogaćen magnezijem, cinkom i vitaminima B6 i E; kalcij prirodno potječe iz sirutke.",
+      "kind": "sastav",
+      "source_field": "description_long",
+      "exact_quote": "Magnezij, cink i vitamini B6 i E dodani su u smjesu, a kalcij prirodno potječe iz sirutke.",
+      "safe_for_post": true,
+      "note": "Za magnezij izvor ne navodi zdravstvenu tvrdnju (5 % NRV po dozi, 15 % u 90 g), pa mu se ne smije pripisivati nikakav učinak."
+    },
+    {
+      "text": "Bjelančevine doprinose povećanju i održavanju mišićne mase.",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "bjelančevine koje doprinose povećanju i održavanju mišićne mase",
+      "safe_for_post": true,
+      "note": "Koristiti samo ovu formulaciju. Ne dodavati 'vrlo probavljive i iskoristive', 'brže', 'više' ni 'garantirano'. Tvrdnja se odnosi na bjelančevine, a ne na 'Just Whey gradi mišiće'."
+    },
+    {
+      "text": "Cink (50 % NRV po dozi) doprinosi održavanju normalne razine testosterona u krvi i normalnoj funkciji imunološkog sustava.",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "doprinosi održavanju normalne razine testosterona u krvi i normalnoj funkciji imunološkog sustava",
+      "safe_for_post": true,
+      "note": "Samo doslovno. Ne pisati 'podiže testosteron', 'jača imunitet' ni 'štiti od prehlade'."
+    },
+    {
+      "text": "Vitamin B6 (133 % NRV po dozi) doprinosi smanjenju umora i iscrpljenosti i regulaciji hormonske aktivnosti.",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "doprinosi smanjenju umora i iscrpljenosti i regulaciji hormonske aktivnosti",
+      "safe_for_post": true,
+      "note": "Ne pisati 'daje energiju' ni 'uklanja umor'."
+    },
+    {
+      "text": "Vitamin E (100 % NRV po dozi) doprinosi zaštiti stanica od oksidativnog stresa.",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "doprinosi zaštiti stanica od oksidativnog stresa",
+      "safe_for_post": true,
+      "note": "Ne pisati 'antioksidativni detoks', 'usporava starenje' ni slično."
+    },
+    {
+      "text": "Kalcij (17 % NRV po dozi, prirodno iz sirutke) doprinosi normalnoj funkciji mišića i normalnoj funkciji probavnih enzima te je potreban za održavanje normalnih kostiju i zubi.",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "doprinosi normalnoj funkciji mišića i normalnoj funkciji probavnih enzima; potreban je za održavanje normalnih kostiju i zubi",
+      "safe_for_post": true,
+      "note": "Ne pisati 'jača kosti' ni 'sprječava osteoporozu'."
+    },
+    {
+      "text": "Sirutka postiže najvišu vrijednost PDCAAS 1,00; tijelo iz nje može iskoristiti gotovo sve što unese.",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long",
+      "exact_quote": "Tijelo iz nje može iskoristiti gotovo sve što unese.",
+      "safe_for_post": false,
+      "note": "Ovo je općenita tvrdnja o sirutki iz literature, a ne izmjereni podatak o proizvodu. Uz to je usporedna i pojačana i nije odobrena zdravstvena tvrdnja."
+    },
+    {
+      "text": "Sastav koji ne opterećuje probavu; enzimi za podršku probavi.",
+      "kind": "zdravstvena_tvrdnja",
+      "source_field": "description_long / faq",
+      "exact_quote": "Sastav koji ne opterećuje probavu",
+      "safe_for_post": false,
+      "note": "Nije odobrena zdravstvena tvrdnja. Proizvod nije bez laktoze, a i FAQ kaže da 'individualne reakcije mogu varirati'."
+    },
+    {
+      "text": "Voćni okusi sadrže prah od liofiliziranog voća.",
+      "kind": "sastav",
+      "source_field": "description_long",
+      "exact_quote": "Voćni okusi sadrže prah od liofiliziranog",
+      "safe_for_post": true,
+      "note": "Vrijedi samo za voćne okuse (npr. banana, jogurt od borovnice), ne za sve. Tvrdnja 'okus je puniji i manje umjetan' je subjektivna usporedba i ne koristi se."
+    },
+    {
+      "text": "Dobro se otapa: dovoljni su šejker, 200 do 300 ml tekućine i nekoliko sekundi, bez grudica.",
+      "kind": "upotreba",
+      "source_field": "description_long",
+      "exact_quote": "Dovoljni su šejker, 200 do 300 ml tekućine i nekoliko sekundi.",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Pomiješajte 1 mjericu (30 g) s 200–300 ml vode ili mlijeka; uzimajte 1–3× dnevno, najviše 90 g dnevno.",
+      "kind": "upotreba",
+      "source_field": "properties.Upotreba / properties.Maksimalna dnevna doza",
+      "exact_quote": "Pomiješajte 1 mjericu (30 g) proteina s 200–300 ml vode i popijte. Uzimajte 1–3× dnevno",
+      "safe_for_post": true,
+      "note": "Mlijeko je navedeno u FAQ-u ('Možete ga pomiješati i s mlijekom'). Najveća dnevna doza je 90 g."
+    },
+    {
+      "text": "Verzija bez okusa nema sladila ni arome i može se koristiti za pečenje ili u slanim receptima.",
+      "kind": "upotreba",
+      "source_field": "description_long",
+      "exact_quote": "Možete je upotrijebiti i za pečenje ili u slanim receptima.",
+      "safe_for_post": true,
+      "note": "Ne koristiti izraz 'čista sirutka i ništa drugo' jer je u proturječju sa sastavom (dodani minerali, vitamini i enzimi)."
+    },
+    {
+      "text": "Dostupni okusi: čokoladni frape/milkshake, gurmanska vanilija, sladoled od vanilije, bijela čokolada s kokosom, slani karamel, keksi & krema, banana, jogurt od borovnice i bez okusa.",
+      "kind": "ostalo",
+      "source_field": "description_long / variants",
+      "exact_quote": "Dostupni su okusi čokoladni frape, gurmanska vanilija, sladoled od vanilije",
+      "safe_for_post": true,
+      "note": "Nazivi okusa razlikuju se između opisa i varijanti (vidi nedosljednosti)."
+    },
+    {
+      "text": "Vegetarijanski, bez glutena, bez GMO, bez kofeina i stimulansa, bez soje, bez aspartama.",
+      "kind": "sastav",
+      "source_field": "properties.Vegetarijanski / Bez glutena / Bez GMO / Bez sadržaja (sastojci)",
+      "exact_quote": "gluten free, no added sugar, aspartame free, Bez kofeina, stimulant free",
+      "safe_for_post": true,
+      "note": "Prije objave tvrdnje 'bez glutena' provjeriti deklaraciju na pakiranju. Proizvod NIJE veganski."
+    },
+    {
+      "text": "Bez dodanog šećera",
+      "kind": "nutritivna_vrijednost",
+      "source_field": "properties.Bez sadržaja (sastojci)",
+      "exact_quote": "no added sugar",
+      "safe_for_post": false,
+      "note": "Regulirana prehrambena tvrdnja. U izvoru je u proturječju s 'Bez šećera: Ne', s tri različite vrijednosti šećera i s voćnim prahom u voćnim okusima. Ne koristiti bez provjere deklaracije."
+    },
+    {
+      "text": "Proizvod nije namijenjen djeci; trudnice i dojilje trebaju se posavjetovati s liječnikom.",
+      "kind": "upozorenje",
+      "source_field": "properties.Proizvod nije namijenjen djeci...",
+      "exact_quote": "Proizvod nije namijenjen djeci. Trudnice i dojilje trebaju se posavjetovati s liječnikom o uzimanju proizvoda.",
+      "safe_for_post": true,
+      "note": "Preporučuje se navesti u objavama koje prikazuju obitelj ili trudnice."
+    },
+    {
+      "text": "Proizvod nije bez laktoze (sadrži sirutku iz mlijeka).",
+      "kind": "upozorenje",
+      "source_field": "properties.Bez laktoze / faq",
+      "exact_quote": "nije proizvod bez laktoze",
+      "safe_for_post": true,
+      "note": "Ne sugerirati da je pogodan za osobe s intolerancijom na laktozu."
+    },
+    {
+      "text": "Čuvati na suhom mjestu, zaštićeno od izravne sunčeve svjetlosti, na sobnoj temperaturi.",
+      "kind": "upozorenje",
+      "source_field": "properties.Uvjeti skladištenja",
+      "exact_quote": "Čuvati na suhom mjestu, zaštićeno od izravne sunčeve svjetlosti, na sobnoj temperaturi.",
+      "safe_for_post": true,
+      "note": ""
+    },
+    {
+      "text": "Prosječna ocjena kupaca 4,7 iz 8516 ocjena.",
+      "kind": "ocjena_kupaca",
+      "source_field": "rating",
+      "exact_quote": "\"value\": 4.7, \"count\": 8516",
+      "safe_for_post": false,
+      "note": "Promjenjiv podatak, kao i cijene. Ako se ipak koristi, mora biti s datumom (stanje na dan dohvaćanja) i uz provjeru neposredno prije objave."
+    },
+    {
+      "text": "#1 u kategoriji Proteini / Bestseller",
+      "kind": "ocjena_kupaca",
+      "source_field": "properties.Ocjena prodajne uspješnosti",
+      "exact_quote": "#1 u kategoriji Proteini",
+      "safe_for_post": false,
+      "note": "Promjenjiv interni prodajni podatak trgovine. Lako se pretvori u nedopušteno 'najbolji protein'."
+    }
+  ],
+  "inconsistencies": [
+    "Proteini po dozi od 30 g: 22 g (tablica, opis 'najmanje 22 g'), 22,5 g (svi odgovori u FAQ-u), 22,8 g (polje 'Proteina po dozi (g)'). U tvrdnjama se koristi 22 g.",
+    "Šećeri po dozi od 30 g: 1,6 g (nutritivna tablica), 1,8 g (polje 'Šećera po dozi (g)'), 2,2 g (FAQ o mršavljenju). Konzervativnija je 2,2 g. Preporuka je ne navoditi šećer dok se ne provjeri deklaracija.",
+    "Broj enzima u DigeZyme®: opis kaže 'pet u patentiranom kompleksu DigeZyme® te bromelain' (ukupno šest), a FAQ kaže 'mješavinom DigeZyme® od šest probavnih enzima'.",
+    "'Metoda obrade proteina' i 'Oblik aktivne tvari' glase 'Koncentrat', dok opis, 'Vrsta proteina: whey_blend' i FAQ navode mješavinu koncentrata, izolata i hidrolizata. Proizvod je usto svrstan i u 'Proteinski izolati'.",
+    "Opseg laboratorijskih ispitivanja: opis navodi teške metale, mikrobiologiju, aminokiselinski profil i nutritivne vrijednosti, a polje 'Vrsta laboratorijskog ispitivanja' samo 'Mikrobiologija, Teški metali'.",
+    "Verzija bez okusa opisana je kao 'čista sirutka i ništa drugo', a sastav navodi dodane magnezij, cink, vitamine E i B6 te enzime DigeZyme® i bromelain.",
+    "'no added sugar' stoji uz 'Bez šećera: Ne', voćni prah u voćnim okusima i tri različite vrijednosti šećera.",
+    "Polje 'Nije pogodno za djecu, trudnice i dojilje: Ne' proturječi polju 'Proizvod nije namijenjen djeci. Trudnice i dojilje trebaju se posavjetovati s liječnikom…: Da' i polju 'Dobna skupina: Nije namijenjeno djeci'.",
+    "Nazivi okusa razlikuju se između opisa i varijanti: 'čokoladni frape' / 'čokoladni milkshake', 'keksi & krema' / 'cookies & cream', 'gurmanska vanilija' / 'gourmet vanilla', 'jogurt od borovnice' / 'borovnica jogurt'.",
+    "U 'Marketing Composition' oznaka '99 %' uz hidrolizat nije jasna: nije navedeno odnosi li se na udio sirutke u proizvodu ili na stupanj hidrolize.",
+    "Kao primarni cilj navodi se 'Rast mišićne mase', a kao sekundarni 'Oporavak', no za oporavak na stranici ne postoji odobrena zdravstvena tvrdnja."
+  ],
+  "forbidden": [
+    "'Najbolji protein', 'protein br. 1', 'najkvalitetniji protein na tržištu': superlativi bez dokaza; '#1' je promjenjiv prodajni podatak trgovine.",
+    "'Brže/više gradi mišiće', 'garantirani rast mišića', 'Just Whey gradi mišiće': pojačavanje odobrene tvrdnje. Dopušteno je samo 'bjelančevine doprinose povećanju i održavanju mišićne mase'.",
+    "'Ubrzava oporavak', 'za brži oporavak nakon treninga': 'Oporavak' je samo kategorija u filtru, a ne odobrena zdravstvena tvrdnja.",
+    "'Pomaže pri mršavljenju', 'topi masti', 'za definiciju': FAQ izričito kaže da proizvod nije za to formuliran i da nije zamjena za raznoliku prehranu.",
+    "'Podiže testosteron', 'prirodni booster testosterona': dopušteno je samo 'cink doprinosi održavanju normalne razine testosterona u krvi'.",
+    "'Jača imunitet', 'štiti od prehlade/bolesti': pojačano i preventivno. Dopušteno je samo 'cink doprinosi normalnoj funkciji imunološkog sustava'.",
+    "'Daje energiju', 'uklanja umor': pojačana tvrdnja o vitaminu B6.",
+    "'Jača kosti', 'sprječava osteoporozu', 'liječi' bilo što: tvrdnje o sprječavanju i liječenju bolesti zabranjene su za hranu.",
+    "'Ne nadima', 'bez probavnih tegoba', 'savršen za osjetljiv želudac', 'enzimi poboljšavaju probavu/apsorpciju': nisu odobrene zdravstvene tvrdnje, a proizvod nije bez laktoze.",
+    "'Pogodno za intoleranciju na laktozu', 'bez laktoze': proizvod nije bez laktoze.",
+    "'Tijelo iskoristi 100 % / gotovo sve', 'najveća iskoristivost', 'najbrža apsorpcija': PDCAAS/DIAAS su općeniti podaci o sirutki iz literature, a ne izmjereni podaci o proizvodu, i usporedne su tvrdnje.",
+    "'Sadrži mikronutrijente kojih nema u drugim proteinima', 'bolji od običnih proteina': neprovjerljiva usporedba s konkurencijom.",
+    "'Bez dopinga', '100 % siguran za doping kontrole': Cologne List® znači samo minimalizirani rizik.",
+    "'100 % prirodno', 'čista sirutka i ništa drugo', 'bez aditiva' (za okusne varijante): okusne varijante sadrže sukralozu, steviol glikozide i arome, a čak i verzija bez okusa ima dodane minerale, vitamine i enzime.",
+    "'Bez šećera', 'bez dodanog šećera': polje 'Bez šećera' glasi 'Ne', a podaci o šećeru su proturječni.",
+    "'Veganski': proizvod nije veganski (samo vegetarijanski).",
+    "'BIO' / 'organski': polje 'BIO' glasi 'Ne'.",
+    "'Za djecu', 'za trudnice': nije namijenjen djeci, a trudnice i dojilje trebaju se posavjetovati s liječnikom.",
+    "'22,5 g' ili '22,8 g proteina po mjerici': vrijednosti nisu usklađene, pa se koristi 22 g.",
+    "Cijene, popusti, Black Friday i oznaka 'POKLON': promjenjivi podaci koji se ne uvrštavaju."
+  ]
+}

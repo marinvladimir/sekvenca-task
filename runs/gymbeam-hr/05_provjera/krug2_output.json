@@ -1,0 +1,1181 @@
+{
+  "results": [
+    {
+      "post": 1,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 88 px"
+    },
+    {
+      "post": 1,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "88 px"
+    },
+    {
+      "post": 1,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 1,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 96 px"
+    },
+    {
+      "post": 1,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "96 px"
+    },
+    {
+      "post": 1,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 1,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 96 px"
+    },
+    {
+      "post": 1,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "96 px"
+    },
+    {
+      "post": 1,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 1,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 104 px"
+    },
+    {
+      "post": 1,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "104 px"
+    },
+    {
+      "post": 1,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 1,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 104 px"
+    },
+    {
+      "post": 1,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "104 px"
+    },
+    {
+      "post": 1,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 1,
+      "slide": 6,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 6,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 104 px"
+    },
+    {
+      "post": 1,
+      "slide": 6,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "104 px"
+    },
+    {
+      "post": 1,
+      "slide": 6,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 1,
+      "slide": 7,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 1,
+      "slide": 7,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 128 px"
+    },
+    {
+      "post": 1,
+      "slide": 7,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "128 px"
+    },
+    {
+      "post": 1,
+      "slide": 7,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "objava",
+      "check": "Broj slajdova = plan",
+      "status": "pass",
+      "detail": "7 / plan 7"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "objava",
+      "check": "Format odgovara planu",
+      "status": "pass",
+      "detail": "karusel"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "opis",
+      "check": "Duljina opisa (40–2200 znakova)",
+      "status": "pass",
+      "detail": "304 znakova"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "opis",
+      "check": "Najviše 3 emojija u opisu",
+      "status": "pass",
+      "detail": "2 emojija"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "opis",
+      "check": "Hashtagovi (2–6, uključuje #gymbeamhr)",
+      "status": "pass",
+      "detail": "#gymbeamhr #gbig #gbnutrition #gbfit"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Bez zabranjenih tvrdnji, cijena i kodova",
+      "status": "pass",
+      "detail": "nema"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Dosljedno obraćanje „ti”",
+      "status": "pass",
+      "detail": "nema oblika s „vi”"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Sve brojke na slajdovima postoje u izvoru",
+      "status": "pass",
+      "detail": "11 brojki provjereno"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez zaostalih oznaka (*, {{ }}, dupli „Listaj”)",
+      "status": "pass",
+      "detail": "čisto"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Obavezna upozorenja prisutna",
+      "status": "pass",
+      "detail": "nije bez laktoze"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "proizvod",
+      "check": "Packshot je odobrena referenca (bez promo kompozicija)",
+      "status": "pass",
+      "detail": "13 odobrenih referenci u analizi"
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez pretjeranog ponavljanja riječi",
+      "status": "pass",
+      "detail": "ok"
+    },
+    {
+      "post": 2,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 92 px"
+    },
+    {
+      "post": 2,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "92 px"
+    },
+    {
+      "post": 2,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 2,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 96 px"
+    },
+    {
+      "post": 2,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "96 px"
+    },
+    {
+      "post": 2,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 2,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 44 px"
+    },
+    {
+      "post": 2,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "warn",
+      "detail": "44 px"
+    },
+    {
+      "post": 2,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 2,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 104 px"
+    },
+    {
+      "post": 2,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "104 px"
+    },
+    {
+      "post": 2,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 2,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 104 px"
+    },
+    {
+      "post": 2,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "104 px"
+    },
+    {
+      "post": 2,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 2,
+      "slide": 6,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1350 (očekivano 1080×1350)"
+    },
+    {
+      "post": 2,
+      "slide": 6,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 128 px"
+    },
+    {
+      "post": 2,
+      "slide": 6,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "128 px"
+    },
+    {
+      "post": 2,
+      "slide": 6,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "objava",
+      "check": "Broj slajdova = plan",
+      "status": "pass",
+      "detail": "6 / plan 6"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "objava",
+      "check": "Format odgovara planu",
+      "status": "pass",
+      "detail": "karusel"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "opis",
+      "check": "Duljina opisa (40–2200 znakova)",
+      "status": "pass",
+      "detail": "442 znakova"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "opis",
+      "check": "Najviše 3 emojija u opisu",
+      "status": "pass",
+      "detail": "2 emojija"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "opis",
+      "check": "Hashtagovi (2–6, uključuje #gymbeamhr)",
+      "status": "pass",
+      "detail": "#gymbeamhr #gbig #gbnutrition #gbwomen"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Bez zabranjenih tvrdnji, cijena i kodova",
+      "status": "pass",
+      "detail": "nema"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Dosljedno obraćanje „ti”",
+      "status": "pass",
+      "detail": "nema oblika s „vi”"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Sve brojke na slajdovima postoje u izvoru",
+      "status": "pass",
+      "detail": "5 brojki provjereno"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez zaostalih oznaka (*, {{ }}, dupli „Listaj”)",
+      "status": "pass",
+      "detail": "čisto"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Obavezna upozorenja prisutna",
+      "status": "pass",
+      "detail": "sadrži zaslađivače"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "proizvod",
+      "check": "Packshot je odobrena referenca (bez promo kompozicija)",
+      "status": "pass",
+      "detail": "13 odobrenih referenci u analizi"
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez pretjeranog ponavljanja riječi",
+      "status": "pass",
+      "detail": "ok"
+    },
+    {
+      "post": 3,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1920 (očekivano 1080×1920)"
+    },
+    {
+      "post": 3,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 120 px"
+    },
+    {
+      "post": 3,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "120 px"
+    },
+    {
+      "post": 3,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 3,
+      "slide": 1,
+      "group": "slajd",
+      "check": "Sigurna zona storyja (250 px gore, 340 px dolje)",
+      "status": "pass",
+      "detail": "tekst od 617 do 1190 px"
+    },
+    {
+      "post": 3,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1920 (očekivano 1080×1920)"
+    },
+    {
+      "post": 3,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 120 px"
+    },
+    {
+      "post": 3,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "120 px"
+    },
+    {
+      "post": 3,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 3,
+      "slide": 2,
+      "group": "slajd",
+      "check": "Sigurna zona storyja (250 px gore, 340 px dolje)",
+      "status": "pass",
+      "detail": "tekst od 434 do 1373 px"
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1920 (očekivano 1080×1920)"
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 124 px"
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "124 px"
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "slajd",
+      "check": "Sigurna zona storyja (250 px gore, 340 px dolje)",
+      "status": "pass",
+      "detail": "tekst od 374 do 759 px"
+    },
+    {
+      "post": 3,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1920 (očekivano 1080×1920)"
+    },
+    {
+      "post": 3,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 120 px"
+    },
+    {
+      "post": 3,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "120 px"
+    },
+    {
+      "post": 3,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=None"
+    },
+    {
+      "post": 3,
+      "slide": 4,
+      "group": "slajd",
+      "check": "Sigurna zona storyja (250 px gore, 340 px dolje)",
+      "status": "pass",
+      "detail": "tekst od 476 do 1331 px"
+    },
+    {
+      "post": 3,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Dimenzije",
+      "status": "pass",
+      "detail": "1080×1920 (očekivano 1080×1920)"
+    },
+    {
+      "post": 3,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Tekst stane (bez preljeva)",
+      "status": "pass",
+      "detail": "naslov 116 px"
+    },
+    {
+      "post": 3,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Čitljiva veličina naslova (≥ 56 px)",
+      "status": "pass",
+      "detail": "116 px"
+    },
+    {
+      "post": 3,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Logo i packshot učitani",
+      "status": "pass",
+      "detail": "logo=True packshot=True"
+    },
+    {
+      "post": 3,
+      "slide": 5,
+      "group": "slajd",
+      "check": "Sigurna zona storyja (250 px gore, 340 px dolje)",
+      "status": "pass",
+      "detail": "tekst od 284 do 1499 px"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "objava",
+      "check": "Broj slajdova = plan",
+      "status": "pass",
+      "detail": "5 / plan 5"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "objava",
+      "check": "Format odgovara planu",
+      "status": "pass",
+      "detail": "story_niz"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "opis",
+      "check": "Duljina opisa (40–2200 znakova)",
+      "status": "pass",
+      "detail": "233 znakova"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "opis",
+      "check": "Najviše 3 emojija u opisu",
+      "status": "pass",
+      "detail": "0 emojija"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "opis",
+      "check": "Hashtagovi (2–6, uključuje #gymbeamhr)",
+      "status": "pass",
+      "detail": "#gymbeamhr #gbhealthy"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Bez zabranjenih tvrdnji, cijena i kodova",
+      "status": "pass",
+      "detail": "nema"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Dosljedno obraćanje „ti”",
+      "status": "pass",
+      "detail": "nema oblika s „vi”"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Sve brojke na slajdovima postoje u izvoru",
+      "status": "pass",
+      "detail": "5 brojki provjereno"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez zaostalih oznaka (*, {{ }}, dupli „Listaj”)",
+      "status": "pass",
+      "detail": "čisto"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "usklađenost",
+      "check": "Obavezna upozorenja prisutna",
+      "status": "pass",
+      "detail": "nije za djecu, ne prekoračiti dozu"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "proizvod",
+      "check": "Packshot je odobrena referenca (bez promo kompozicija)",
+      "status": "pass",
+      "detail": "13 odobrenih referenci u analizi"
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "jezik",
+      "check": "Bez pretjeranog ponavljanja riječi",
+      "status": "pass",
+      "detail": "ok"
+    },
+    {
+      "post": 1,
+      "slide": 1,
+      "group": "AI vizija",
+      "check": "Proizvod odgovara referenci",
+      "status": "pass",
+      "detail": "Na S1 je posuda Just Whey Salted Caramel 1000 g ista kao na referenci: prozirna posuda s aluminijskim poklopcem, bijela etiketa s narančastim rubom, natpisi JUST WHEY, GRASS FED WHEY PROTEIN i oznaka okusa SALTED CARAMEL. Nema dodanih ni izmišljenih predmeta. Ostali slajdovi su tipografski i nemaju prikaz proizvoda."
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Logo točan",
+      "status": "pass",
+      "detail": "Logo GymBeam® je u gornjem lijevom kutu na svih 7 slajdova. Nije izobličen i čitljiv je. Na tamnoj i narančastoj podlozi je bijel, a na svijetloj crn. I na etiketi pakiranja na S1 logo je točan."
+    },
+    {
+      "post": 1,
+      "slide": 7,
+      "group": "AI vizija",
+      "check": "Čitljivost",
+      "status": "warn",
+      "detail": "Na mobitelu je većina teksta čitljiva: naslovi su veliki, a na S1–S6 kontrast je dobar. Na S7 bijeli tekst stoji na narančastoj #FF4500, što daje kontrast od oko 3,5 : 1. To je prihvatljivo za naslov, ali je na granici za tekst normalne veličine. Mogao bi biti malo deblji (medium) ili za nijansu veći. Na S5 je prekriženi „mit” u svijetlosivoj boji i ostaje čitljiv. Fusnota na S5 je mala, ali još čitljiva. Ništa nije odrezano ni preklopljeno."
+    },
+    {
+      "post": 1,
+      "slide": 2,
+      "group": "AI vizija",
+      "check": "Hijerarhija poruke",
+      "status": "warn",
+      "detail": "Hijerarhija je jasna: oznaka, broj ili naslov, pa tekst. Svaki slajd ima jednu poruku. Na S2 se „mjerica” ponavlja tri puta: oznaka „U JEDNOJ MJERICI”, naslov „…U MJERICI OD 30 g” i tekst „Jedna mjerica = 30 g”. Slično je na S3 („Što je u posudi” i „u mjerici”). Oznaku bi bilo dobro zamijeniti nečim što ne ponavlja naslov, npr. „Bjelančevine” ili „Osnove”."
+    },
+    {
+      "post": 1,
+      "slide": 4,
+      "group": "AI vizija",
+      "check": "Pravopis i gramatika",
+      "status": "warn",
+      "detail": "Dijakritici, padeži, razmaci uz jedinice (22 g, 30 g, 108 kcal, 457 kJ, 200–300 ml) i hrvatski navodnici „…“ na S5 su ispravni. U naslovu S4 raspon „200-300 ml” na grafici izgleda kao da ima spojnicu, a ne crticu. U tekstu ispod je crtica (–) ispravna. Treba provjeriti glif u naslovnom fontu i ujednačiti na crticu."
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Prirodan hrvatski, „ti”",
+      "status": "pass",
+      "detail": "Obraćanje „ti” je dosljedno na slajdovima i u opisu (trebaš, Protresi, Uzimaj, Uzmi, možeš, Spremi, Pošalji, pogledaj). Nema srbizama ni kalkova. „Šejk”, „gym” i „Whey 101” su uobičajeni u fitness žargonu i odgovaraju brendu. „Prijatelju” je korišteno prema odluci."
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Ton brenda",
+      "status": "pass",
+      "detail": "Naslovi su kratki i udarni, u zbijenom verzalu, s jednom riječi u narančastoj boji. „Mit ili činjenica?” i „Merry Fitmas” na S6 donose razigranost i blagdanski kontekst. Objava je edukativna, pa je nešto suzdržanija od drskog promo tona, što cilju odgovara. Nema pretjerivanja."
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Vizualni identitet",
+      "status": "pass",
+      "detail": "Paleta je dosljedna: tamna #171617, svijetla #F3F0EB i narančasta #FF4500, prema odluci čovjeka. Ponavljaju se isti elementi: veliki prsten u pozadini, narančaste oznake u obliku pilule, numeracija 0X / 07, @GYMBEAMHR i „LISTAJ —”. Debeli zbijeni verzal ima jednu riječ istaknutu narančastom. Izmjena tamnih i svijetlih slajdova te narančasti završni slajd prepoznatljivo pripadaju brendu."
+    },
+    {
+      "post": 1,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Samo dopuštene tvrdnje",
+      "status": "pass",
+      "detail": "Sve tvrdnje su s popisa: 22 g bjelančevina u 30 g i 108 kcal / 457 kJ (S2), zdravstvena tvrdnja o mišićnoj masi u dopuštenom obliku (S2), tri izvora WPC/WPI/WPH i hidrolizat (S3), priprema i najviše 90 g dnevno (S4), proizvod nije bez laktoze i upozorenje za djecu, trudnice i dojilje (S5 i opis) te verzija bez okusa za pečenje (S6). Nema superlativa, cijena, kodova ni izmišljenih postotaka."
+    },
+    {
+      "post": 1,
+      "slide": 7,
+      "group": "AI vizija",
+      "check": "Jasan poziv na akciju",
+      "status": "pass",
+      "detail": "Cilj je spremanje objave, a S7 ga izravno podržava: naslov „SPREMI ZA PRVI ŠEJK” i ikona za spremanje. Tu su i sekundarni pozivi „Pošalji prijatelju” i gymbeam.hr. Opis ponavlja poziv na spremanje i slanje te završava pitanjem uz 👇. Poziva je dosta, ali je spremanje jasno na prvom mjestu."
+    },
+    {
+      "post": 2,
+      "slide": 3,
+      "group": "AI vizija",
+      "check": "Proizvod odgovara referenci",
+      "status": "pass",
+      "detail": "Pakiranje na S1 i S3 odgovara referenci: bijeli omot, smeđi natpis „Moi Müv“, „PROTEIN BAR“, tirkizni „COOKIES & CREAM FLAVOUR“, „19,8 g PROTEIN / 60g OF TASTE / LOW IN SUGARS / NET WT.: 60 g“. Nema izobličenja ni izmišljenih predmeta. Krokant-karamel se spominje samo u tekstu (S3, S6), a ne prikazuje se drugim pakiranjem, pa tu nema netočnog prikaza."
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Logo točan",
+      "status": "pass",
+      "detail": "Logo GymBeam® je gore lijevo na svim slajdovima (S1–S6). Na svijetloj pozadini je crn, na narančastoj (S6) bijel. Nije izobličen i čitljiv je. Na pakiranju (S1, S3) logo je izvorni tirkizni."
+    },
+    {
+      "post": 2,
+      "slide": 3,
+      "group": "AI vizija",
+      "check": "Čitljivost",
+      "status": "pass",
+      "detail": "Naslovi su veliki i kontrastni, a tekst je dovoljno velik za mobitel. Napomena o zaslađivačima i alergenima na S3 je najmanji tekst u objavi, ali je tamna na svijetlom i čitljiva. Na S2 i S4 se brojka i naslov preklapaju s dekorativnim prstenom, no kontrast ostaje dovoljan. Ništa nije odrezano. Prijelom „KROKANT-/KARAMEL?“ na S6 pada na crticu, pa je u redu."
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Hijerarhija poruke",
+      "status": "pass",
+      "detail": "Svaki slajd ima jasan raspored: oznaka iznad naslova (kicker), naslov s jednom narančastom riječi, tijelo teksta i na dnu „LISTAJ“. S2 nosi jednu brojku (19,8 g), a S6 je jasno istaknut kao završni slajd s pozivom. Tijelo teksta na S4 nabraja tri načina korištenja u jednom odlomku. Prihvatljivo je, ali je to najgušći slajd."
+    },
+    {
+      "post": 2,
+      "slide": 4,
+      "group": "AI vizija",
+      "check": "Pravopis i gramatika",
+      "status": "warn",
+      "detail": "Dijakritici, razmaci uz jedinice („60 g“, „19,8 g“, „2,3–2,4 g“), crtica u rasponu i „sa sirom“ su ispravni. Na S4 rečenica „Ili je nareži preko blagdanskog deserta i u zobene pahuljice“ nespretno povezuje dvije alternative veznikom „i“, pa zvuči kao da se pločica reže istodobno na oboje. Treba je preformulirati."
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Prirodan hrvatski, „ti”",
+      "status": "pass",
+      "detail": "Obraćanje je dosljedno na „ti“ (Pojedi, nareži, Ubaci, trčiš, Napiši, pronađi), u skladu s ljudskom odlukom. „Kriza za slatkim“ i „Napiši u komentar“ uobičajeni su kolokvijalni izrazi u Hrvatskoj. Nema srbizama ni kalkova. Naslov „Uz kavu ili na desert“ (S4) je kolokvijalan i blago dvosmislen („na desert“ = za desert ili preko deserta), ali je prihvatljiv."
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Ton brenda",
+      "status": "pass",
+      "detail": "Ton je razigran, kratak i blagdanski („Kriza za slatkim?“, „Prosinačka gužva“, „Ubaci je u torbu“). Opis ima 3–4 rečenice s 2 emojija (😉, 👇) i uključuje #gymbeamhr, #gbig te tematske hashtagove. Nema pretjerivanja. Tijelo teksta na S4 je nešto duže od ostalih, ali ne odstupa od tona."
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Vizualni identitet",
+      "status": "pass",
+      "detail": "Narančasta #FF4500 (prema odluci čovjeka), tamna #171617 i svjetla #F3F0EB dosljedne su kroz sve slajdove. Naslovi su u debelom zbijenom verzalu s jednom narančastom riječi, oznake su narančaste kapsule, a ponavljaju se dekorativni prsten, brojač 0X / 06 i @GYMBEAMHR. Završni slajd je u punoj narančastoj. Sve je prepoznatljivo i ujednačeno."
+    },
+    {
+      "post": 2,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Samo dopuštene tvrdnje",
+      "status": "pass",
+      "detail": "Sve tvrdnje su s popisa dopuštenih: 19,8 g proteina po pločici (60 g), visok udio proteina, zdravstvena tvrdnja u službenom obliku („Proteini doprinose rastu i održavanju mišićne mase.“), izvor vlakana, malo šećera 2,3–2,4 g, okusi, upotreba uz kavu, preko deserta, u zobenim pahuljicama i za koru kolača sa sirom te međuobrok za radnu torbu. Obavezna napomena o zaslađivačima i alergenima nalazi se na S3 i u opisu. Nema superlativa, cijena ni kodova."
+    },
+    {
+      "post": 2,
+      "slide": 6,
+      "group": "AI vizija",
+      "check": "Jasan poziv na akciju",
+      "status": "pass",
+      "detail": "S6 ima jasan poziv s izborom („Cookies & cream ili krokant-karamel?“, „Napiši u komentar 👇“) i usmjerava na gymbeam.hr preko poveznice u opisu profila. Opis ponavlja isto. To odgovara cilju predstavljanja proizvoda i obrascu brenda (pitanje s izborom uz 👇)."
+    },
+    {
+      "post": 3,
+      "slide": 3,
+      "group": "AI vizija",
+      "check": "Proizvod odgovara referenci",
+      "status": "pass",
+      "detail": "Na S3 i S5 je pakiranje identično referenci: bijela bočica, siva i narančasta traka, logo GymBeam, natpisi „Vitamin D3“, „1000 IU“ na narančastoj podlozi, „NET WT.: 28,8 g“ i „120 CAPS“. Ništa nije dodano ni izmišljeno."
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Logo točan",
+      "status": "pass",
+      "detail": "Logo GymBeam® je na svim slajdovima (S1–S5) gore lijevo. Nije izobličen, čitljiv je i kontrast je dobar: bijeli na narančastoj i tamnoj podlozi, crni na svijetloj."
+    },
+    {
+      "post": 3,
+      "slide": 5,
+      "group": "AI vizija",
+      "check": "Čitljivost",
+      "status": "warn",
+      "detail": "Tekst je velik i kontrastan na svim slajdovima. Na S5 je oznaka „1 KAPSULA, BILO KAD“ gotovo zalijepljena uz logo, pa djeluje zbijeno. Pomakni je niže kao na S2 i S4. Napomena na dnu S5 je sitna, ali na mobitelu još čitljiva."
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Hijerarhija poruke",
+      "status": "pass",
+      "detail": "Svaki kadar ima jasnu strukturu: oznaka, naslov u verzalu, kartica s pitanjem ili odgovorom. Svaki slajd nosi jednu poruku: anketa (S1), kviz (S2), odgovor (S3), kviz (S4), proizvod i poveznica (S5)."
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Pravopis i gramatika",
+      "status": "pass",
+      "detail": "Dijakritici su ispravni. Razmaci uz jedinice su dobri („25 μg“, „1000 IU“, „500 %“), padeži točni. Pravopisnih grešaka nema."
+    },
+    {
+      "post": 3,
+      "slide": 5,
+      "group": "AI vizija",
+      "check": "Prirodan hrvatski, „ti”",
+      "status": "warn",
+      "detail": "„Ti“ se koristi dosljedno („Imaš li“, „Ne prekoračuj“, „Čuvaj“). U standardnom hrvatskom prednost ima „pridonosi“ pred „doprinosi“, a i popis dopuštenih tvrdnji drugdje koristi „pridonosi“. Ostatak zvuči prirodno."
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Ton brenda",
+      "status": "pass",
+      "detail": "Naslovi su kratki i udarni, a format kviza je razigran. Na S1 je jedan emoji 💪. Nema pretjerivanja ni hitnosti, što edukativnom wellness storyju odgovara."
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Vizualni identitet",
+      "status": "pass",
+      "detail": "Paleta je dosljedna: narančasta #FF4500, tamna #171617 i svjetla #F3F0EB. Naslovi su u debelom zbijenom verzalu s jednom istaknutom riječi, a krug u pozadini i @GYMBEAMHR ponavljaju se na svakom kadru. Prepoznatljivo je za brend."
+    },
+    {
+      "post": 3,
+      "slide": 0,
+      "group": "AI vizija",
+      "check": "Samo dopuštene tvrdnje",
+      "status": "pass",
+      "detail": "Sve tvrdnje su s popisa: 25 μg (1000 IU) = 500 % preporučenog dnevnog unosa (S3); imunološki sustav i rad mišića, upozorenja o dozi, djeci, trudnicama i dojiljama te prehrani (S5); 1 kapsula u bilo koje vrijeme (S5). Nema superlativa, cijena ni kodova."
+    },
+    {
+      "post": 3,
+      "slide": 5,
+      "group": "AI vizija",
+      "check": "Jasan poziv na akciju",
+      "status": "warn",
+      "detail": "Anketa (S1) i dva kviza (S2, S4) dobro služe cilju reakcija. Na S5 tekstualni CTA glasi „Pogledaj D3“, a na grafici gumb kaže „GYMBEAM.HR“. Pri postavljanju Link stikera upiši tekst „Pogledaj D3“, da se poziv poklopi s planom. Odgovor na Kviz 2 vidi se samo iz oznake na S5, što je u redu, ali ga je lako previdjeti."
+    }
+  ],
+  "summary": {
+    "pass": 135,
+    "warn": 8
+  },
+  "total": 143,
+  "language_fixes": [
+    {
+      "post": 1,
+      "slide": 4,
+      "original": "ŠEJKER, 200-300 ml, GOTOVO",
+      "suggestion": "ŠEJKER, 200–300 ml, GOTOVO",
+      "reason": "Za raspon vrijednosti u hrvatskom pravopisu ide crtica (–), a ne spojnica (-). Na grafici naslova vidi se kratka spojnica. Treba provjeriti glif naslovnog fonta i ujednačiti s tekstom ispod."
+    },
+    {
+      "post": 2,
+      "slide": 4,
+      "original": "Pojedi je kao desert uz kavu. Ili je nareži preko blagdanskog deserta i u zobene pahuljice, ili je iskoristi kao proteinsku bazu za koru kolača sa sirom.",
+      "suggestion": "Pojedi je kao desert uz kavu. Nareži je preko blagdanskog deserta ili u zobene pahuljice, ili je iskoristi kao proteinsku bazu za koru kolača sa sirom.",
+      "reason": "Veznik „i“ povezuje dvije alternative (preko deserta / u zobene pahuljice), pa rečenica zvuči kao da se pločica reže istodobno na oboje. Uz to je izbačen početni „Ili“, kako se „ili“ ne bi ponavljao tri puta."
+    },
+    {
+      "post": 3,
+      "slide": 5,
+      "original": "Vitamin D doprinosi normalnoj funkciji imunološkog sustava",
+      "suggestion": "Vitamin D pridonosi normalnoj funkciji imunološkog sustava",
+      "reason": "U standardnom hrvatskom prednost ima „pridonositi“; tako je i u ostalim dopuštenim tvrdnjama."
+    }
+  ],
+  "overall": {
+    "1": "Spremno za objavu uz manje dorade. Proizvod, logo, tvrdnje i obraćanje „ti” su ispravni. Preporuke: 1) u naslovu S4 ujednačiti crticu u „200–300 ml”, 2) na S2 smanjiti ponavljanje riječi „mjerica” između oznake, naslova i teksta, 3) po želji pojačati čitljivost bijelog teksta na narančastoj podlozi na S7. Nema grešaka zbog kojih se objava ne bi smjela objaviti.",
+    "2": "Objava je spremna za objavu uz jednu manju jezičnu doradu na S4 (veznik „i“ → „ili“ i preformulacija rečenice). Proizvod i logo su točni, tvrdnje su sve s dopuštenog popisa, a obavezne napomene o zaslađivačima i alergenima su prisutne. Vizualni identitet, obraćanje na „ti“ i završni poziv na akciju su dosljedni i jasni.",
+    "3": "Objava je spremna za objavu uz manje dorade. Proizvod, logo, tvrdnje i vizualni identitet su ispravni, a format ankete i kvizova odgovara cilju reakcija. Preporuke: na S5 odmakni oznaku od loga, postavi Link stiker s tekstom „Pogledaj D3“ i zamijeni „doprinosi“ s „pridonosi“."
+  }
+}

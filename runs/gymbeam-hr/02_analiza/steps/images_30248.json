@@ -1,0 +1,43 @@
+{
+  "images": [
+    {
+      "file": "01_moimuv-cookie-and-cream-flavour-60-g-gymbeam-2-2_1.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "GymBeam / Moi Müv / PROTEIN BAR / COOKIES & CREAM FLAVOUR / 19,8 g PROTEIN / 60g OF TASTE / LOW IN SUGARS / NET WT.: 60 g",
+      "usable_as_reference": true,
+      "reason": "Čist frontalni packshot jedne pločice na bijeloj pozadini, bez dodatnih predmeta, etiketa potpuno čitljiva."
+    },
+    {
+      "file": "02_moimuv-crunchy-caramel-flavour-60-g-gymbeam-2-1_1.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "GymBeam / Moi Müv / PROTEIN BAR / CRUNCHY CARAMEL FLAVOUR / 20,4g PROTEIN / 60g OF TASTE / LOW IN SUGARS / NET WT.: 60 g",
+      "usable_as_reference": true,
+      "reason": "Čist frontalni packshot pločice okusa Crunchy Caramel na bijeloj pozadini, bez dodatnih predmeta."
+    },
+    {
+      "file": "03_caramel-box.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "GymBeam / Moi Müv / PROTEIN BAR / NET WT.: 20 x 60 g / CRUNCHY CARAMEL FLAVOUR",
+      "usable_as_reference": true,
+      "reason": "Render kutije od 20 pločica (Crunchy Caramel) pod kutom, na bijeloj pozadini; samo proizvod, ali ovo je zbirno pakiranje, ne pojedinačna pločica."
+    },
+    {
+      "file": "04_image-2.png",
+      "role": "packshot",
+      "background": "bijela",
+      "extra_items": [],
+      "visible_label_text": "GymBeam / Moi Müv / PROTEIN BAR / NET WT.: 20 x 60 g / COOKIES & CREAM FLAVOUR",
+      "usable_as_reference": true,
+      "reason": "Render kutije od 20 pločica (Cookies & Cream) pod kutom, na bijeloj pozadini; samo proizvod, zbirno pakiranje."
+    }
+  ],
+  "best_reference": "01_moimuv-cookie-and-cream-flavour-60-g-gymbeam-2-2_1.png",
+  "packaging_description": "Pločica je u uskom, uspravnom, mat bijelom flow-pack omotu sa zupčasto zavarenim rubovima gore i dolje. Na vrhu je logo „GymBeam“ u boji okusa: „Gym“ tanjim, a „Beam“ podebljanim slovima. Ispod je veliki, debeli tamnosmeđi natpis „Moi Müv“ u dva reda. Slijede tanka linija u boji okusa, smeđi natpis „PROTEIN BAR“ u dva reda i još jedna linija. Ispod nje je naziv okusa velikim podebljanim slovima: tirkizno/svijetloplavo „COOKIES & CREAM FLAVOUR“ ili koraljno crveno „CRUNCHY CARAMEL FLAVOUR“. U donjem dijelu su smeđim slovima ispisani gramaža proteina (19,8 g ili 20,4g), „60g OF TASTE“, „LOW IN SUGARS“ i „NET WT.: 60 g“. Zbirno pakiranje je bijela kartonska kutija s 20 × 60 g pločica i istim rasporedom natpisa i bojom okusa, a logo GymBeam nalazi se i na bočnoj strani.",
+  "best_reference_path": "01_brif/products/proteinska-plocica-moimuv-gymbeam/images/01_moimuv-cookie-and-cream-flavour-60-g-gymbeam-2-2_1.png"
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "hex": "#FFFFFF",
+    "share": 0.266,
+    "kind": "svijetla/pozadina"
+  },
+  {
+    "hex": "#C1C0C5",
+    "share": 0.109,
+    "kind": "boja"
+  },
+  {
+    "hex": "#171617",
+    "share": 0.059,
+    "kind": "tamna/tekst"
+  },
+  {
+    "hex": "#59565A",
+    "share": 0.053,
+    "kind": "boja"
+  },
+  {
+    "hex": "#F3F0EB",
+    "share": 0.042,
+    "kind": "svijetla/pozadina"
+  },
+  {
+    "hex": "#A98E79",
+    "share": 0.029,
+    "kind": "boja"
+  },
+  {
+    "hex": "#DBD4D5",
+    "share": 0.028,
+    "kind": "boja"
+  },
+  {
+    "hex": "#694F48",
+    "share": 0.019,
+    "kind": "boja"
+  },
+  {
+    "hex": "#DE7419",
+    "share": 0.018,
+    "kind": "boja"
+  },
+  {
+    "hex": "#302B2A",
+    "share": 0.018,
+    "kind": "boja"
+  }
+]

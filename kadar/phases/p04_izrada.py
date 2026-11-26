@@ -1,0 +1,115 @@
+"""KADAR 04 · IZRADA
+
+Ulaz:   03_plan/output.json (odobren, s ljudskim doradama), reference
+        proizvoda i logo iz faza 01–02, boje iz inputs/brand/brand.json.
+Radi:   (a) završni tekstovi i opisi (jedan poziv modela, lektura, "ti"),
+        (b) render svakog slajda u PNG (HTML predložak → Playwright).
+        Raspored, pozadina i proizvod dolaze iz plana; model mijenja samo tekst.
+Izlaz:  04_izrada/objava_N/slajd_XX.png + opis.txt + objava.json → ulaz za provjeru.
+"""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+from ..config import settings
+from ..llm import ask_structured, load_prompt
+from ..render.renderer import render_post
+from ..schemas import FinalCopy
+from ..state import Run, now_iso
+
+PHASE = "04_izrada"
+
+# riječ u tekstu slajda → dio naziva datoteke packshota te varijante
+FLAVOR_HINTS = {"bez okusa": "unflavored", "cookies": "cookie", "krokant": "caramel", "karamel": "caramel",
+                "vanilij": "vanilla", "120 kaps": "120", "60 kaps": "60"}
+
+
+def _match_product(name: str, refs: Dict[str, Dict[str, Any]]) -> Optional[str]:
+    if not name:
+        return None
+    n = name.lower()
+    for key in refs:
+        k = key.lower()
+        if n in k or k in n or n.split()[0] in k:
+            return key
+    return None
+
+
+def _image_for(slide_text: str, product: str, analysis: Dict[str, Any], run: Run) -> Optional[Path]:
+    info = analysis["product_images"][product]
+    usable = [i["file"] for i in info["images"] if i["usable_as_reference"]]
+    text = slide_text.lower()
+    for hint, token in FLAVOR_HINTS.items():
+        if hint in text:
+            hit = next((f for f in usable if token in f.lower()), None)
+            if hit:
+                return run.dir / Path(info["best_reference_path"]).parent / hit
+    return run.dir / info["best_reference_path"] if info.get("best_reference_path") else None
+
+
+def run_create(run: Run, copy_only: bool = False) -> Dict[str, Any]:
+    plan_out = run.output("03_plan")
+    analysis = run.output("02_analiza")
+    if not plan_out or not analysis:
+        raise SystemExit("Nedostaje odobreni plan ili analiza.")
+    phase_dir = run.phase_dir(PHASE)
+    run.set_meta(PHASE, status="running", started_at=now_iso())
+    plan = plan_out["plan"]
+
+    # (a) završni tekstovi — spremaju se, pa ponovni render ne troši novi poziv
+    copy_path = phase_dir / "copy.json"
+    if copy_path.exists():
+        copy = json.loads(copy_path.read_text(encoding="utf-8"))
+    else:
+        notes_path = settings.inputs_dir / f"plan_notes_{run.slug}.md"
+        copy = ask_structured(
+            schema=FinalCopy,
+            system=load_prompt("04_tekst_system"),
+            text=load_prompt("04_tekst_user", plan=plan,
+                             human_notes=notes_path.read_text(encoding="utf-8") if notes_path.exists() else "(nema)"),
+            effort="high",
+            log_path=phase_dir / "calls.jsonl",
+            label="tekstovi",
+        ).model_dump()
+        copy_path.write_text(json.dumps(copy, ensure_ascii=False, indent=2), encoding="utf-8")
+    if copy_only:
+        return copy
+
+    # (b) render
+    logo_dark = run.dir / analysis["logo"]["file"]
+    logo_white = run.dir / analysis["logo"].get("variant_white", analysis["logo"]["file"])
+    posts_out: List[Dict[str, Any]] = []
+    for planned, final in zip(plan["posts"], copy["posts"]):
+        product = _match_product(planned["product"], analysis["product_images"])
+        slides, images = [], {}
+        for ps, fs in zip(planned["slides"], final["slides"]):
+            s = {"layout": ps["layout"], "background": ps["background"], **fs}
+            s["product"] = ""
+            if product and (ps.get("product") or ps["layout"] in ("proizvod", "story_otkrivanje", "story_poveznica")):
+                img = _image_for(" ".join([fs["headline"], fs["body"]]), product, analysis, run)
+                if img:
+                    key = f"{product}::{img.name}"
+                    images[key] = img
+                    s["product"] = key
+            s["source"] = fs.get("footnote", "")
+            slides.append(s)
+        story = planned["format"] == "story_niz"
+        out_dir = phase_dir / f"objava_{planned['number']}"
+        pngs = render_post(slides, story, out_dir, run.dir, images, logo_dark, logo_white)
+        (out_dir / "opis.txt").write_text(final["caption"] + "\n", encoding="utf-8")
+        meta = {
+            "objava": planned["number"], "naslov": planned["title"], "cilj": planned["goal"],
+            "format": planned["format"], "proizvod": planned["product"], "koncept": planned["concept"],
+            "obrazlozenje": planned["why_it_fits"], "kpi": planned["kpi"], "opis": final["caption"],
+            "alt_text": final["alt_text"], "slajdovi": [str(p.relative_to(run.dir)) for p in pngs],
+            "tekst_slajdova": final["slides"],
+        }
+        (out_dir / "objava.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
+        posts_out.append(meta)
+
+    output = {"posts": posts_out, "editor_notes": copy.get("editor_notes", [])}
+    run.save_output(PHASE, output)
+    return output
