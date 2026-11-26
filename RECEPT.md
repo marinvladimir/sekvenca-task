@@ -28,7 +28,7 @@ Sheme strukturiranog izlaza su u `kadar/schemas.py`.
 
 ## Ljudske radnje (deklarirane)
 1. Pristup modelu: `claude auth login` ili API ključ u `.env`.
-2. Brif i poveznice IG objava (`inputs/brief_<brend>.json`, `inputs/…/posts.txt`); screenshotovi su opcionalni.
+2. Brif i **izbor IG objava** (`inputs/brief_<brend>.json`, poveznice u `inputs/…/posts.txt`); screenshotovi su opcionalni. Popis objava profila nije dostupan bez prijave; podatke svake objave iz poveznice recept dohvaća sam. U produkciji bi ovaj korak zamijenio službeni Instagram Graph API (vidi README).
 3. Pregled i odobrenje svakog kadra (`approve`, s napomenom što je pregledano).
 4. Ljudske odluke koje nadjačavaju AI: boje i obraćanje (`inputs/brand/brand.json`), smjernice za plan (`inputs/plan_notes_<brend>.md`), ispravci teksta (`inputs/fixes_<brend>.json`: unosi s `"phase": "03_plan"` primjenjuju se na plan odmah nakon generiranja, ostali na tekstove izrade naredbom `fix`). Ručna referenca proizvoda, ako webshop nema čisti packshot: `inputs/brand/<slug-proizvoda>.png`.
 5. Opcionalno, kreativni sloj: `kadar scenes <brend>` napiše prompte; čovjek generira scene u alatu po izboru (bez proizvoda i logotipa) i spremi ih u `inputs/scenes/objava_N_slajd_NN.jpg`, a izabrani naslov upiše u `inputs/fixes_<brend>.json`. Render umeće pravi packshot i logo preko scene.

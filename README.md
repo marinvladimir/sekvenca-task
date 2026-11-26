@@ -79,7 +79,7 @@ $P -m kadar status gymbeam-hr                            # gdje smo / od čega n
 
 | Kadar | Ulaz | Što radi | Izlaz |
 |---|---|---|---|
-| **01 Brif** | brif (obrazac ili JSON), poveznice proizvoda i IG objava, opcionalno logo i screenshotovi | dohvaća činjenice i slike proizvoda (schema.org), službeni logo (SVG) te javne podatke IG objava (opis, datum, lajkovi, slika) | `01_brif/output.json` |
+| **01 Brif** | brif (obrazac ili JSON), poveznice proizvoda i IG objava, opcionalno logo i screenshotovi | automatski dohvaća činjenice i slike proizvoda (schema.org) i službeni logo (SVG); iz **poveznica IG objava koje daje čovjek** dohvaća opis, datum, lajkove i naslovnu sliku | `01_brif/output.json` |
 | **02 Analiza** | izlaz 01 | bira čisti packshot (odbacuje promo kompozicije), izvlači **dopuštene tvrdnje s doslovnim citatima**, mjeri paletu kodom, analizira ton, publiku, teme, stil i prikaz proizvoda i osoba uz oznake **PROVJERENO / PRETPOSTAVKA / NEDOSTUPNO** | `analiza.md` |
 | **03 Plan** | odobrena analiza + ljudske smjernice | tri objave (cilj, format, koncept, slajdovi iz skupa predložaka, KPI, rizici) i odbačene ideje; kod provjerava da su sve tvrdnje s popisa dopuštenih | `plan.md` |
 | **04b Scene** *(opcionalno)* | plan + analiza | jedan AI poziv: prompti za fotografske ili nadrealne scene naslovnica u stilu brenda i 3 razigrana naslova; čovjek generira scene u alatu po izboru i bira naslov | `scene_prompts.md` → `inputs/scenes/` |
@@ -110,13 +110,19 @@ Kadar je složen kao proizvod, ne kao jednokratna skripta:
 
 Put do SaaS-a (nije implementirano): pohrana runova u bazu i objektni spremnik umjesto diska, red poslova (npr. Celery ili RQ) umjesto niti, prijava i više klijenata, pružatelj slika za automatske scene, uvoz metrika iz Instagram Insightsa za petlju učenja (vidi PDF, odjeljak 9).
 
+## Instagram u produkciji (kako bismo uklonili ručni korak)
+
+- **Vlastiti brend klijenta:** službeni **Instagram Graph API**. Brend u aplikaciji jednom poveže svoj poslovni račun (Meta prijava, OAuth), a recept sam dohvaća sve objave **i metrike** (spremanja, doseg, odgovori na storyje). Isti podaci hrane petlju učenja iz PDF-a (odjeljak 9).
+- **Tuđi ili novi brend** (prije potpisa ugovora, konkurencija): javni podaci poslovnih profila preko **Business Discovery** u Graph API-ju, ili kao sada poveznice objava.
+- **Namjerno ne:** automatsko čitanje Instagrama preko prijavljenog preglednika. To krši Instagramove uvjete korištenja i riskira blokadu računa, pa nije održivo za proizvod.
+
 ## Što može varirati pri ponavljanju
 
 Formulacije tekstova, koncepti objava i redoslijed slajdova razlikuju se od pokretanja do pokretanja jer je izlaz modela nedeterministički. Stabilni su: izvori i činjenice, izbor packshota, boje i logo, raspored i dimenzije slajdova te pravila provjere. Instagram se mijenja, pa analiza ovisi o objavama dostupnima u trenutku dohvata. Webshop može promijeniti strukturu stranice; scraper koristi standardni schema.org, uz rezervu na ručne ulaze.
 
 ## Ograničenja
 
-- Instagram feed profila nije dostupan bez prijave, pa se koriste poveznice objava (javni podaci) i opcionalni screenshotovi. Metrike (spremanja, doseg) nisu dostupne.
+- **Instagram: što je automatsko, a što ručno.** Popis objava profila Instagram ne daje bez prijave, pa **čovjek bira objave** (5–15 poveznica, opcionalno i screenshotovi). Sve ostalo recept dohvaća sam: opis, datum, lajkove i naslovnu sliku svake objave. Metrike (spremanja, doseg, storyji) nisu dostupne. Zadatak to i predviđa („omogući unos poveznica…”, „navedi nedostupne izvore”).
 - Ankete, kvizovi i poveznice u storyju su grafički prikaz. Pri objavi se preko njih postavljaju nativni Instagram stikeri; upute su uz svaku objavu.
 - Nema AI generiranih fotografija scena: objave su grafičke, s pravim packshotom.
 

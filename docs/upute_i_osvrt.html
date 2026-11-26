@@ -71,13 +71,13 @@ th { background: #F3F0EB; }
 
 <h2>7. Ograničenja</h2>
 <ul>
-<li>Feed profila nije dostupan bez prijave; koriste se javni podaci objava iz poveznica i screenshotovi. Spremanja, doseg i storyji nisu dostupni, a broj lajkova razlikuje se između izvora (38 naspram 116), pa je angažman samo okviran.</li>
+<li>Popis objava profila nije dostupan bez prijave: čovjek bira objave (poveznice), a recept iz njih sam dohvaća opis, datum, lajkove i sliku. U produkciji ovaj korak zamjenjuje službeni Instagram Graph API (brend poveže poslovni račun i dobiju se i metrike); prijava preglednikom nije opcija jer krši uvjete korištenja. Spremanja, doseg i storyji nisu dostupni, a broj lajkova razlikuje se između izvora (38 naspram 116), pa je angažman samo okviran.</li>
 <li>Ankete, kvizovi i link u storyju su grafika; pri objavi se postavljaju nativni stikeri (upute uz objavu).</li>
 <li>Objave su grafičke, s pravim packshotom, bez fotografija scena. Tekstovi variraju između pokretanja jer je model nedeterministički, dok su izvori, packshotovi, boje, rasporedi i pravila provjere stabilni.</li>
 </ul>
 
 <h2>8. Utrošeno vrijeme</h2>
-<p>Aktivni ljudski rad ≈ <span class="k">55 min</span> (odluke, Instagram ulazi, scene, pregledi, QA). Rad AI agenta na izradi recepta i čekanje ≈ <span class="k">2 h</span>. Čisto generiranje unutar recepta: <span class="k">21 AI poziv, ≈ 21 min</span>. Detalji su u <code>TIMELOG.md</code> i <code>runs/…/calls.jsonl</code>.</p>
+<p>Aktivni ljudski rad ≈ <span class="k">1 h 20 min</span> (odluke, Instagram ulazi, scene, pregledi, QA). Rad AI agenta na izradi recepta i čekanje ≈ <span class="k">2,5 h</span>. Čisto generiranje unutar recepta: <span class="k">21 AI poziv, ≈ 21 min</span>. Detalji su u <code>TIMELOG.md</code> i <code>runs/…/calls.jsonl</code>.</p>
 
 <h2>9. Prijedlog unapređenja: učenje iz komentara, odobrenja i rezultata</h2>
 <ul>

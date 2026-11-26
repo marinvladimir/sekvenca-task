@@ -13,4 +13,7 @@
 | 2026-11-26 | 11:30–11:55 | 2 | 23 | setup.sh, kadar 06 isporuka, gumbi u aplikaciji |
 | 2026-11-26 | 14:20–14:35 | 2 | 13 | README, RECEPT.md, /kadar za Claude Code, PDF |
 | 2026-11-26 | 14:35–15:00 | 15 | 25 | Provjera Sekvence, kreativni sloj (scene + naslovi), generiranje 3 scene (čovjek), krug 3 provjere, isporuka, PDF |
-| | **Ukupno** | **54** | **121** | |
+| | **Ukupno (zbroj redova)** | **54** | **121** | |
+| | **Ukupno (procjena čovjeka, uključuje čitanje i pregled izvan zabilježenih blokova)** | **≈ 80** | **≈ 150** | |
+
+Za PDF: aktivni ljudski rad ≈ 1 h 20 min; rad AI agenta i čekanje ≈ 2,5 h; čisto generiranje unutar recepta 21 AI poziv, ≈ 21 min (`runs/…/calls.jsonl`).
