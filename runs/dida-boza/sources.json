@@ -1,0 +1,42 @@
+[
+  {
+    "id": "S1",
+    "url": "https://www.didaboza.hr/hr/proizvodi/ekoloski-dzemovi/ekoloski-dzem-smokva/",
+    "kind": "webshop",
+    "title": "Ekološki džem od smokve | 240 g - Dida Boža",
+    "note": "",
+    "retrieved_at": "2026-11-26T14:26:39+00:00"
+  },
+  {
+    "id": "S2",
+    "url": "https://www.didaboza.hr/hr/proizvodi/ekoloski-sokovi/ekoloski-sok-od-nara/",
+    "kind": "webshop",
+    "title": "Ekološki sok nar 0,75 L - Dida Boža",
+    "note": "",
+    "retrieved_at": "2026-11-26T14:26:43+00:00"
+  },
+  {
+    "id": "S3",
+    "url": "https://www.didaboza.hr/hr/proizvodi/mix-paketi/didin-paket-slastica/",
+    "kind": "webshop",
+    "title": "Didin paket slastica | Dida Boža - Dida Boža",
+    "note": "",
+    "retrieved_at": "2026-11-26T14:26:46+00:00"
+  },
+  {
+    "id": "S4",
+    "url": "https://www.didaboza.hr",
+    "kind": "webshop",
+    "title": "Naslovnica (logo)",
+    "note": "",
+    "retrieved_at": "2026-11-26T14:26:48+00:00"
+  },
+  {
+    "id": "S5",
+    "url": "https://www.instagram.com/didaboza/",
+    "kind": "instagram",
+    "title": "Instagram profil",
+    "note": "Feed profila nije dostupan bez prijave; korišteni screenshotovi i poveznice objava.",
+    "retrieved_at": "2026-11-26T14:26:48+00:00"
+  }
+]

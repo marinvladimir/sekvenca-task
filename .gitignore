@@ -13,6 +13,7 @@ __pycache__/
 runs/*
 !runs/.gitkeep
 !runs/gymbeam-hr/
+!runs/dida-boza/
 runs/**/.img_cache/
 runs/**/*.log
 

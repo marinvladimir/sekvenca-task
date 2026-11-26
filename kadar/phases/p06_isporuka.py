@@ -46,7 +46,7 @@ def _posting_notes(post: Dict[str, Any]) -> List[str]:
         notes = ["Kadrove objavi redom kao story (kadar_01 … kadar_NN).",
                  "Preko grafike ankete/kviza postavi nativne Instagram stikere (Poll / Quiz) s istim pitanjem i opcijama; "
                  "grafika pokazuje njihov položaj.",
-                 "Na zadnji kadar postavi Link stiker s tekstom „Pogledaj D3” i poveznicom na stranicu proizvoda.",
+                 "Na kadar s poveznicom postavi Link stiker (kratki poziv, npr. „Pogledaj proizvod”) s poveznicom na stranicu proizvoda.",
                  "Nakon 24 h spremi niz u highlight (npr. „Članci”)."]
     return notes
 

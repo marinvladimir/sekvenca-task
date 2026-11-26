@@ -23,11 +23,41 @@ STORY = (1080, 1920)
 _env = Environment(loader=FileSystemLoader(str(HERE / "templates")), autoescape=select_autoescape(["html"]))
 
 
+def _palette_colors(run_dir: Path) -> Dict[str, str]:
+    """Boje iz palete koju je kadar 02 izmjerio kodom: najzasićenija boja = brend, najtamnija i najsvjetlija = podloge."""
+    import colorsys
+    out = run_dir / "02_analiza" / "output.json"
+    if not out.exists():
+        return {}
+    pal = json.loads(out.read_text(encoding="utf-8")).get("palette_measured") or []
+    def hsv(h):
+        r, g, b = (int(h[i:i + 2], 16) / 255 for i in (1, 3, 5))
+        return colorsys.rgb_to_hsv(r, g, b)
+    res: Dict[str, str] = {}
+    colored = [c for c in pal if c.get("share", 0) >= 0.005 and hsv(c["hex"])[1] > 0.35 and hsv(c["hex"])[2] > 0.35]
+    if colored:
+        res["brand"] = max(colored, key=lambda c: hsv(c["hex"])[1] * hsv(c["hex"])[2])["hex"]
+    if pal:
+        res["dark"] = min(pal, key=lambda c: hsv(c["hex"])[2])["hex"]
+        light = [c for c in pal if c["hex"].upper() != "#FFFFFF"] or pal
+        res["light"] = max(light, key=lambda c: hsv(c["hex"])[2] - hsv(c["hex"])[1])["hex"]
+    return res
+
+
 def brand_config(run_dir: Path) -> Dict[str, Any]:
     """Boje i postavke brenda: ljudska odluka (inputs/brand/brand.json) ima prednost pred analizom."""
-    cfg = {"colors": {"brand": "#FF4500", "dark": "#171617", "light": "#F3F0EB"}, "handle": "", "link_label": ""}
+    cfg = {"colors": {"brand": "#2B2B2B", "dark": "#151515", "light": "#F4F2EE"}, "handle": "", "link_label": ""}
     brif = run_dir / "01_brif" / "output.json"
-    brand_dir = json.loads(brif.read_text(encoding="utf-8"))["brief"].get("brand_dir", "inputs/brand") if brif.exists() else "inputs/brand"
+    brief = json.loads(brif.read_text(encoding="utf-8"))["brief"] if brif.exists() else {}
+    brand_dir = brief.get("brand_dir", "inputs/brand")
+    # zadano za bilo koji brend: @handle iz Instagram poveznice, domena weba, boje iz izmjerene palete
+    m = re.search(r"instagram\.com/([A-Za-z0-9_.]+)", brief.get("instagram", ""))
+    if m:
+        cfg["handle"] = "@" + m.group(1)
+    dom = re.sub(r"^https?://(www\.)?", "", brief.get("website", "")).strip("/")
+    if dom:
+        cfg["link_label"] = dom
+    cfg["colors"].update(_palette_colors(run_dir))
     path = settings.root / brand_dir / "brand.json"
     if path.exists():
         data = json.loads(path.read_text(encoding="utf-8"))

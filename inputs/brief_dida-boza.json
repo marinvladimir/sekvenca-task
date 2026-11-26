@@ -1,0 +1,19 @@
+{
+  "brand": "Dida Boža",
+  "brand_choice": "Drugi brend predložen u zadatku; test recepta na manjem hrvatskom prehrambenom brendu s webshopom koji sadržaj učitava JavaScriptom.",
+  "instagram": "https://www.instagram.com/didaboza/",
+  "website": "https://www.didaboza.hr",
+  "products": [
+    "https://www.didaboza.hr/hr/proizvodi/ekoloski-dzemovi/ekoloski-dzem-smokva/",
+    "https://www.didaboza.hr/hr/proizvodi/ekoloski-sokovi/ekoloski-sok-od-nara/",
+    "https://www.didaboza.hr/hr/proizvodi/mix-paketi/didin-paket-slastica/"
+  ],
+  "audience": "Ljubitelji domaćih, ekoloških proizvoda u Hrvatskoj; kupci poklona i domaćinstva koja cijene tradiciju.",
+  "goals": "1) predstavljanje proizvoda, 2) blagdanski pokloni (interes za kupnju), 3) reakcije i komentari.",
+  "inspiration": "Topla, tradicijska estetika; sezonski recepti.",
+  "tone_notes": "Topao, domaći, obraćanje s 'ti'.",
+  "constraints": "Bez izmišljenih svojstava, cijena i izjava stvarnih osoba; samo tvrdnje sa službene stranice.",
+  "language": "hrvatski",
+  "instagram_screenshots_dir": "inputs/dida-boza/instagram",
+  "brand_dir": "inputs/dida-boza/brand"
+}

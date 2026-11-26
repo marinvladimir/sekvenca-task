@@ -1,0 +1,39 @@
+{
+  "source_id": "S2",
+  "url": "https://www.didaboza.hr/hr/proizvodi/ekoloski-sokovi/ekoloski-sok-od-nara/",
+  "retrieved_at": "2026-11-26T14:26:43+00:00",
+  "name": "Ekološki sok nar 0,75 L - Dida Boža",
+  "brand": "",
+  "sku": null,
+  "category": "",
+  "description_schema": "Dida Boža ekološki sok od nara poznatog po svojim blagotvornim učincima na organizam. Nar je izuzetan antioksidans koji pomaže organizmu u jačanju imuniteta",
+  "data_source": "open_graph (render)",
+  "description_short": "",
+  "description_long": "",
+  "properties": {},
+  "spec_table": {},
+  "faq": [],
+  "rating": {
+    "value": null,
+    "count": null
+  },
+  "offers": [
+    {
+      "name": "",
+      "price": null,
+      "currency": null,
+      "gtin13": null,
+      "sku": null,
+      "available": false,
+      "url": null
+    }
+  ],
+  "offers_note": "Cijene su promjenjive (akcije). Ne koristiti u objavama bez ponovne provjere.",
+  "images": [
+    {
+      "url": "https://www.didaboza.hr/site/assets/files/1113/nar-sipak-ekoloski-sok-dida-boza.800x0.png",
+      "file": "01_brif/products/ekoloski-sok-nar-0-75-l-dida-boza/images/01_nar-sipak-ekoloski-sok-dida-boza.800x0.png",
+      "origin": "galerija"
+    }
+  ]
+}

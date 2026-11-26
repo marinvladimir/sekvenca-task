@@ -1,0 +1,39 @@
+{
+  "source_id": "S1",
+  "url": "https://www.didaboza.hr/hr/proizvodi/ekoloski-dzemovi/ekoloski-dzem-smokva/",
+  "retrieved_at": "2026-11-26T14:26:39+00:00",
+  "name": "Ekološki džem od smokve | 240 g - Dida Boža",
+  "brand": "",
+  "sku": null,
+  "category": "",
+  "description_schema": "Ekološki džem smokva - Dida Boža, nevjerojatno bogatog okusa i potpuno očuvane arome jadranskih smokava ručno branih, sušenih na suncu i pažljivo kuhanih za punoću okusa.",
+  "data_source": "open_graph (render)",
+  "description_short": "",
+  "description_long": "",
+  "properties": {},
+  "spec_table": {},
+  "faq": [],
+  "rating": {
+    "value": null,
+    "count": null
+  },
+  "offers": [
+    {
+      "name": "",
+      "price": null,
+      "currency": null,
+      "gtin13": null,
+      "sku": null,
+      "available": false,
+      "url": null
+    }
+  ],
+  "offers_note": "Cijene su promjenjive (akcije). Ne koristiti u objavama bez ponovne provjere.",
+  "images": [
+    {
+      "url": "https://www.didaboza.hr/site/assets/files/1053/ekoloski_dzem_smokva_240g__3.800x0.png",
+      "file": "01_brif/products/ekoloski-dzem-od-smokve-240-g-dida-boza/images/01_ekoloski_dzem_smokva_240g__3.800x0.png",
+      "origin": "galerija"
+    }
+  ]
+}

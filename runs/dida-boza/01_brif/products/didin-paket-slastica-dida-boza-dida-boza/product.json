@@ -1,0 +1,39 @@
+{
+  "source_id": "S3",
+  "url": "https://www.didaboza.hr/hr/proizvodi/mix-paketi/didin-paket-slastica/",
+  "retrieved_at": "2026-11-26T14:26:46+00:00",
+  "name": "Didin paket slastica | Dida Boža - Dida Boža",
+  "brand": "",
+  "sku": null,
+  "category": "",
+  "description_schema": "Didin paket slastica | Dida Boža",
+  "data_source": "open_graph (render)",
+  "description_short": "",
+  "description_long": "",
+  "properties": {},
+  "spec_table": {},
+  "faq": [],
+  "rating": {
+    "value": null,
+    "count": null
+  },
+  "offers": [
+    {
+      "name": "",
+      "price": null,
+      "currency": null,
+      "gtin13": null,
+      "sku": null,
+      "available": false,
+      "url": null
+    }
+  ],
+  "offers_note": "Cijene su promjenjive (akcije). Ne koristiti u objavama bez ponovne provjere.",
+  "images": [
+    {
+      "url": "https://www.didaboza.hr/site/assets/files/3310/mix-didin-paket-slastica-6x-1.800x0.png",
+      "file": "01_brif/products/didin-paket-slastica-dida-boza-dida-boza/images/01_mix-didin-paket-slastica-6x-1.800x0.png",
+      "origin": "galerija"
+    }
+  ]
+}

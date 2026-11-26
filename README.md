@@ -110,6 +110,19 @@ Kadar je složen kao proizvod, ne kao jednokratna skripta:
 
 Put do SaaS-a (nije implementirano): pohrana runova u bazu i objektni spremnik umjesto diska, red poslova (npr. Celery ili RQ) umjesto niti, prijava i više klijenata, pružatelj slika za automatske scene, uvoz metrika iz Instagram Insightsa za petlju učenja (vidi PDF, odjeljak 9).
 
+## Testirano na drugim brendovima
+
+Dohvat podataka (kadar 01) provjeren je na različitim tipovima webshopa:
+
+| Trgovina | Platforma / tip stranice | Kako recept čita podatke | Rezultat |
+|---|---|---|---|
+| gymbeam.hr | Magento, schema.org `Product` | JSON-LD + slike varijanti | puna demonstracija (kadrovi 01–06) |
+| didaboza.hr | sadržaj se učitava JavaScriptom | render u Chromiumu → Open Graph | brif i ulazi (`runs/dida-boza/`), spremno za kadar 02 |
+| myprotein.com | schema.org `ProductGroup` s varijantama | JSON-LD (`hasVariant`) | naziv, opis, FAQ, varijante |
+| allbirds.com | Shopify | JSON-LD | naziv, opis, varijante, slike |
+
+Redoslijed rezervi: schema.org (`Product`, `ProductGroup`…) → render JavaScriptom → Open Graph oznake. Što manje strukturiranih podataka stranica ima, to je manje činjenica u popisu dopuštenih tvrdnji, a analiza to označava kao nedostupno.
+
 ## Instagram u produkciji (kako bismo uklonili ručni korak)
 
 - **Vlastiti brend klijenta:** službeni **Instagram Graph API**. Brend u aplikaciji jednom poveže svoj poslovni račun (Meta prijava, OAuth), a recept sam dohvaća sve objave **i metrike** (spremanja, doseg, odgovori na storyje). Isti podaci hrane petlju učenja iz PDF-a (odjeljak 9).

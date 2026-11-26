@@ -1,0 +1,43 @@
+{
+  "brief": {
+    "brand": "Dida Boža",
+    "brand_choice": "Drugi brend predložen u zadatku; test recepta na manjem hrvatskom prehrambenom brendu s webshopom koji sadržaj učitava JavaScriptom.",
+    "instagram": "https://www.instagram.com/didaboza/",
+    "website": "https://www.didaboza.hr",
+    "products": [
+      "https://www.didaboza.hr/hr/proizvodi/ekoloski-dzemovi/ekoloski-dzem-smokva/",
+      "https://www.didaboza.hr/hr/proizvodi/ekoloski-sokovi/ekoloski-sok-od-nara/",
+      "https://www.didaboza.hr/hr/proizvodi/mix-paketi/didin-paket-slastica/"
+    ],
+    "audience": "Ljubitelji domaćih, ekoloških proizvoda u Hrvatskoj; kupci poklona i domaćinstva koja cijene tradiciju.",
+    "goals": "1) predstavljanje proizvoda, 2) blagdanski pokloni (interes za kupnju), 3) reakcije i komentari.",
+    "inspiration": "Topla, tradicijska estetika; sezonski recepti.",
+    "tone_notes": "Topao, domaći, obraćanje s 'ti'.",
+    "constraints": "Bez izmišljenih svojstava, cijena i izjava stvarnih osoba; samo tvrdnje sa službene stranice.",
+    "language": "hrvatski",
+    "instagram_screenshots_dir": "inputs/dida-boza/instagram",
+    "brand_dir": "inputs/dida-boza/brand"
+  },
+  "products": [
+    "01_brif/products/ekoloski-dzem-od-smokve-240-g-dida-boza/product.json",
+    "01_brif/products/ekoloski-sok-nar-0-75-l-dida-boza/product.json",
+    "01_brif/products/didin-paket-slastica-dida-boza-dida-boza/product.json"
+  ],
+  "logo": {
+    "file": "01_brif/brand/logo.svg",
+    "method": "img_or_schema",
+    "url": "https://www.didaboza.hr/site/templates/svg/Dida-BOZA-logo-o.svg",
+    "source_id": "S4"
+  },
+  "instagram": [],
+  "instagram_posts": [],
+  "warnings": [
+    "Nema IG screenshotova: analiza Instagrama bit će označena kao NEDOSTUPNO."
+  ],
+  "human_steps": [
+    "Ispunjavanje brifa (odgovori u brief JSON-u ili interaktivno).",
+    "Poveznice Instagram objava u posts.txt (feed profila nije dostupan bez prijave).",
+    "Opcionalno: screenshotovi objava + index.csv (vide se raspored, komentari, slajdovi).",
+    "Odobrenje faze nakon pregleda upozorenja."
+  ]
+}

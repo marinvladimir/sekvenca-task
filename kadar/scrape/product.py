@@ -75,6 +75,15 @@ def _of_type(nodes: List[Dict[str, Any]], t: str) -> List[Dict[str, Any]]:
 
 
 def _offers(product: Dict[str, Any]) -> List[Dict[str, Any]]:
+    # ProductGroup (npr. Shopify, MyProtein): ponude su u varijantama (hasVariant)
+    if product.get("hasVariant"):
+        out = []
+        for v in product["hasVariant"]:
+            if isinstance(v, dict):
+                for o in _offers(v):
+                    o["name"] = o["name"] or _clean(v.get("name"))
+                    out.append(o)
+        return out
     offers = product.get("offers") or {}
     if isinstance(offers, dict) and "offers" in offers:  # AggregateOffer
         offers = offers["offers"]
@@ -157,17 +166,50 @@ def _variant_images(page: str, url: str, known: List[str], limit: int = 6) -> Li
     return found[:limit]
 
 
+def _rendered_html(url: str) -> str:
+    """Stranice koje sadržaj učitavaju JavaScriptom: otvori u nevidljivom Chromiumu i vrati HTML nakon učitavanja."""
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        page = browser.new_page(user_agent=settings.user_agent, locale="hr-HR")
+        page.goto(url, wait_until="networkidle", timeout=45000)
+        html = page.content()
+        browser.close()
+    return html
+
+
+def _has_product_data(soup: BeautifulSoup) -> bool:
+    types = ("Product", "ProductGroup", "IndividualProduct", "ProductModel")
+    return any(_of_type(_json_ld(soup), t) for t in types)
+
+
 def scrape_product(url: str, run: Run, download_images: bool = True) -> Dict[str, Any]:
     with _client() as client:
         resp = client.get(url)
         resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
+        page_html, rendered = resp.text, False
+        soup = BeautifulSoup(page_html, "html.parser")
+        if not _has_product_data(soup):
+            # rezerva 1: render JavaScriptom (SPA trgovine); rezerva 2 niže: Open Graph
+            try:
+                page_html, rendered = _rendered_html(url), True
+                soup = BeautifulSoup(page_html, "html.parser")
+            except Exception:
+                pass
         nodes = _json_ld(soup)
 
-        products = _of_type(nodes, "Product")
-        if not products:
-            raise RuntimeError(f"Na {url} nema schema.org Product podataka.")
-        product = products[0]
+        products = (_of_type(nodes, "Product") or _of_type(nodes, "ProductGroup")
+                    or _of_type(nodes, "IndividualProduct") or _of_type(nodes, "ProductModel"))
+        if products:
+            product = products[0]
+        else:
+            # rezerva za stranice bez schema.org: Open Graph / meta oznake (manje činjenica, ali radi gotovo svugdje)
+            og = lambda k: (soup.find("meta", attrs={"property": k}) or soup.find("meta", attrs={"name": k}) or {}).get("content")
+            if not og("og:title"):
+                raise RuntimeError(f"Na {url} nema ni schema.org ni Open Graph podataka o proizvodu.")
+            product = {"name": og("og:title"), "description": og("og:description") or og("description"),
+                       "image": [m.get("content") for m in soup.find_all("meta", attrs={"property": "og:image"}) if m.get("content")],
+                       "_fallback": "open_graph"}
         title = _clean(product.get("name"))
         source_id = run.add_source(url, kind="webshop", title=title)
 
@@ -179,20 +221,23 @@ def scrape_product(url: str, run: Run, download_images: bool = True) -> Dict[str
 
         rating = product.get("aggregateRating") or {}
         images = product.get("image") or []
-        images = [images] if isinstance(images, str) else images
+        images = [images] if isinstance(images, (str, dict)) else images
+        images = [i.get("url") or i.get("contentUrl") if isinstance(i, dict) else i for i in images]
+        images = [i for i in images if i]
         # Glavna galerija (JSON-LD) je često puna promo kompozicija; slike
         # pojedinih okusa/varijanti su u podacima stranice i obično su čisti packshotovi.
-        variants = _variant_images(resp.text, url, images)
+        variants = _variant_images(page_html, url, images)
 
         record: Dict[str, Any] = {
             "source_id": source_id,
             "url": url,
             "retrieved_at": now_iso(),
             "name": title,
-            "brand": _clean((product.get("brand") or {}).get("name")),
+            "brand": _clean((product.get("brand") or {}).get("name") if isinstance(product.get("brand"), dict) else product.get("brand")),
             "sku": product.get("sku"),
             "category": _clean(product.get("category")),
             "description_schema": _clean(product.get("description")),
+            "data_source": product.get("_fallback", "schema.org") + (" (render)" if rendered else ""),
             "description_short": _short_description(soup),
             "description_long": _text_by_test(soup, "pdp-product-description-long"),
             "properties": _properties(product),
